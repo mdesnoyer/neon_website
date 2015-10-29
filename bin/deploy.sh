@@ -5,7 +5,7 @@ else
   BUCKET="www.neon-lab.com"
 fi
 
-BUILD_DIR=dist/build
+BUILD_DIR=build/
 STATIC_DIR=static/
 
 # Update region
