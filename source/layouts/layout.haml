@@ -1,0 +1,20 @@
+!!! 5
+%html
+  %head
+    %title Neon
+    %meta{:charset => "utf-8"}
+    %meta{:content => "Neon", :name => "description"}
+    %meta{:content => "on", "http-equiv" => "cleartype"}
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+    %link{:href => "/stylesheets/style.css", :rel => "stylesheet"}
+    = javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+    = javascript_include_tag "scroll-up"
+    = javascript_include_tag "bootstrap_collapse"
+
+    %script(src="//use.typekit.net/zpc4pgn.js")
+    :javascript
+      try{Typekit.load();}catch(e){}
+
+  %body
+    = render_partial 'navigation'
+    = yield
