@@ -2,7 +2,7 @@
 if [ "$1" == "staging" ]; then
   BUCKET="staging.neon-lab.com"
 else
-  BUCKET="www.neon-lab.com" # This should be the site's url
+  BUCKET="www.neon-lab.com"
 fi
 
 BUILD_DIR=dist/build
