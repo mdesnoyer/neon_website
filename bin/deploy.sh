@@ -10,7 +10,6 @@ STATIC_DIR=static/
 
 # Update region
 
-middleman build && \
 aws s3 sync $BUILD_DIR s3://$BUCKET/ --region us-standard --exclude "index.html" && \
 # uncomment this if you have static files
 # aws s3 sync $STATIC_DIR s3://$BUCKET/ --region us-standard && \
