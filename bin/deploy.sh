@@ -10,7 +10,7 @@ STATIC_DIR=static/
 
 # Update region
 
-aws s3 sync $BUILD_DIR s3://$BUCKET/ --exclude "index.html" && \
+aws s3 sync $BUILD_DIR s3://$BUCKET/
 # uncomment this if you have static files
 # aws s3 sync $STATIC_DIR s3://$BUCKET/ --region us-standard && \
-aws s3 cp $DIR/index.html s3://$BUCKET/index.html --cache-control "max-age=60"
+# aws s3 cp $DIR/index.html s3://$BUCKET/index.html --cache-control "max-age=60"
