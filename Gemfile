@@ -18,8 +18,6 @@ gem "rack"
 
 gem "bourbon"
 
-gem "neat"
-
 gem "rack-contrib"
 
 gem "puma"
