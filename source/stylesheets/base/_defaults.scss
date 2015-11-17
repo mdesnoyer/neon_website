@@ -1,0 +1,122 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: 62.5%; // 1em = 10px
+  max-width: 1278px;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-rendering: optimizeLegibility; // Fix the character spacing for headings
+  color: $header-color;
+  margin: 0;
+  line-height: 1em;
+}
+
+h1,
+h2,
+h4 {
+  font-family: $header-font-family;
+}
+
+h3,
+h5 {
+  font-family: $base-font-family;
+}
+
+h1,
+.platinum {
+  font-size: $title-size--large;
+  font-weight: 300;
+  color: $header-color;
+  line-height: 1.2em;
+}
+
+h2,
+.gold {
+  font-size: $title-size--medium;
+}
+
+h3,
+.silver {
+  font-size: $title-size--small;
+  font-weight: 300;
+}
+
+h4,
+.bronze {
+  font-size: $title-size--small;
+}
+
+h5 {
+  font-size: $title-size--tiny;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.prehead {
+  @extend h5;
+  color: $star-dust;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  margin: 0 0 ($base-font-size * 0.5);
+}
+
+a {
+  color: $base-link-color;
+  text-decoration: none;
+  @include transition(color 0.1s linear);
+
+  &:hover {
+    color: $hover-accent-color;
+  }
+
+  &:active, &:focus {
+    color: $hover-neutral-color;
+    outline: none;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+blockquote {
+  @extend h3;
+
+  &:before {
+    @include quotation($open-quote);
+    font-family: $serif;
+    font-size: 1.6em;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: $accent-color;
+  }
+}
+
+cite {
+  &::before {
+    content: '\2014 \00A0';
+  }
+}
+
+.open-quote {
+  font-family: $serif;
+  font-size: 5em;
+}
