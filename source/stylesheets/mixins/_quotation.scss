@@ -1,0 +1,7 @@
+@mixin quotation($quote-type) {
+  content: $quote-type;
+  font-size: 4em;
+  margin-right: 0.15em;
+  vertical-align: -0.4em;
+  display: block;
+}
