@@ -23,3 +23,5 @@ gem "rack-contrib"
 gem "puma"
 
 gem "middleman-autoprefixer"
+
+gem 'nokogiri'
