@@ -10,18 +10,26 @@
 }
 
 .link--cta > a {
+  display: flex;
+  align-items: center;
   font-size: $title-size--medium;
   font-weight: 100;
   color: $mountain-mist;
+  @include transition(all 0.2s linear);
 
-  &:after {
-    content: '';
-    display: inline-block;
-    background: url('/images/arrow.svg');
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 15px;
-    vertical-align: middle;
-    margin-left: 15px;
+  &:hover {
+    color: $mine-shaft;
+
+    svg {
+      @include transform(translateX(5px));
+      fill: $hover-accent-color;
+    }
   }
+}
+
+.arrow {
+  width: 3%;
+  fill: $mountain-mist;
+  margin-left: 10px;
+  @include transition(all 0.2s ease-out);
 }

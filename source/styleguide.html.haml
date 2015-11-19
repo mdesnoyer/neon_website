@@ -78,4 +78,6 @@ layout: styleguide
       .section__item.margin-top--60
         .prehead Call to action
         .link--cta
-          = link_to 'Get in Touch', '/index.html'
+          = link_to '/index.html' do
+            Get in Touch
+            = inline_svg("arrow.svg", class: "arrow")
