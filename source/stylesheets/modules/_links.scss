@@ -13,4 +13,15 @@
   font-size: $title-size--medium;
   font-weight: 100;
   color: $mountain-mist;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    background: url('/images/arrow.svg');
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 15px;
+    vertical-align: middle;
+    margin-left: 15px;
+  }
 }
