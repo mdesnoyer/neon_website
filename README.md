@@ -2,6 +2,10 @@
 
 This is the codebase for neon-lab.com.
 
+## Access
+
+The site is hosted on [Netlify](). Ask Deb to be added to the Netlify account.
+
 ## Local Setup
 
 To get the app setup locally, follow these steps:
@@ -20,7 +24,11 @@ bundle install
 middleman build
 middleman server
 ```
-Once you've done the first build, you should only have to run `middleman server` in the future, unless you update the Gemfile or do something else that requires re-building the source files.
+Once you've run `middleman build` once, you should only have to run `middleman server` in the future, unless you change something that requires re-building the source files in order to render locally.
+
+## Deploying
+
+* The Netlify apps for production and staging are setup to deploy automatically -- they will "watch" the Github brances (develop and master) and deploy whenever there's a new commit -- committing to `develop` will deploy to `staging.neon-lab.com`, committing to `master` will deploy to production, `neon-lab.com.
 
 ## Usage & Best Practices
 
