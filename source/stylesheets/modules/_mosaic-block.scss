@@ -16,7 +16,6 @@ $mosaic-gutter: 40px;
 
 .mosaic-block__row {
   display: flex;
-  flex-basis: 50%;
   justify-content: center;
 
   & > * + * {
