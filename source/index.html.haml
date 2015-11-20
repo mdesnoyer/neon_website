@@ -1,3 +1,40 @@
 %main.main
+  .section--hero
+    .section__title--hero
+      %h1 Images are a gateway to content.
+      %h1 Do you know what images work the best?
+    .link--cta
+      = link_to 'Learn More', '/index.html'
   .section
-    %p This is a paragraph
+    .mosaic-block__row--centered
+      .mosaic-block__content--centered
+        %h1.section__label
+          How it Works
+        %h2.section__title
+          The images your viewers want to see, automatically.
+        %p
+          Our smart, science-based approach to understanding images predicts how your visual content will perform.
+        .link--cta
+          = link_to('Discover Now', '/index.html')
+      %img{:src => 'https://s3.amazonaws.com/neon_website_assets/home/how-it-works_01.png', :class => 'mosaic-image--left-gutter'}
+    .mosaic-block__row
+      %img{:src => 'https://s3.amazonaws.com/neon_website_assets/home/how-it-works_02.png'}
+      %img{:src => 'https://s3.amazonaws.com/neon_website_assets/home/how-it-works_03.png', :class => 'mosaic-image--left-gutter'}
+
+  .section
+    .mosaic-block__container
+      .mosaic-block__column
+        .mosaic-block__content
+          %h1.section__label Products
+          %h2.section__title Make your images more valuable.
+        %img{:src => 'https://s3.amazonaws.com/neon_website_assets/home/products_01.png', :class => 'mb-20'}
+
+        .mosaic-block__content
+          %p
+            Neon makes it easy for you to get more value out of your content by representing it with the right images for your viewers.
+        .link--cta
+          = link_to('Discover Now', '/index.html')
+
+      .mosaic-block__column
+        %img{:src => 'https://s3.amazonaws.com/neon_website_assets/home/products_02.png', :class => 'mosaic-image--small'}
+        %img{:src => 'https://s3.amazonaws.com/neon_website_assets/home/products_03.png', :class => 'mb-20'}
