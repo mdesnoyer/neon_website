@@ -15,7 +15,7 @@ gem install bundler
 ```
 bundle install
 ```
-4. This site uses the static site generator [Middleman](https://middlemanapp.com/). To start a local server, run the build command below, followed by the command to startup a local server:
+4. This site uses the static site generator [Middleman](https://middlemanapp.com/) (which should get installed when you run `bundle install`. To start a local server, run the build command below, followed by the command to startup a local server:
 ```
 middleman build
 middleman server
