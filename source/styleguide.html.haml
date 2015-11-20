@@ -73,11 +73,11 @@ layout: styleguide
       .section__item.margin-top--60
         .prehead Inline link with CTA
         %p This is an #{link_to('inline link', '')}. The Read More link below is used underneath paragraphs.
-        .link--read-more
+        .link--cta
           = link_to 'Read More', '/index.html'
       .section__item.margin-top--60
         .prehead Call to action
-        .link--cta
+        .link--cta--primary
           = link_to '/index.html' do
             Get in Touch
             = inline_svg("arrow.svg", class: "arrow")
