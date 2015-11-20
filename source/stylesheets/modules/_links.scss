@@ -1,7 +1,7 @@
-.link--read-more > a {
+.link--cta > a {
   font-size: $base-font-size;
   padding-bottom: 3px;
-  border-bottom: 1.5px solid $mountain-mist;
+  border-bottom: 1.5px solid lighten($mountain-mist, 25%);
 
   &:hover {
     color: $mine-shaft;
@@ -9,7 +9,7 @@
   }
 }
 
-.link--cta > a {
+.link--cta--primary > a {
   display: flex;
   align-items: center;
   font-size: $title-size--medium;
