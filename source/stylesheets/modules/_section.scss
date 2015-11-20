@@ -8,3 +8,24 @@
   @include clearfix();
   padding: $xl 0;
 }
+
+.section--hero {
+  padding-top: ($xl + $xl);
+  padding-bottom: (300px)
+}
+
+.section__title--hero {
+  margin-bottom: 30px;
+}
+
+.section__label {
+  @extend .prehead;
+}
+
+.section__description {
+  max-width: 75%;
+}
+
+.section__title {
+  margin-bottom: $medium;
+}
