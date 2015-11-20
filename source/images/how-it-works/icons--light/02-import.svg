@@ -1,0 +1,36 @@
+<svg viewBox="0 0 126 94" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.414">
+  <path d="M12.5 64.2L19.2 18h87.7l6.8 46.2H12.5z" fill="#94a0ab" fill-opacity=".1" fill-rule="nonzero"/>
+  <path d="M106.5 18.5l6.6 45.3H13l6.6-45.3h86.9m.4-.5H19.1l-6.7 46.3h101.2L106.9 18z" fill="#94a0ab" fill-rule="nonzero"/>
+  <path d="M101.9 33.7l5.9 40.7H18.2l5.9-40.7h77.8m.2-.2H24l-6 41.2h90.2l-6.1-41.2z" fill="#94a0ab" fill-rule="nonzero"/>
+  <g fill="#94a0ab" fill-rule="nonzero">
+    <path d="M47.3 9.1h1.3v.2H47V6.9h.3v2.2zM49.4 7h.3v2.4h-.3zM51.3 9.1L52 7h.3l-.8 2.4h-.3L50.4 7h.3l.6 2.1zM54.6 7.2h-1.3V8h1.1v.2h-1.1v.9h1.3v.2H53V6.9h1.6v.3zM57.8 9.1l.7-2.1h.3L58 9.4h-.3L56.9 7h.3l.6 2.1zM59.5 7h.3v2.4h-.3zM62.6 8.2c0 .8-.4 1.2-1.2 1.2h-.8V7h.8c.8-.1 1.2.3 1.2 1.2zm-.3 0c0-.6-.3-1-.9-1h-.5v2h.5c.6 0 .9-.4.9-1zM65 7.2h-1.3V8h1.1v.2h-1.1v.9H65v.2h-1.6V6.9H65v.3zM65.9 7.2c.2-.2.5-.3.8-.3.3 0 .6.1.8.3.2.2.3.5.3.9s-.1.7-.3.9c-.2.2-.5.3-.8.3-.3 0-.6-.1-.8-.3-.2-.2-.3-.5-.3-.9 0-.3.1-.6.3-.9zm.8-.1c-.5 0-.8.3-.8 1s.3 1 .8 1 .8-.3.8-1c-.1-.6-.4-1-.8-1zM71.6 7.2h-1.3v.9h1.1v.2h-1.1v1.1H70V7h1.5l.1.2zM74 7.2h-1.3V8h1.1v.2h-1.1v.9H74v.2h-1.6V6.9H74v.3zM76.4 7.2h-1.3V8h1.1v.2h-1.1v.9h1.3v.2h-1.6V6.9h1.6v.3zM79.2 8.2c0 .8-.4 1.2-1.2 1.2h-.8V7h.8c.8-.1 1.2.3 1.2 1.2zm-.3 0c0-.6-.3-1-.9-1h-.5v2h.5c.7 0 .9-.4.9-1z"/>
+  </g>
+  <g fill="none" stroke-width=".5" stroke="#94a0ab">
+    <path d="M35.8 91.6l3.4-23.5" stroke-dasharray="0,1.01"/>
+    <path d="M40.3 67.6h46.1" stroke-dasharray="0,0.99"/>
+    <path d="M87 68.6l3.4 23.5" stroke-dasharray="0,1.01"/>
+    <path d="M89.5 92.6H36.1" stroke-dasharray="0,1"/>
+  </g>
+  <g fill="none" stroke-width=".5" stroke="#94a0ab">
+    <path d="M25.9 83.2l4.7-32.7" stroke-dasharray="0,1.01"/>
+    <path d="M31.7 50h63.2" stroke-dasharray="0,1"/>
+    <path d="M95.6 51l4.7 32.7" stroke-dasharray="0,1.01"/>
+    <path d="M99.4 84.2H26.2" stroke-dasharray="0,1"/>
+  </g>
+  <path d="M19.3 13h87.6" fill="none" stroke-width=".25" stroke-linecap="butt" stroke-linejoin="miter" stroke="#94a0ab"/>
+  <path fill="#94a0ab" d="M19.2 12.2h.2v1.6h-.2zM106.7 12.2h.2v1.6h-.2z"/>
+  <path d="M112.3 1.9c-5.5 4.4-25.2 23.3-25.2 65.7" fill="none" stroke-width=".5" stroke-dasharray="0,1" stroke="#94a0ab"/>
+  <path d="M113.7.8l-2.6.7 1.1.5.2 1.1 1.3-2.3z" fill="#94a0ab" fill-rule="nonzero"/>
+  <g>
+    <path d="M123.7 38.3c-12.1 5.2-33.2 20.2-33.2 54.6" fill="none" stroke-width=".5" stroke-dasharray="0,1" stroke="#94a0ab"/>
+    <path d="M125.3 37.6l-2.7.1 1 .7-.2 1.1 1.9-1.9z" fill="#94a0ab" fill-rule="nonzero"/>
+  </g>
+  <g>
+    <path d="M14 1.9c5.5 4.4 25.2 23.3 25.2 65.7" fill="none" stroke-width=".5" stroke-dasharray="0,1" stroke="#94a0ab"/>
+    <path d="M12.6.8l1.3 2.3L14 2l1.1-.5-2.5-.7z" fill="#94a0ab" fill-rule="nonzero"/>
+  </g>
+  <g>
+    <path d="M2.5 38.3c12.1 5.2 33.2 20.2 33.2 54.6" fill="none" stroke-width=".5" stroke-dasharray="0,1" stroke="#94a0ab"/>
+    <path d="M.9 37.6l1.9 1.9-.1-1.1.9-.7-2.7-.1z" fill="#94a0ab" fill-rule="nonzero"/>
+  </g>
+</svg>
