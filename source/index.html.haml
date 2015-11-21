@@ -16,10 +16,11 @@
           Our smart, science-based approach to understanding images predicts how your visual content will perform.
         .link--cta
           = link_to('Discover Now', '/index.html')
-      %img{:src => 'https://s3.amazonaws.com/neon_website_assets/home/how-it-works_01.png', :class => 'mosaic-image--left-gutter'}
+      %img{:src => 'https://s3.amazonaws.com/neon_website_assets/home/how-it-works_01.png', :class => 'mosaic-image mosaic-image--left-gutter'}
     .mosaic-block__row
-      %img{:src => 'https://s3.amazonaws.com/neon_website_assets/home/how-it-works_02.png'}
-      %img{:src => 'https://s3.amazonaws.com/neon_website_assets/home/how-it-works_03.png', :class => 'mosaic-image--left-gutter'}
+      .image-container--small
+        %img{:src => 'https://s3.amazonaws.com/neon_website_assets/home/how-it-works_02.png', :class => 'mosaic-image'}
+      %img{:src => 'https://s3.amazonaws.com/neon_website_assets/home/how-it-works_03.png', :class => 'mosaic-image mosaic-image--left-gutter'}
 
   .section
     .mosaic-block__container
@@ -27,7 +28,7 @@
         .mosaic-block__content
           %h1.section__label Products
           %h2.section__title Make your images more valuable.
-        %img{:src => 'https://s3.amazonaws.com/neon_website_assets/home/products_01.png', :class => 'mb-20'}
+        %img{:src => 'https://s3.amazonaws.com/neon_website_assets/home/products_01.png', :class => 'mosaic-image mosaic-image--bottom-gutter'}
 
         .mosaic-block__content
           %p
@@ -36,5 +37,20 @@
           = link_to('Discover Now', '/index.html')
 
       .mosaic-block__column
-        %img{:src => 'https://s3.amazonaws.com/neon_website_assets/home/products_02.png', :class => 'mosaic-image--small'}
-        %img{:src => 'https://s3.amazonaws.com/neon_website_assets/home/products_03.png', :class => 'mb-20'}
+        %img{:src => 'https://s3.amazonaws.com/neon_website_assets/home/products_02.png', :class => 'mosaic-image mosaic-image--small mosaic-image--bottom-gutter'}
+        %img{:src => 'https://s3.amazonaws.com/neon_website_assets/home/products_03.png', :class => 'mosaic-image mosaic-image--bottom-gutter'}
+
+  .section
+    .mosaic-block__container
+      .mosaic-block__column
+        .mosaic-block__content
+          %h1.section__label Careers
+          %h2.section__title Do you want to impact how images are used across the internet?
+        %img{:src => 'https://s3.amazonaws.com/neon_website_assets/home/careers_01.png', :class => 'mosaic-image'}
+      .mosaic-block__column
+        %img{:src => 'https://s3.amazonaws.com/neon_website_assets/home/careers_02.png', :class => 'mosaic-image mosaic-image--bottom-gutter'}
+        .mosaic-block__content
+          %p
+            Neon makes it easy for you to get more value out of your content by representing it with the right images for your viewers.
+        .link--cta
+          = link_to('Discover Now', '/index.html')
