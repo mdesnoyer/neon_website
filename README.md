@@ -6,16 +6,16 @@ This is the codebase for neon-lab.com.
 
 To get the app setup locally, follow these steps:
 
-1. Clone the repo to your machine.
-2. If you haven't installed bundler, run this command:
+* Clone the repo to your machine.
+* If you haven't installed bundler, run this command:
 ```
 gem install bundler
 ```
-3. From the root directory of the repo, run bundle to install necessary dependencies:
+* From the root directory of the repo, run bundle to install necessary dependencies:
 ```
 bundle install
 ```
-4. This site uses the static site generator [Middleman](https://middlemanapp.com/) (which should get installed when you run `bundle install`. To start a local server, run the following command:
+* This site uses the static site generator [Middleman](https://middlemanapp.com/) (which should get installed when you run `bundle install`. To start a local server, run the following command:
 ```
 middleman server
 ```
