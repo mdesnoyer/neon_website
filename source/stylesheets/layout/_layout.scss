@@ -2,3 +2,8 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.l-constrained {
+  max-width: 1278px;
+  margin: auto
+}
