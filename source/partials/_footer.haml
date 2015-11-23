@@ -1,0 +1,50 @@
+%footer
+  .footer__wrapper
+    .footer__flex-content
+      .footer__nav-block
+        %ul.sub-nav
+          %li.sub-nav__title
+            Company
+          %li.sub-nav__item
+            = link_to 'About', '/about.html'
+          %li.sub-nav__item
+            = link_to 'Jobs', '/jobs.html'
+          %li.sub-nav__item
+            = link_to 'Partnerships', '/partnerships.html'
+          %li.sub-nav__item
+            = link_to 'News + Press', '/news.html'
+          %li.sub-nav__item
+            = link_to 'Contact', '/contact.html'
+
+      .footer__nav-block
+        %ul.sub-nav
+          %li.sub-nav__title
+            Resources
+          %li.sub-nav__item
+            = link_to 'API Documentation', ''
+          %li.sub-nav__item
+            = link_to 'Terms of Service', '/terms-of-service.html'
+
+      .footer__nav-block
+        %ul.sub-nav
+          %li.sub-nav__title
+            Social
+          %li.sub-nav__item
+            = link_to 'Twitter', ''
+          %li.sub-nav__item
+            = link_to 'Facebook', ''
+          %li.sub-nav__item
+            = link_to 'Medium', ''
+          %li.sub-nav__item
+            = link_to 'LinkedIn', ''
+
+      .footer__nav-block
+        %ul.sub-nav
+          %li.sub-nav__title--long
+            Subscribe to our newsletter!
+          %li.sub-nav__item
+            %form.inline-submit
+              %input{:type => 'email', :placeholder => 'Your email address'}
+              %input{:type => 'submit', :value => "Go"}
+
+          = yield_content :footer

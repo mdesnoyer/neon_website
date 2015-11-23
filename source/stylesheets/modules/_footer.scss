@@ -1,0 +1,21 @@
+footer {
+  background-color: $seashell;
+  padding: 5em;
+}
+
+.footer__wrapper {
+  max-width: 1060px;
+  margin: auto;
+}
+
+.footer__flex-content {
+  display: flex;
+}
+
+.footer__nav-block {
+  flex: 1 1 10%;
+
+  &:last-child {
+    flex-grow: 2;
+  }
+}
