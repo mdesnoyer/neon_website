@@ -1,0 +1,21 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$desktop-page-width: 127.8em;
+$desktop-pinch-width: 14.8em;
+
+.page {
+	width: $desktop-page-width;
+	margin: 3.7em auto 0;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.pinch-left {
+	margin-left: $desktop-pinch-width / $desktop-page-width * 100%;
+}
+
+.pinch-right {
+	margin-right: $desktop-pinch-width / $desktop-page-width * 100%;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
