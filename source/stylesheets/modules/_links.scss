@@ -1,4 +1,4 @@
-.link--cta > a {
+.link--cta {
   font-size: $base-font-size;
   padding-bottom: 3px;
   border-bottom: 1.5px solid lighten($mountain-mist, 25%);
@@ -9,7 +9,7 @@
   }
 }
 
-.link--cta--primary > a {
+.link--cta--primary {
   display: flex;
   align-items: center;
   font-size: $title-size--medium;
