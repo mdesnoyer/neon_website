@@ -20,17 +20,17 @@
 ////////////////////////////
 
 @each $color-name, $color-value in $colors {
-  .color--#{$color-name}__swatch {
+  .color--#{"" + $color-name}__swatch {
     background-color: $color-value;
   }
 
-  .color--#{$color-name}__code {
+  .color--#{"" + $color-name}__code {
     &:before {
       content: '#{$color-value}';
     }
   }
 
-  .color--#{$color-name}__name {
+  .color--#{"" + $color-name}__name {
     &:before {
       content: '$#{$color-name}';
       font-family: courier;
