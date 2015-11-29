@@ -1,0 +1,15 @@
+.prehead {
+  @extend h5;
+  color: $star-dust;
+  margin-bottom: 20px;
+}
+
+.prehead--accent {
+  @extend .prehead;
+  color: $accent-color;
+}
+
+.details {
+  font-size: 1.4em;
+  color: $star-dust;
+}
