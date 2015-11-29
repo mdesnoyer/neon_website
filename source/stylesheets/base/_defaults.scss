@@ -68,12 +68,6 @@ h5 {
   font-weight: bold;
 }
 
-.prehead {
-  @extend h5;
-  color: $star-dust;
-  margin-bottom: 20px;
-}
-
 p {
   font-size: $base-font-size;
   line-height: $base-line-height;
