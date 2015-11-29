@@ -16,7 +16,6 @@ $colors: (
   seashell: $seashell
 );
 
-
 //  Brand Colors
 $brand-color: $gray-chateau;
 $accent-color: $burnt-orange;
@@ -30,11 +29,12 @@ $base-link-color: $mine-shaft;
 $hover-accent-color: $accent-color;
 $hover-neutral-color: $mine-shaft;
 
-
 // Typography
 ///////////////////////////////////////////////////////////////////////////////
 $serif: "Harriet Display Light", serif;
-$sans-serif: "Balto", sans-serif;
+$sans-serif: "Balto Book", sans-serif;
+$sans-serif-light: "Balto Light", sans-serif;
+$sans-serif-medium: "Balto Medium", sans-serif;
 
 $base-font-family: $sans-serif;
 $header-font-family: $serif;
@@ -60,7 +60,6 @@ $small:   10px;
 $medium:  20px;
 $large:   40px;
 $xl:      80px;
-
 
 // Media queries
 $tablet-min: new-breakpoint(min-width 769px);
