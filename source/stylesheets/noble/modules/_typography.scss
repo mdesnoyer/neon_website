@@ -1,0 +1,31 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@font-face {
+  font-family: "Balto Light";
+  src: url("/fonts/baltoweb-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Balto Book";
+  src: url("/fonts/baltoweb-book.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Balto Medium";
+  src: url("/fonts/baltoweb-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$font-family-primary-1: "Balto Book", Arial, sans-serif;
+$font-family-primary-2: "Balto Light", "Arial Narrow", sans-serif;
+$font-family-primary-3: "Balto Medium", "Arial Black", sans-serif;
+$font-family-secondary: 'Harriet Display Light', serif;
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

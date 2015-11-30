@@ -1,0 +1,29 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$w: 100%;
+
+.bricks {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+
+.brick {
+	padding: 1%;
+	flex-grow: 1;
+	.-double & {
+		width: ($w / 2);
+		min-width: ($w / 2);
+	}
+	.-triple & {
+		width: ($w / 3);
+		min-width: ($w / 3);
+	}
+	.-quadruple & {
+		width: ($w / 4);
+		min-width: ($w / 4);
+	}
+}

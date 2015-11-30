@@ -1,0 +1,23 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$w: 12em;
+
+.logo-link,
+.logo {
+	@include alt-rectangle($w, (44 / 106) * $w);
+	display: block;
+}
+
+.logo-link {
+	transition: none;
+}
+
+.logo {	
+	float: left;
+	background: url('/images/logo.svg') no-repeat 50% 50%;
+	i {
+		@include visuallyhidden;
+	}
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
