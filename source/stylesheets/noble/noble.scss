@@ -130,7 +130,7 @@ html {
 
 .h {
 	@include type(4.7, 5.8, $colour-mine-shaft, $font-family-secondary);
-	margin-bottom: 0.5em;
+	margin-bottom: 0.33em;
 }
 
 .hh {
@@ -144,20 +144,6 @@ html {
 
 .hhhh {
 	@include type(2.5, 3.2, $colour-mine-shaft, $font-family-secondary);
-}
-
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-.prehead {
-	@include type(1.2, 3.0, $colour-mine-shaft, $font-family-primary-3);
-	letter-spacing: (150 / 1000) * 1em;
-	text-transform: uppercase;
-	&.-alt-1 {
-		color: $colour-silver-chalice;	
-	}
-	&.-alt-2 {
-		margin-bottom: 1em;
-	}
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
