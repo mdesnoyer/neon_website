@@ -19,6 +19,7 @@ $colors: (
 //  Brand Colors
 $brand-color: $gray-chateau;
 $accent-color: $burnt-orange;
+$light-accent-color: lighten($accent-color, 10%);
 
 //  Text Colors
 $base-font-color: $mountain-mist;
@@ -28,6 +29,9 @@ $header-color: $mine-shaft;
 $base-link-color: $mine-shaft;
 $hover-accent-color: $accent-color;
 $hover-neutral-color: $mine-shaft;
+
+// Form Colors
+$base-border-color: #d6d6d6;
 
 // Typography
 ///////////////////////////////////////////////////////////////////////////////
