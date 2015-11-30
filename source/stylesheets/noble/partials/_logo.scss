@@ -17,7 +17,7 @@ $shift-left: 47px;
 
 .logo {	
 	float: left;
-	background: url('/images/logo.svg') no-repeat 50% 50%;
+	background: url('/images/navigation/logo.svg') no-repeat 50% 50%;
 	transform: translateX(-1 * percentage($shift-left / $original-width));
 	i {
 		@include visuallyhidden;
