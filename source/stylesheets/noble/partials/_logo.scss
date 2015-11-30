@@ -1,10 +1,13 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-$w: 12em;
+$desired-width: 12em;
+$original-width: 120px;
+$original-height: 50px;
+$shift-left: 47px;
 
 .logo-link,
 .logo {
-	@include alt-rectangle($w, (44 / 106) * $w);
+	@include alt-rectangle($desired-width, (($original-height / $original-width) * $desired-width));
 	display: block;
 }
 
@@ -15,6 +18,7 @@ $w: 12em;
 .logo {	
 	float: left;
 	background: url('/images/logo.svg') no-repeat 50% 50%;
+	transform: translateX(-1 * percentage($shift-left / $original-width));
 	i {
 		@include visuallyhidden;
 	}
