@@ -1,0 +1,14 @@
+.logo-grid {
+  display: flex;
+  // justify-content: space-between;
+  flex-wrap: wrap;
+  flex-start: start;
+}
+
+.logo {
+  margin-right: 10em;
+
+  img {
+    width: 100%;
+  }
+}
