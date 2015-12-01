@@ -4,6 +4,12 @@
 }
 
 .l-constrained {
-  max-width: 1024px;
+  max-width: 1278px;
   margin: auto
+}
+
+.l-offset {
+  float: right;
+  width: 66%;
+  @include clearfix;
 }
