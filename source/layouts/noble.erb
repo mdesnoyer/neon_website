@@ -7,7 +7,11 @@
 		<meta name="description" content="TODO" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<%= partial "partials/favicons.html.erb" %>
-		<title><%= current_page.data.title %> | Neon</title>
+		<% if current_page.data.home == true %>
+			<title>Neon | find your best images</title>
+		<% else %>
+			<title><%= current_page.data.title %> | Neon</title>
+		<% end %>
 		<%= partial "partials/scripts.top.html.erb" %>
 	</head>
     <body class="page <%= current_page.data.classes %>">
