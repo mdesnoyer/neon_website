@@ -107,6 +107,7 @@ ul {
 blockquote {
   @extend h3;
   margin-bottom: 0.5em;
+  line-height: 1.3em;
 
   &:before {
     @include quotation($open-quote);
