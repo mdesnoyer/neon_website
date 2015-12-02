@@ -1,32 +1,32 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 .primary-nav {
-	@include clearfix;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	margin-bottom: 0; // ugh
+    @include clearfix;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 0; // ugh
 }
 
 .primary-nav-item {
-	@include type(1.6, 1.6, "", $font-family-primary-1);
-	float: left;
-	list-style: none;
-	margin-left: 2em;
-	position: relative;
-	a {
-		&:link,
-		&:visited {
-			text-decoration: none;
-			color: $colour-dusty-gray;
-		}
-		&:focus,
-		&:hover,
-		&:active {
-			text-decoration: none;
-			color: $colour-burning-orange;
-		}
-	}
+    @include type(1.6, 1.6, '', $font-family-primary-1);
+    float: left;
+    list-style: none;
+    margin-left: 2em;
+    position: relative;
+    a {
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: $colour-dusty-gray;
+        }
+        &:focus,
+        &:hover,
+        &:active {
+            text-decoration: none;
+            color: $colour-burning-orange;
+        }
+    }
 }
 
 .home .primary-nav-item.-home,
@@ -35,27 +35,27 @@
 .careers .primary-nav-item.-careers,
 .our-story .primary-nav-item.-our-story,
 .about .primary-nav-item.-about {
-	&:after {
-		display: block;
-		position: absolute;
-		bottom: -0.25em;
-		left: 0;
-		content: ' ';
-		width: 1em;
-		height: 1px;
-		background-color: $colour-burning-orange;
-	}
-	a {
-		&:link,
-		&:visited {
-			color: $colour-mine-shaft;
-		}
-		&:focus,
-		&:hover,
-		&:active {
-			color: $colour-burning-orange;
-		}
-	}
+    &:after {
+        display: block;
+        position: absolute;
+        bottom: -0.25em;
+        left: 0;
+        content: ' ';
+        width: 1em;
+        height: 1px;
+        background-color: $colour-burning-orange;
+    }
+    a {
+        &:link,
+        &:visited {
+            color: $colour-mine-shaft;
+        }
+        &:focus,
+        &:hover,
+        &:active {
+            color: $colour-burning-orange;
+        }
+    }
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

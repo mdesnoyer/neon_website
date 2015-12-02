@@ -1,23 +1,23 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 .happy-quote {
-	transform: translateY(1.5em);
+    transform: translateY(1.5em);
 }
 
 .happy-words {
-	@include type(2.3, 2.8, $colour-mine-shaft, $font-family-primary-1);
-	margin-bottom: 0.5em;
-	display: block;
-	&:before {
-		@include type(1.618, 0.1, $colour-burning-orange, $font-family-secondary);
-		content: '\201c';
-		display: block;
-	}
+    @include type(2.3, 2.8, $colour-mine-shaft, $font-family-primary-1);
+    margin-bottom: 0.5em;
+    display: block;
+    &:before {
+        @include type(1.618, 0.1, $colour-burning-orange, $font-family-secondary);
+        content: '\201c';
+        display: block;
+    }
 }
 
 .happy-source {
-	@include type(1.4, 3.2, $colour-dusty-gray, $font-family-primary-1);
-	display: block;
+    @include type(1.4, 3.2, $colour-dusty-gray, $font-family-primary-1);
+    display: block;
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
