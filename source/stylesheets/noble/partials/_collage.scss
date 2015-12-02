@@ -150,7 +150,7 @@
 		@include generate-tile(118px, 0px, 465px, 257px, $cw, $ch, '');
 	}
 	.-tile-05-b {
-		@include generate-tile(534px, 512px, 472px, 111px, $cw, $ch, '');
+		@include generate-tile(513px, 512px, 472px, 133px, $cw, $ch, '');
 	}
 	.-tile-05-c {
 		@include generate-tile(0px, 512px, 620px, 464px, $cw, $ch, '/images/careers/careers_wiley.jpg');
