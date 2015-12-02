@@ -32,9 +32,12 @@ h4 {
   font-family: $header-font-family;
 }
 
-h3,
-h5 {
+h3 {
   font-family: $base-font-family;
+}
+
+h5 {
+  font-family: $sans-serif-medium;
 }
 
 h1,
@@ -73,6 +76,7 @@ h5 {
   @extend h5;
   color: $star-dust;
   margin-bottom: 20px;
+  letter-spacing: 3px;
 }
 
 p {
