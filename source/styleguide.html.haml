@@ -78,7 +78,6 @@ classes: styleguide
           = link_to 'Read More', '/index.html'
       .section__item.margin-top--60
         .prehead Call to action
-        .link--cta--primary
-          = link_to '/index.html' do
-            Get in Touch
-            = inline_svg("arrow.svg", class: "arrow")
+        = link_to '/index.html', class: 'link--cta--primary' do
+          Get in Touch
+          = inline_svg("arrow.svg", class: "arrow")

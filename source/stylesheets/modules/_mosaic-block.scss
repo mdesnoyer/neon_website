@@ -63,6 +63,10 @@ $mosaic-gutter: 40px;
   margin-left: $mosaic-gutter;
 }
 
+.mosaic-image--top-gutter {
+  margin-top: $mosaic-gutter;
+}
+
 .mosaic-image--bottom-gutter {
   margin-bottom: $mosaic-gutter;
 }

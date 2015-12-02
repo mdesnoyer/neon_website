@@ -3,13 +3,14 @@
     %nav.flex-nav
       %ul
         %li.flex-nav__item--logo
-          = image_tag('images/navigation/logo.svg')
+          = link_to '/index.html' do
+            = image_tag('images/navigation/logo.svg')
         %li.flex-nav__item
           = link_to 'Products', '/products.html'
         %li.flex-nav__item
           = link_to 'How it Works', ''
         %li.flex-nav__item
-          = link_to 'Careers', ''
+          = link_to 'Careers', '/careers/'
         %li.flex-nav__item
           = link_to 'Our Story', ''
         %li.flex-nav__item

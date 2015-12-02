@@ -5,17 +5,18 @@ classes: products
 ---
 %main
   .l-constrained
-    .section.section--medium
-      .prehead Products
-      %h1.section__title Images that Impact.
-      %p
-        Images are everywhere. Over 1.8 B images are uploaded online every day. This volume will only increase as more people have the tools to create and share images in their back pockets. How will you manage your visual assets in a world inundated with images?
-      %p
-        Neon is a comprehensive solution that instantly filters through massive image databases and video libraries to identify and surface high-value visual assets. Features like smart cropping and automatic image optimization across platforms make Neon able to be personalized for different audiences and uses.
-      %p
-        Make smarter decisions about how to present your content with Neon, automatically.
+    .l-narrow
+      .section
+        .prehead Products
+        %h1.section__title Images that Impact.
+        %p
+          Images are everywhere. Over 1.8 B images are uploaded online every day. This volume will only increase as more people have the tools to create and share images in their back pockets. How will you manage your visual assets in a world inundated with images?
+        %p
+          Neon is a comprehensive solution that instantly filters through massive image databases and video libraries to identify and surface high-value visual assets. Features like smart cropping and automatic image optimization across platforms make Neon able to be personalized for different audiences and uses.
+        %p
+          Make smarter decisions about how to present your content with Neon, automatically.
 
-      = link_to('Learn how it works', '/how-it-works.html', class: 'link--cta')
+        = link_to('Learn how it works', '/how-it-works.html', class: 'link--cta')
 
     .section.columns
       .column
@@ -61,7 +62,7 @@ classes: products
           = image_tag('images/products/products-lift-261.jpg', class: 'mosaic-image mosaic-image--bottom-gutter')
 
           .mosaic-block__content
-            = link_to('Download Case Study', '', class: 'link--cta')
+            = link_to('Download Case Study', 'https://s3.amazonaws.com/neon_website_assets/Neon-IGN-Case-Study.pdf', class: 'link--cta')
 
         .mosaic-block__column
           .mosaic-block__content
@@ -74,3 +75,25 @@ classes: products
               Jim Hall / VP of Technology, IGN
 
           = image_tag('images/products/products-lift-62.jpg', class: 'mosaic-image mosaic-image--small mosaic-image--top-gutter')
+
+    .section
+      .l-narrow--offset
+        .prehead Integrations
+        %p
+          Neon has highly flexible integrations with products and services like online video and content management platforms, social networks, analytics tools, and more. Some of our most common integrations are listed below. Get in touch for our full list.
+
+        .logo-grid
+          .logo
+            = image_tag('images/products/logos/brightcove.svg')
+          .logo
+            = image_tag('images/products/logos/ooyala.svg')
+          .logo.logo--twitter
+            = image_tag('images/products/logos/twitter.svg')
+          .logo
+            = image_tag('images/products/logos/akamai.svg')
+          .logo
+            = image_tag('images/products/logos/snappy-tv.png')
+        .section
+          = link_to '/index.html', class: 'link--cta--primary' do
+            Get in Touch
+            = inline_svg("arrow.svg", class: "arrow")
