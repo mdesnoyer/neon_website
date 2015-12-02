@@ -13,7 +13,7 @@
 }
 
 .l-narrow--offset {
+  @include clearfix;
   width: 66%;
   float: right;
-  @include clearfix;
 }
