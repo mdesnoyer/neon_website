@@ -34,7 +34,7 @@ classes: products
           Flexible technology to select and surface the most compelling images from image libraries, stock photo sets, and content databases. A powerful tool to assist in the creation of photo galleries, effective search, and editorial images paired with articles.
 
     .section
-      .mosaic-block__container
+      .mosaic-block__container.mosaic-block__container--constrained
         .mosaic-block__column.mosaic-block__column--small.mosaic-block__column--centered
           .mosaic-block__content
             .stats-callout__number $179,000+
@@ -47,7 +47,8 @@ classes: products
             .stats-callout__number 2 Billion+
             %p.stats-callout__description Images served in past month
 
-          = image_tag('images/products/products-football.jpg', class: 'mosaic-image mosaic-image--bottom-gutter')
+          .image-container
+            = image_tag('images/products/products-football.jpg', class: 'mosaic-image mosaic-image--large mosaic-image--bottom-gutter')
 
           .mosaic-block__row.mosaic-block__row--left
             .image-container--medium

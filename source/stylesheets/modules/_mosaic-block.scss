@@ -8,6 +8,11 @@ $mosaic-gutter: 40px;
   }
 }
 
+.mosaic-block__container--constrained {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .mosaic-block__column {
   display: flex;
   flex-direction: column;
@@ -73,6 +78,10 @@ $mosaic-gutter: 40px;
 
 .mosaic-image--small {
   width: 50%;
+}
+
+.mosaic-image--large {
+  width: 100%;
 }
 
 .image-container--small {
