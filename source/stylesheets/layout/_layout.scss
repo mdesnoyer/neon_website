@@ -8,8 +8,12 @@
   margin: auto
 }
 
-.l-offset {
-  float: right;
+.l-narrow {
   width: 66%;
+}
+
+.l-narrow--offset {
+  width: 66%;
+  float: right;
   @include clearfix;
 }
