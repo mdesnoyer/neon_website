@@ -40,7 +40,7 @@
 
 .section--bordered {
   $border-color: $seashell;
-  border-top: 3px solid $border-color;
+
 
   & > * + * {
     border-top: 3px solid $border-color;
