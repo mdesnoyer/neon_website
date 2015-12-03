@@ -37,3 +37,16 @@
 .section--medium {
   width: 60%;
 }
+
+.section--bordered {
+  $border-color: $seashell;
+  border-top: 3px solid $border-color;
+
+  & > * + * {
+    border-top: 3px solid $border-color;
+  }
+}
+
+.section--img {
+  padding-top: $small;
+}
