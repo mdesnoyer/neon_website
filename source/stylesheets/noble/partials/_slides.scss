@@ -1,0 +1,26 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.slides {
+	@include clearfix;
+}
+
+.slide {
+	margin-bottom: 500px; // TODO
+}
+
+.slide--columns {
+	@include clearfix;
+	margin-bottom: 10em;
+}
+
+.slide--columns--verso {
+	float: left;
+	width: 52%;
+}
+
+.slide--columns--recto {
+	float: right;
+	width: 41%;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

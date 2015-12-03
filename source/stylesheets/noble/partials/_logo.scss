@@ -7,21 +7,21 @@ $shift-left: 47px;
 
 .logo-link,
 .logo {
-	@include alt-rectangle($desired-width, (($original-height / $original-width) * $desired-width));
-	display: block;
+    @include alt-rectangle($desired-width, (($original-height / $original-width) * $desired-width));
+    display: block;
 }
 
 .logo-link {
-	transition: none;
+    transition: none;
 }
 
-.logo {	
-	float: left;
-	background: url('/images/navigation/logo.svg') no-repeat 50% 50%;
-	transform: translateX(-1 * percentage($shift-left / $original-width));
-	i {
-		@include visuallyhidden;
-	}
+.logo { 
+    float: left;
+    background: url('/images/navigation/logo.svg') no-repeat 50% 50%;
+    transform: translateX(-1 * percentage($shift-left / $original-width));
+    i {
+        @include visuallyhidden;
+    }
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

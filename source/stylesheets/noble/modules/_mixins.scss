@@ -1,14 +1,14 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 @mixin type($size, $lead, $colour, $font-family) {
-	font-size: $size * 1em;
-	line-height: ($lead / $size);
-	@if $colour != "" {
-		color: $colour;
-	}
-	@if $font-family != "" {
-		font-family: $font-family;
-	}
+    font-size: $size * 1em;
+    line-height: ($lead / $size);
+    @if $colour != "" {
+        color: $colour;
+    }
+    @if $font-family != "" {
+        font-family: $font-family;
+    }
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -27,14 +27,14 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 @mixin clearfix {
-	&:before,
-	&:after {
-		content: ' ';
-		display: table;
-	}
-	&:after {
-		clear: both;
-	}
+    &:before,
+    &:after {
+        content: ' ';
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

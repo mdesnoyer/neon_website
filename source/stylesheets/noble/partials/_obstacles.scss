@@ -1,0 +1,30 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$obstacles-width: 100%;
+
+.obstacles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.obstacles--item {
+    .-septuple & {
+        width: ($obstacles-width / 7);
+    }
+}
+
+.obstacles--item--image {
+    @include alt-rectangle(90%, 50%);
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    // background-image: set inline;
+    margin-bottom: 3em;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

@@ -20,7 +20,9 @@
     	<main class="meat" role="main">
     		<%= yield %>
     	</main>
-    	<%= partial "partials/site.footer.html.erb" %>
+    	<% if current_page.data.hide_footer != true %>
+    		<%= partial "partials/site.footer.html.erb" %>
+    	<% end %>
     	<%= partial "partials/scripts.bottom.html.erb" %>
     </body>
 </html>

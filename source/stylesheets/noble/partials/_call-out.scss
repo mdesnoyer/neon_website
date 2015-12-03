@@ -1,0 +1,32 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.call-out {
+    text-align: center;
+}
+
+.call-out-heading {
+    @include type(1.2, 3.0, $colour-burning-orange, $font-family-primary-3);
+    letter-spacing: (150 / 1000) * 1em;
+    text-transform: uppercase;
+    &.-alt-01 {
+        color: $colour-gray-chateau;
+    }
+}
+
+.call-out-details {
+    @include type(1.4, 2.0, $colour-mine-shaft, $font-family-primary-1);
+    &.-alt-01 {
+        color: $colour-gray-chateau;
+    }
+}
+
+.call-out-line {
+    height: 20px; // TODO
+    width: 1px;
+    display: block;
+    background-color: $colour-mine-shaft;
+    color: $colour-mine-shaft;
+    border: 0;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

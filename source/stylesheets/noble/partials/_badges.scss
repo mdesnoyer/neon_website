@@ -1,8 +1,8 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-$w: 100%;
+$w: 90%;
 
-.bricks {
+.badges {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -11,21 +11,27 @@ $w: 100%;
     align-content: flex-start;
 }
 
-.brick {
-    padding: 1%;
-    flex-grow: 1;
+.badges-item {
     .-double & {
         width: ($w / 2);
-        min-width: ($w / 2);
     }
     .-triple & {
         width: ($w / 3);
-        min-width: ($w / 3);
     }
     .-quadruple & {
         width: ($w / 4);
-        min-width: ($w / 4);
     }
+    .-septuple & {
+        width: ($w / 7);
+    }
+}
+
+.badge {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
