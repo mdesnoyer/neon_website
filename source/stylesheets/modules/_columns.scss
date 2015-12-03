@@ -7,3 +7,17 @@
     margin-right: 3em;
   }
 }
+
+.column__page-intro {
+  &:not(:last-child) {
+    margin-right: 10em;
+  }
+}
+
+.column__main-content {
+  flex: 1;
+}
+
+.column__image {
+  max-width: 100%;
+}
