@@ -3,8 +3,7 @@
 $selected-top-border-width: 2px;
 $item-right-border-width: 1px;
 $font-size: 1.4;
-$pop-height: 12em;
-$icons: ('introduction', 'import', 'algorithms', 'seed-library', 'valence', 'analytics', 'best-performer');
+$pop-height: 14em;
 $timeline-width: 100%;
 
 .timeline-nav {
@@ -15,6 +14,7 @@ $timeline-width: 100%;
         position: fixed;
         bottom: 0;
         left: 0;
+        opacity: 0;
     }
 }
 
@@ -72,11 +72,11 @@ $timeline-width: 100%;
             background-color: $colour-silver-chalice-10-percent;
             background-repeat: no-repeat;
             background-position: 50%;
-            background-size: 54.6%;
+            background-size: 50%;
             // background-image: set below!
         }
         // Icons
-        @each $icon in $icons {
+        @each $icon in $how-it-works-icons {
             &.-#{$icon} {
                 &:after {
                     background-image: url('/images/how-it-works/icons--light/#{$icon}.svg');

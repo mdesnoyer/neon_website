@@ -1,1 +1,4 @@
-<script src="/js/google.analytics.js" />
+<% if current_page.data.scripts.slides == true %>
+	<script src="/js/neon.slides.js"></script>
+<% end %>
+<script src="/js/google.analytics.js"></script>

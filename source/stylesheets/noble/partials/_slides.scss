@@ -2,10 +2,15 @@
 
 .slides {
 	@include clearfix;
+	position: relative;
 }
 
 .slide {
-	margin-bottom: 500px; // TODO
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	pointer-events: none;
 }
 
 .slide--columns {
