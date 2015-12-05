@@ -13,17 +13,17 @@
 	pointer-events: none;
 }
 
-.slide--columns {
+.slide__columns {
 	@include clearfix;
 	margin-bottom: 10em;
 }
 
-.slide--columns--verso {
+.slide__columns__verso {
 	float: left;
 	width: 52%;
 }
 
-.slide--columns--recto {
+.slide__columns__recto {
 	float: right;
 	width: 41%;
 }

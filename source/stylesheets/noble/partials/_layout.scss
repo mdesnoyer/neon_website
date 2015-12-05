@@ -3,10 +3,8 @@
 $desktop-page-width: 127.8em;
 $desktop-pinch-width: 14.8em;
 
-.page {
-    width: $desktop-page-width;
-    margin: 3.7em auto 0;
-}
+$desktop-sidebar-width: 30.7%;
+$desktop-mainbar-width: 65.2%;
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -19,3 +17,24 @@ $desktop-pinch-width: 14.8em;
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.page {
+    width: $desktop-page-width;
+    margin: 3.7em auto 0;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.page-columns {
+	@include clearfix;
+}
+
+.page-columns__verso {
+	width: $desktop-sidebar-width;
+	float: left;
+}
+
+.page-columns__recto {
+	width: $desktop-mainbar-width;
+	float: right;
+}
