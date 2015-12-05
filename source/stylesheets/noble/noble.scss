@@ -1,5 +1,9 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+@import 'bourbon';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 @import url('http://cloud.webtype.com/css/568203bd-32db-4f07-bf02-10b6c682c324.css');
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -19,7 +23,14 @@
 
 html {
     font-size: 62.5%;
-    font-family: Hack, "Courier New", monospace;
+    font-family: $font-family-primary-1;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+input {
+    font-size: inherit;
+    font-family: $font-family-primary-1;
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -163,15 +174,30 @@ html {
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-.copy,
-p,
-li {
-    @include type(1.8, 2.7, $colour-dusty-gray, $font-family-primary-1);
-}
+.meat {
+    p,
+    ul {
+        margin-bottom: 2em;
+    }
 
-li {
-    list-style: disc;
-    margin-left: 1em;
+    .copy {
+        // typically .copy will probably be a <p> so this is to make sure, ugh
+        margin-bottom: 1em;
+        &.-alt-01 {
+            margin-bottom: 2em;
+        }
+    }
+
+    .copy,
+    p,
+    li {
+        @include type(1.8, 2.7, $colour-dusty-gray, $font-family-primary-1);
+    }
+
+    li {
+        list-style: disc;
+        margin-left: 1em;
+    }
 }
 
 p,
@@ -223,13 +249,26 @@ a {
     &:link,
     &:visited {
         text-decoration: none;
-        color: $colour-mine-shaft;
     }
     &:focus,
     &:hover,
     &:active {
         text-decoration: none;
-        color: $colour-burning-orange;  
+    }
+}
+
+
+.meat {
+    a {
+        &:link,
+        &:visited {
+            color: $colour-mine-shaft;
+        }
+        &:focus,
+        &:hover,
+        &:active {
+            color: $colour-burning-orange;  
+        }
     }
 }
 
@@ -285,30 +324,6 @@ a {
             &:active {
                 color: $colour-burning-orange;
             }
-        }
-    }
-}
-
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-.tertiary-nav {
-}
-
-.tertiary-nav-item {
-    @include type(1.4, 2.5, $colour-silver-chalice, $font-family-primary-1);
-    list-style: none; // ugh
-    margin-left: 0; // ugh
-    a {
-        &:link,
-        &:visited {
-            text-decoration: none;
-            color: $colour-silver-chalice;
-        }
-        &:focus,
-        &:hover,
-        &:active {
-            text-decoration: none;
-            color: $colour-burning-orange;
         }
     }
 }
