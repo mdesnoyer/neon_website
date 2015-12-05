@@ -1,28 +1,17 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<%= stylesheet_link_tag "noble/noble" %>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="description" content="<%= current_page.data.description %>" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<%= partial "partials/favicons.html.erb" %>
-		<% if current_page.data.home == true %>
-			<title>Neon | Find your best images</title>
-		<% else %>
-			<title><%= current_page.data.title %> | Neon</title>
-		<% end %>
-		<%= partial "partials/scripts.top.html.erb" %>
+		<%= partial "partials/site.head" %>
 	</head>
     <body class="page <%= current_page.data.classes %>">
-    	<%= partial "partials/scripts.middle.html.erb" %>
-    	<%= partial "partials/site.header.html.erb" %>
+    	<%= partial "partials/scripts.middle" %>
+    	<%= partial "partials/site.header" %>
     	<main class="meat" role="main">
     		<%= yield %>
     	</main>
     	<% if current_page.data.hide_footer != true %>
-    		<%= partial "partials/site.footer.html.erb" %>
+    		<%= partial "partials/site.footer" %>
     	<% end %>
-    	<%= partial "partials/scripts.bottom.html.erb" %>
+    	<%= partial "partials/scripts.bottom" %>
     </body>
 </html>
