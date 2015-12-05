@@ -5,17 +5,18 @@ $original-width: 120px;
 $original-height: 50px;
 $shift-left: 47px;
 
-.logo-link,
-.logo {
+.insignia-link,
+.insignia {
     @include alt-rectangle($desired-width, (($original-height / $original-width) * $desired-width));
-    display: block;
+    font-size: 1em;
 }
 
-.logo-link {
+.insignia-link {
     transition: none;
 }
 
-.logo { 
+.insignia { 
+	margin-bottom: 0;
     float: left;
     background: url('/images/navigation/logo.svg') no-repeat 50% 50%;
     transform: translateX(-1 * percentage($shift-left / $original-width));
