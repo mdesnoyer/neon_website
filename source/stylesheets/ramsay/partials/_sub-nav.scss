@@ -1,0 +1,180 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+%x-sub-nav-item {
+    @include font-size($sub-nav-item-font-sizes);
+	@include breakpoint(goldilocks) {
+	    padding-left: 2.5em;
+	}
+	@include breakpoint(baby-bear) {
+		// empty
+	}
+	@include breakpoint(mummy-bear) {
+	    padding-left: 0;
+	}
+	@include breakpoint(daddy-bear) {
+	    // empty
+	}
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.sub-nav {
+	user-select: none;
+	position: relative;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.sub-nav-key {
+	@extend %x-sub-nav-item;
+	position: relative;
+	cursor: pointer;
+	&:after {
+		@include rectangle(1.5em, (1.5em * 15px / 29px));
+		content: '';
+		display: block;
+		background-repeat: no-repeat;
+		position: absolute;
+		top: 1.5em;
+		right: 2.5em;
+		background-image: url('/images/navigation/carrot.svg');
+	}
+	.is-open & {
+		background-color: rgba($colour-gray-chateau, 0.15);
+		&:after {
+			transform: rotate(0.5turn);
+		}
+	}
+	.is-closed & {
+		background-color: rgba($colour-silver-chalice, 0.1);
+		&:after {
+		}
+	}
+	@include breakpoint(goldilocks) {
+	    // empty
+	}
+	@include breakpoint(baby-bear) {
+		// empty
+	}
+	@include breakpoint(mummy-bear) {
+	    display: none;
+	}
+	@include breakpoint(daddy-bear) {
+	    // empty
+	}
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.sub-nav-tada {
+	width: 100%;
+	@include breakpoint(goldilocks) {
+		position: absolute;
+		top: 0;
+		transform: translateY(-100%);
+		display: flex;
+		flex-direction: column-reverse;
+		.is-open & {
+			// empty
+		}
+		.is-closed & {
+			display: none;
+		}
+	}
+	@include breakpoint(baby-bear) {
+		// empty
+	}
+	@include breakpoint(mummy-bear) {
+	    display: block !important;
+	    position: static;
+	    transform: none;
+	}
+	@include breakpoint(daddy-bear) {
+	    // empty
+	}
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.sub-nav-value {
+	@extend %x-sub-nav-item;
+    @include breakpoint(goldilocks) {
+        background-color: rgba($colour-silver-chalice, 0.1);
+        border-top: 1px solid $colour-gallery;
+		&.is-selected {
+			box-shadow: inset 1px 0 0 $colour-burning-orange;
+		}
+    }
+    @include breakpoint(baby-bear) {
+		&.is-selected {
+			box-shadow: inset 2px 0 0 $colour-burning-orange;
+		}
+    }
+    @include breakpoint(mummy-bear) {
+    	display: block !important;
+        background-color: transparent;
+        border-top: 0;
+		&.is-selected {
+			box-shadow: none;
+		}
+    }
+    @include breakpoint(daddy-bear) {
+        // empty
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.sub-nav-key-title {
+	@extend %x-epsilon;
+	text-transform: uppercase;
+	color: $colour-mine-shaft;
+	// display: inline-block;
+	// text-transform: none;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.sub-nav-key-additional {
+	@extend %x-sub-nav-item;
+	// display: inline-block;
+	// text-transform: none;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.sub-nav-anchor {
+	transition: all $DEFAULT-TRANSITION-TIME;
+	&:link,
+	&:visited {
+		text-decoration: none;
+		color: $colour-dusty-gray;
+	}
+	&:focus,
+	&:hover,
+	&:active {
+		text-decoration: none;
+		color: $colour-burning-orange;
+	}
+    @include breakpoint(goldilocks) {
+        display: block;
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        display: inline;
+		.is-selected & {
+			&:link,
+			&:visited {
+				color: $colour-mine-shaft;
+			}
+		}
+    }
+    @include breakpoint(daddy-bear) {
+        // empty
+    }
+
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

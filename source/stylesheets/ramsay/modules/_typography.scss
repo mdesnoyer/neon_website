@@ -1,0 +1,218 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$font-family-primary: 'Harriet Display Light', Georgia, serif;
+$font-family-secondary-1: 'Balto Thin', 'Arial Narrow', sans-serif;
+$font-family-secondary-2: 'Balto Book', Arial, sans-serif;
+$font-family-secondary-3: 'Balto Medium', 'Arial Black', sans-serif;
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$font-weight-primary: normal;
+$font-weight-secondary-1: 300;
+$font-weight-secondary-2: 400;
+$font-weight-secondary-3: 500;
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@mixin font-size($fs-map, $fs-breakpoints: $base-font-sizes) {
+    @each $fs-breakpoint, $font-list in $fs-map {
+        $base-font-size: nth(map-get($fs-breakpoints, $fs-breakpoint), 1);
+        @include breakpoint($fs-breakpoint) {
+            @include make-font-size($font-list, $base-font-size, $fs-breakpoint);
+        }
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@mixin make-font-size($font-list, $base-font-size, $bp) {
+    $this-font-size-ratio: nth($font-list, 1) / $base-font-size;
+    font-size: $this-font-size-ratio * 1em;
+    line-height: nth($font-list, 2) / nth($font-list, 1);
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@mixin letter-spacing($value) {
+    letter-spacing: ($value / 1000) * 1em;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$super-base-font-sizes: (
+    null: ($BASE-FONT-SIZE-PX, 1),
+    goldilocks: ($BASE-FONT-SIZE-PX, 1),
+    baby-bear: ($BASE-FONT-SIZE-PX, 1),
+    mummy-bear: ($BASE-FONT-SIZE-PX, 1),
+    daddy-bear: ($BASE-FONT-SIZE-PX, 1)
+);
+
+$base-font-sizes: (
+    null: (10px, 10px),
+    goldilocks: (12px, 18px),
+    baby-bear: (24px, 36px),
+    mummy-bear: (16px, 24px),
+    daddy-bear: (18px, 27px)
+);
+
+$alpha-font-sizes: (
+    null: (30px, 30px),
+    goldilocks: (28px, 33px),
+    baby-bear: (56px, 66px),
+    mummy-bear: (47px, 58px),
+    daddy-bear: (47px, 58px)
+);
+
+$beta-font-sizes: (
+    null: (24px, 24px),
+    goldilocks: (21px, 25px),
+    baby-bear: (42px, 50px),
+    mummy-bear: (33px, 48px),
+    daddy-bear: (33px, 48px)
+);
+
+$gamma-font-sizes: (
+    null: (18px, 18px),
+    goldilocks: (15px, 20px),
+    baby-bear: (30px, 40px),
+    mummy-bear: (23px, 28px),
+    daddy-bear: (23px, 28px)
+);
+
+$delta-font-sizes: (
+    null: (14px, 14px),
+    goldilocks: (16px, 21px),
+    baby-bear: (32px, 42px),
+    mummy-bear: (25px, 32px),
+    daddy-bear: (25px, 32px)
+);
+
+$epsilon-font-sizes: (
+    null: (12px, 12px),
+    goldilocks: (10px, 20px),
+    baby-bear: (20px, 40px),
+    mummy-bear: (12px, 30px),
+    daddy-bear: (12px, 30px)
+);
+
+$zeta-font-sizes: (
+    null: (12px, 12px),
+    goldilocks: (10px, 14px),
+    baby-bear: (20px, 28px),
+    mummy-bear: (14px, 32px),
+    daddy-bear: (14px, 32px)
+);
+
+$cta-big-font-sizes: (
+    null: (20px, 20px),
+    goldilocks: (21px, 21px),
+    baby-bear: (42px, 42px),
+    mummy-bear: (31px, 31px),
+    daddy-bear: (31px, 31px)
+);
+
+$sub-nav-item-font-sizes: (
+    null: (12px, 12px),
+    goldilocks: (10px, 37px),
+    baby-bear: (20px, 74px),
+    mummy-bear: (14px, 30px),
+    daddy-bear: (14px, 30px)
+);
+
+$tertiary-nav-item-font-sizes: (
+    null: (12px, 12px),
+    goldilocks: (10px, 23px),
+    baby-bear: (20px, 46px),
+    mummy-bear: (14px, 25px),
+    daddy-bear: (14px, 25px)
+);
+
+$primary-nav-item-font-sizes: (
+    null: (16px, 16px),
+    goldilocks: (16px, 16px),
+    baby-bear: (16px, 16px),
+    mummy-bear: (16px, 16px),
+    daddy-bear: (16px, 16px)
+);
+
+$newsletter-item-font-sizes: (
+    null: (10px, 10px),
+    goldilocks: (12px, 18px),
+    baby-bear: (24px, 36px),
+    mummy-bear: (16px, 24px),
+    daddy-bear: (18px, 27px)
+);
+
+$overlay-nav-item-font-sizes: (
+    null: (21px, 36px),
+    goldilocks: (21px, 36px),
+    baby-bear: (42px, 72px),
+    mummy-bear: (42px, 72px),
+    daddy-bear: (42px, 72px)
+);
+
+$stat-font-sizes: (
+    null: (20px, 25px),
+    goldilocks: (20px, 25px),
+    baby-bear: (40px, 50px),
+    mummy-bear: (40px, 50px),
+    daddy-bear: (40px, 50px)
+);
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+%x-alpha {
+    @include font-size($alpha-font-sizes);
+    color: $colour-mine-shaft;
+    font-family: $font-family-primary;
+    font-weight: $font-weight-primary;
+}
+
+%x-beta {
+    @include font-size($beta-font-sizes);
+    color: $colour-mine-shaft;
+    font-family: $font-family-primary;
+    font-weight: $font-weight-primary;
+}
+
+%x-gamma {
+    @include font-size($gamma-font-sizes);
+    color: $colour-mine-shaft;
+    font-family: $font-family-secondary-2;
+    font-weight: $font-weight-secondary-2;
+}
+
+%x-delta {
+    @include font-size($delta-font-sizes);
+    color: $colour-mine-shaft;
+    font-family: $font-family-primary;
+    font-weight: $font-weight-primary;
+}
+
+%x-epsilon {
+    @include font-size($epsilon-font-sizes);
+    color: $colour-silver-chalice;
+    font-family: $font-family-secondary-3;
+    font-weight: $font-weight-secondary-3;
+    @include breakpoint(goldilocks) {
+        @include letter-spacing(125);
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        @include letter-spacing(150);
+    }
+    @include breakpoint(daddy-bear) {
+        // empty
+    }
+}
+
+%x-zeta {
+    @include font-size($zeta-font-sizes);
+    color: $colour-silver-chalice;
+    font-family: $font-family-secondary-2;
+    font-weight: $font-weight-secondary-2;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

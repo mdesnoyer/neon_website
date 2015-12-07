@@ -1,0 +1,35 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.hamburger-mode-is-hidden {
+	overflow: auto;
+}
+
+.hamburger-mode-is-shown {
+	overflow: hidden;
+}
+
+.hamburger {
+	@include rectangle(1em, (1em * 21 / 38));
+	background: url('/images/navigation/hamburger.svg');
+	position: absolute; // ugh
+	bottom: 0;
+	right: -0.26741em;
+	transition: all $DEFAULT-TRANSITION-TIME;
+	cursor: pointer;
+	background-size: contain;
+	background-repeat: no-repeat;
+	@include breakpoint(goldilocks) {
+	    font-size: 2.84em;
+	}
+	@include breakpoint(baby-bear) {
+	    font-size: 1.42em;
+	}
+	@include breakpoint(mummy-bear) {
+	    font-size: 2.1em;
+	}
+	@include breakpoint(daddy-bear) {
+		display: none;
+	}
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

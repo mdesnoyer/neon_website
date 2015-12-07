@@ -1,0 +1,28 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.wall {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-top: 1em; 
+}
+
+.wall-item {
+    @include breakpoint(goldilocks) {
+        width: 33.3333%;
+    }
+    @include breakpoint(baby-bear) {
+        width: 50%;
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        // empty
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

@@ -1,0 +1,29 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$logo-vertical-spacing: 2em;
+$logo-width: 61.8%;
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: $logo-vertical-spacing;
+    @at-root {
+        #{&}__item {
+            width: 33.3333%;
+            margin-bottom: $logo-vertical-spacing;
+        }
+        #{&}__image {
+            display: block;
+            width: $logo-width;
+            height: auto;
+        }
+        #{&}__image--little {
+            width: $logo-width / 2;
+        }
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

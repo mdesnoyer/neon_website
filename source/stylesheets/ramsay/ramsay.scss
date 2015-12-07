@@ -1,0 +1,48 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@import 'vendor/all';
+@import 'modules/all';
+@import 'partials/all';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+body {
+    @include font-size($base-font-sizes, $super-base-font-sizes);
+    color: $colour-dusty-gray;
+    font-family: $font-family-secondary-2;
+    font-weight: $font-weight-secondary-2;
+    /*
+    &:before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 1em 1em 0;
+        border-color: transparent #f00 transparent transparent;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 3333;
+        @include breakpoint(goldilocks) {
+            border-right-color: #ffd700;
+        }
+        @include breakpoint(baby-bear) {
+            border-right-color: #00f;
+        }
+        @include breakpoint(mummy-bear) {
+            border-right-color: #f0f;
+        }
+        @include breakpoint(daddy-bear) {
+            border-right-color: #0f0;
+        }
+    }
+    */
+}

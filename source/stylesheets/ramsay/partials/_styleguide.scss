@@ -1,0 +1,23 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.styleguide {
+    background-color: $colour-alabaster;
+    padding: 2em;
+}
+
+.styleguide-key {
+	@extend %x-zeta;
+	color: $colour-mine-shaft;
+	text-transform: uppercase;
+	padding-left: 1em;
+}
+
+.styleguide-value {
+    background-color: $colour-white;
+    width: 100%;
+    padding: 2em;
+    margin-bottom: 2em;
+    position: relative;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

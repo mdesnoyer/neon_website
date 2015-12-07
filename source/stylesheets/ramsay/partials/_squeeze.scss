@@ -1,0 +1,49 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.squeeze-left,
+.squeeze-right {
+	@include breakpoint(goldilocks) {
+	    // empty
+	}
+	@include breakpoint(baby-bear) {
+	    // empty
+	}
+	@include breakpoint(mummy-bear) {
+	    // empty
+	}
+	@include breakpoint(daddy-bear) {
+	    width: 66.6667%;
+	}
+}
+
+.squeeze-right {
+	@include breakpoint(goldilocks) {
+	    // empty
+	}
+	@include breakpoint(baby-bear) {
+	    // empty
+	}
+	@include breakpoint(mummy-bear) {
+	    // empty
+	}
+	@include breakpoint(daddy-bear) {
+	    margin-right: 33.333%;
+	}
+}
+
+.squeeze-left {
+	@include breakpoint(goldilocks) {
+	    // empty
+	}
+	@include breakpoint(baby-bear) {
+	    // empty
+	}
+	@include breakpoint(mummy-bear) {
+	    // empty
+	}
+	@include breakpoint(daddy-bear) {
+		margin-left: 33.333%;
+	}
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

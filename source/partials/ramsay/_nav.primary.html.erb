@@ -1,0 +1,24 @@
+<% if current_page.data.layout == 'ramsay' %>
+    <div id="js-hamburger" class="hamburger"></div>
+<% end %>
+
+<ul class="primary-nav" id="js-primary-nav">
+    <% if current_page.data.home != true %>
+        <li class="primary-nav-item -home"><a class="primary-nav-anchor" href="/">Home</a></li>
+    <% end %>
+    <li class="primary-nav-item -products"><a class="primary-nav-anchor" href="/products/">Products</a></li>
+    <% if current_page.data.classes == 'how-it-works' %>
+        <li class="primary-nav-item -how-it-works">How it Works</li>
+    <% else %>
+        <li class="primary-nav-item -how-it-works"><a class="primary-nav-anchor" href="/how-it-works/">How it Works</a></li>
+    <% end %>
+    <% if current_page.data.classes == 'careers' %>
+        <li class="primary-nav-item -careers">Careers</li>
+    <% else %>
+        <li class="primary-nav-item -careers"><a class="primary-nav-anchor" href="/careers/">Careers</a></li>
+    <% end %>
+    <!--<li class="primary-nav-item -our-story"><a href="/our-story/">Our Story</a></li>-->
+    <li class="primary-nav-item -about"><a class="primary-nav-anchor" href="/about/">About</a></li>
+    <li class="primary-nav-item -blog"><a rel="me" class="primary-nav-anchor" href="<%=data.config.blog_url%>" title="<%=data.config.blog_blurb%>">Blog</a></li>
+    <li class="primary-nav-item -contact"><a class="primary-nav-anchor" href="/contact/">Contact</a></li>
+</ul>

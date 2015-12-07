@@ -1,0 +1,25 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$quilt-magic-spacing: 1.5%;
+
+.quilt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.quilt__piece {
+    height: auto;
+    margin-bottom: $quilt-magic-spacing;
+    &.-whole {
+        width: 100%;
+    }
+    &.-half {
+        width: (100% - $quilt-magic-spacing) / 2;
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
