@@ -1,13 +1,26 @@
 !!! 5
 %html{:lang => "en"}
   %head
-    %meta{:content => "on", "http-equiv" => "cleartype"}
-    %link{:href => "/stylesheets/style.css", :rel => "stylesheet"}
-    = render_partial '/partials/site.head'
-    %body{:class => 'page ' + current_page.data.classes }
+    %meta{ :content => 'on', 'http-equiv' => 'cleartype' }
+    %meta{ :charset => 'utf-8' }
+    %meta{ 'http-equiv' => 'X-UA-Compatible', :content => 'IE=edge' }
+    %meta{ :name => 'description', :content => current_page.data.description }
+    %meta{ :name => 'viewport', :content => 'width=device-width, initial-scale=1' }
+
+    = partial 'partials/favicons.html.erb'
+
+    - if current_page.data.home
+      %title Neon | Find your best images
+    - else
+      %title #{current_page.data.title} | Neon
+
+    = partial 'partials/scripts.top.html.erb'
+
+    = stylesheet_link_tag "style"
+
+    %body
       = render_partial '/partials/scripts.middle'
-      = render_partial '/partials/site.header'
+      = render_partial '/partials/navigation'
       = yield
       = render_partial '/partials/footer'
       = render_partial '/partials/scripts.bottom'
-      
