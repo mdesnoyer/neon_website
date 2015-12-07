@@ -1,0 +1,10 @@
+%header
+  .l-constrained
+    %nav.primary-nav
+      = link_to('/index.html', class: 'primary-nav__item primary-nav__item--logo') do
+        = image_tag('images/navigation/logo.svg')
+
+      = nav_link_to('/products', 'Products', 'primary-nav__item')
+      = nav_link_to('/how-it-works', 'How it Works', 'primary-nav__item')
+      = nav_link_to('/careers', 'Careers', 'primary-nav__item')
+      = nav_link_to('/about', 'About', 'primary-nav__item')
