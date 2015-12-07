@@ -1,6 +1,4 @@
 scss_files: 'source/stylesheets/ramsay/**/*.scss'
-# exclude: 'app/assets/stylesheets/plugins/**'
-
 linters:
   ColorKeyword:
     enabled: false

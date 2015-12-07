@@ -1,0 +1,60 @@
+---
+title: Contact
+description: Get in Touch
+classes: contact
+tags:
+  - office
+  - sales
+  - careers
+  - support
+  - press
+  - partnerships
+layout: ramsay
+scripts:
+  slides: false
+  jump: false
+sitemap: true
+---
+<section class="pinch-left pinch-right">
+    <header class="page-columns">
+        <div class="page-columns__verso">
+            <h1 class="epsilon">Contact</h1>
+            <p class="alpha masthead">Get in touch.</p>
+        </div>
+    </header>
+    <div class="page-columns">
+        <div class="page-columns__verso">
+            <h2 class="epsilon">General Contact</h2>
+            <ul>
+                <li class="delta">ask@neon-lab.com</li>
+                <li class="delta"><%=data.config.company_telephone%></li>
+                <li class="delta"><br />70 South Park St.<br />San Francisco, CA 94107</li>
+            </ul>
+        </div>
+        <div class="page-columns__recto">
+            <img class="hero" src="/images/contact/contact-office.jpg" alt="" title="" />
+            <ul class="wall">
+                <li class="wall__item">
+                    <h2 class="epsilon">New Business</h2>
+                    <p>Interested in doing business with Neon? Get in touch at <%=data.config.company_telephone%> or email <%=mail_to('sales@neon-lab.com')%></p>
+                </li>
+                <li class="wall__item">
+                    <h2 class="epsilon">Careers</h2>
+                    <p>Find out more about our openings or apply for a position by emailing <%=mail_to('careers@neon-lab.com')%></p>
+                </li>
+                <li class="wall__item">
+                    <h2 class="epsilon">Support</h2>
+                    <p>Have a question? Get in touch at <%=data.config.company_telephone%> during business hours <%=data.config.company_hours%> or email <%=mail_to('support@neon-lab.com')%></p>
+                </li>
+                <li class="wall__item">
+                    <h2 class="epsilon">Press</h2>
+                    <p>Interested in doing business with Neon? Get in touch at <%=data.config.company_telephone%> or email <%=mail_to('sales@neon-lab.com')%></p>
+                </li>
+                <li class="wall__item">
+                    <h2 class="epsilon">Partnerships</h2>
+                    <p>Have a question? Get in touch at <%=data.config.company_telephone%> during business hours <%=data.config.company_hours%> or email <%=mail_to('partnerships@neon-lab.com')%></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
