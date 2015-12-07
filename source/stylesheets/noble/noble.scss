@@ -140,6 +140,9 @@ html {
 
 .hhh {
     @include type(2.3, 2.8, $colour-mine-shaft, $font-family-primary-1);
+    &.-cushion {
+        margin-bottom: 1em;
+    }
 }
 
 .hhhh {
@@ -314,3 +317,11 @@ a {
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+strong,
+em {
+    font-family: $font-family-primary-3;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
