@@ -126,7 +126,7 @@
     $ch: 577px;
     @include generate-collage($cw, $ch, '');
     .-tile-04-a {
-        @include generate-tile(47px, 512px, 473px, 203px, $cw, $ch, '');
+        @include generate-tile(0px, 512px, 473px, 203px, $cw, $ch, '');
     }
     .-tile-04-b {
         @include generate-tile(286px, 294px, 365px, 195px, $cw, $ch, '');
