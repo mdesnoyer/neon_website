@@ -1,18 +1,26 @@
 !!! 5
-%html
+%html{:lang => "en"}
   %head
-    %title Neon
-    %meta{:charset => "utf-8"}
-    %meta{:content => "Neon", :name => "description"}
-    %meta{:content => "on", "http-equiv" => "cleartype"}
-    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
-    %link{:href => "//cloud.webtype.com/css/568203bd-32db-4f07-bf02-10b6c682c324.css", :rel => "stylesheet", :type => "text/css"}
-    %link{:href => "/stylesheets/style.css", :rel => "stylesheet"}
-    = javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
-    = javascript_include_tag "scroll-up"
-    = javascript_include_tag "bootstrap_collapse"
+    %meta{ :content => 'on', 'http-equiv' => 'cleartype' }
+    %meta{ :charset => 'utf-8' }
+    %meta{ 'http-equiv' => 'X-UA-Compatible', :content => 'IE=edge' }
+    %meta{ :name => 'description', :content => current_page.data.description }
+    %meta{ :name => 'viewport', :content => 'width=device-width, initial-scale=1' }
 
-  %body
-    = render_partial '/partials/navigation'
-    = yield
-    = render_partial '/partials/footer'
+    = partial 'partials/favicons'
+
+    - if current_page.data.home
+      %title Neon | Find your best images
+    - else
+      %title #{current_page.data.title} | Neon
+
+    = partial 'partials/scripts.top'
+
+    = stylesheet_link_tag "style"
+
+    %body
+      = render_partial '/partials/scripts.middle'
+      = render_partial '/partials/navigation'
+      = yield
+      = render_partial '/partials/footer'
+      = render_partial '/partials/scripts.bottom'
