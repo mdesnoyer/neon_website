@@ -10,11 +10,50 @@ scripts:
   .l-constrained
     .section
       .columns
-        .column.column__page-intro
+        .column.column__sidebar
           %h1.section__label
             Contact
           %h2.section__title
             Get in Touch.
-        .column.column__main-content
-          .image-container
-            = image_tag('contact/contact-office.jpg', class: 'column__image')
+
+          .section
+            %h1.section__label
+              General Contact
+            %h4
+              = mail_to('ask@neon-lab.com')
+            %h4
+              415 355 4249
+
+          .section
+            %h4 70 S Park St.
+            %h4 San Francisco, CA, 94107
+          .section
+
+        .columns
+          .column__main-content
+            .image-container
+              = image_tag('contact/contact-office.jpg', class: 'column__image')
+            .columns.columns--split
+              .column
+                .section
+                  .sub-section
+                    %h1.section__label New Business
+                    %p
+                      Interested in doing business with Neon? Get in touch at 415-355-4249 or email #{mail_to('sales@neon-lab.com')}
+                  .sub-section
+                    %h1.section__label Careers
+                    %p
+                      Find out more about our openings or apply for a position by emailing #{mail_to('careers@neon-lab.com')}
+                  .sub-section
+                    %h1.section__label Support
+                    %p
+                      Have a question? Get in touch at 415-355-4249 during business hours (M-F, 9-5 PT) or email #{mail_to('support@neon-lab.com')}
+              .column
+                .section
+                  .sub-section
+                    %h1.section__label Press
+                    %p Interested in doing business with Neon? Get in touch at 415-355-4249 or email #{mail_to('sales@neon-lab.com')}
+                  .sub-section
+                    %h1.section__label
+                      Partnerships
+                    %p Have a question? Get in touch at 415-355-4249 during business hours (M-F, 9-5 PT) or email #{mail_to('partnerships@neon-lab.com')}
