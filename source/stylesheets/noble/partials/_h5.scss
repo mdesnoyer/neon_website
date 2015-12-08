@@ -1,0 +1,12 @@
+h5 {
+	text-rendering: optimizeLegibility; // Fix the character spacing for headings
+	color: $header-color;
+	margin: 0;
+	line-height: 1em;
+	font-weight: 100;
+	font-family: $sans-serif-medium;
+	font-size: $title-size--tiny;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
