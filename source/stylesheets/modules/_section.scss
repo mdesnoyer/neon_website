@@ -50,3 +50,9 @@
 .section--img {
   padding-top: $small;
 }
+
+.sub-section {
+  &:not(:last-child) {
+    margin-bottom: $xl;
+  }
+}
