@@ -13,6 +13,7 @@
     float: left;
     list-style: none;
     margin-left: 2em;
+    margin-bottom: 0 !important; // TEMP fix till other code merged in
     position: relative;
     a {
         &:link,
