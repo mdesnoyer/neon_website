@@ -1,0 +1,104 @@
+---
+title: Products
+description:
+layout: layout
+classes: products
+scripts:
+  slides: false
+---
+
+%main
+  .l-constrained
+    .l-narrow
+      .section
+        .prehead Products
+        %h1.section__title Images that Impact.
+        %p
+          Images are everywhere. Over 1.8 billion images are uploaded online every day. This volume will only increase as more people have the tools to create and share images in their back pockets. How will you manage your visual assets in a world inundated with images?
+        %p
+          Neon is a comprehensive solution that instantly filters through massive image databases and video libraries to identify and surface high-value visual assets. Features like smart cropping and automatic image optimization across platforms make Neon able to be personalized for different audiences and uses.
+        %p
+          Make smarter decisions about how to present your content with Neon, automatically.
+
+        = link_to('Learn how it works', '/how-it-works.html', class: 'link--cta')
+
+    .section.columns
+      .column
+        %h2 Video
+        %p
+          Find the video thumbnails that will engage your audience. Neon for Video surfaces the best thumbnails from your videos and continually optimizes them to ensure that the images representing your content are always the ones that will drive the most traffic.
+      .column
+        %h2 Live
+        %p
+          Revolutionary image selection tool for live streaming content, enabling publishers to get up-to-date and relevant thumbnails from their live video, in real time. Images to share on social media, websites, and elsewhere to draw viewers into live streaming video while it’s happening.
+      .column
+        %h2 Images
+        %p
+          Flexible technology to select and surface the most compelling images from image libraries, stock photo sets, and content databases. A powerful tool to assist in the creation of photo galleries, effective search, and editorial images paired with articles.
+
+    .section
+      .mosaic-block__container
+        .mosaic-block__column.mosaic-block__column--small.mosaic-block__column--centered
+          .mosaic-block__content
+            .stats-callout__number $179,000+
+            %p.stats-callout__description Average increase in monthly ad revenue
+
+          = image_tag('images/products/products-woman.jpg', class: 'mosaic-image mosaic-image--bottom-gutter')
+
+        .mosaic-block__column
+          .mosaic-block__content
+            .stats-callout__number 2 Billion+
+            %p.stats-callout__description Images served in past month
+
+          .image-container
+            = image_tag('images/products/products-football.jpg', class: 'mosaic-image mosaic-image--large mosaic-image--bottom-gutter')
+
+          .mosaic-block__row.mosaic-block__row--left
+            .image-container--medium
+              = image_tag('images/products/products-guy.jpg', class: 'mosaic-image')
+
+            .mosaic-block__content.mosaic-block__content--small
+              .stats-callout__number +16-34%
+              %p.stats-callout__description Average uplift for Neon customers
+
+    .section
+      .mosaic-block__container
+        .mosaic-block__column
+          = image_tag('images/products/products-lift-261.jpg', class: 'mosaic-image mosaic-image--bottom-gutter')
+
+          .mosaic-block__content
+            = link_to('Download Case Study', 'https://s3.amazonaws.com/neon_website_assets/Neon-IGN-Case-Study.pdf', class: 'link--cta')
+
+        .mosaic-block__column
+          .mosaic-block__content
+            = image_tag('/images/products/logos/IGN.svg', class: 'image-container--small section__title')
+          .mosaic-block__content
+            %blockquote
+              I was pleasantly surprised that not only did Neon for Video take a significant amount of work off our hands, it also improved the clickability of our thumbnails by 30% on average. This is a huge win for us.
+
+            %cite
+              Jim Hall / VP of Technology, IGN
+
+          = image_tag('images/products/products-lift-62.jpg', class: 'mosaic-image mosaic-image--small mosaic-image--top-gutter')
+
+    .section
+      .l-narrow--offset
+        .prehead Integrations
+        %p
+          Neon has highly flexible integrations with products and services like online video and content management platforms, social networks, analytics tools, and more. Some of our most common integrations are listed below. Get in touch for our full list.
+
+        .logo-grid
+          .logo
+            = image_tag('images/products/logos/brightcove.svg')
+          .logo
+            = image_tag('images/products/logos/ooyala.svg')
+          .logo.logo--twitter
+            = image_tag('images/products/logos/twitter.svg')
+          .logo
+            = image_tag('images/products/logos/akamai.svg')
+          .logo
+            = image_tag('images/products/logos/snappy-tv.png')
+        .section
+          = link_to '/index.html', class: 'link--cta--primary' do
+            Get in Touch
+            = inline_svg("arrow.svg", class: "arrow")

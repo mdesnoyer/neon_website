@@ -1,0 +1,12 @@
+<%= stylesheet_link_tag "symbiant/symbiant" %>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="<%= current_page.data.description %>" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<%= partial "partials/favicons.html.erb" %>
+<% if current_page.data.home == true %>
+	<title>Neon | Find your best images</title>
+<% else %>
+	<title><%= current_page.data.title %> | Neon</title>
+<% end %>
+<%= partial "partials/scripts.top.html.erb" %>
