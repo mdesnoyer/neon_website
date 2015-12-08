@@ -2,13 +2,22 @@
   display: flex;
 }
 
+.columns--split {
+  justify-content: space-between;
+
+  & > * {
+    width: 45%;
+  }
+}
+
 .column {
   &:not(:last-child) {
     margin-right: 3em;
   }
 }
 
-.column__page-intro {
+.column__sidebar {
+  width: 33%;
   &:not(:last-child) {
     margin-right: 10em;
   }
@@ -20,4 +29,10 @@
 
 .column__image {
   max-width: 100%;
+}
+
+.column__block {
+  &:not(:last-child) {
+    margin-bottom: $xl;
+  }
 }
