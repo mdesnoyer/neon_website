@@ -1,0 +1,26 @@
+.flex-nav ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px 0;
+}
+
+.flex-nav__item {
+  padding: 20px;
+  font-size: 1.6em;
+
+  & > a {
+    color: $mountain-mist;
+
+    &:hover {
+      color: $hover-accent-color;
+    }
+  }
+}
+
+.flex-nav__item--logo {
+  margin-right: auto;
+
+  img {
+    width: 80%;
+  }
+}
