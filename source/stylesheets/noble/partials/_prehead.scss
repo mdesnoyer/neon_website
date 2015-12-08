@@ -4,10 +4,10 @@
     @include type(1.2, 3.0, $colour-mine-shaft, $font-family-primary-3);
     letter-spacing: (150 / 1000) * 1em;
     text-transform: uppercase;
-    &.-alt-1 {
+    &.-alt-01 {
         color: $colour-silver-chalice;  
     }
-    &.-alt-2 {
+    &.-alt-02 {
         margin-bottom: 1em;
     }
 }

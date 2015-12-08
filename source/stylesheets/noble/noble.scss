@@ -131,6 +131,9 @@ html {
 .h {
     @include type(4.7, 5.8, $colour-mine-shaft, $font-family-secondary);
     margin-bottom: 0.33em;
+    &.-cushion {
+        margin-bottom: 1em;
+    }
 }
 
 .hh {
@@ -160,19 +163,6 @@ html {
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-p,
-ul {
-    margin-bottom: 2em;
-}
-
-.copy {
-    // typically .copy will probably be a <p> so this is to make sure, ugh
-    margin-bottom: 1em;
-    &.-alt-01 {
-        margin-bottom: 2em;
-    }
-}
-
 .copy,
 p,
 li {
@@ -182,6 +172,19 @@ li {
 li {
     list-style: disc;
     margin-left: 1em;
+}
+
+p,
+li:last-child {
+    margin-bottom: 3em;
+}
+
+.copy {
+    // typically .copy will probably be a <p> so this is to make sure, ugh
+    margin-bottom: 1em;
+    &.-alt-01 {
+        margin-bottom: 2em;
+    }
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
