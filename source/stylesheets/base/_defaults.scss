@@ -11,7 +11,8 @@ body {
   color: $base-font-color;
   font-family: $base-font-family;
   font-size: 62.5%; // 1em = 10px
-  margin: auto;
+  width: 127.8em;
+  margin: 3.7em auto 0;
 }
 
 h1,
@@ -53,6 +54,7 @@ h2,
 .gold {
   font-size: $title-size--medium;
   margin-bottom: 0.5em;
+  line-height: 1.2em;
 }
 
 h3,
