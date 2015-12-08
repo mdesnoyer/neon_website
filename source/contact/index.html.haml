@@ -11,20 +11,19 @@ scripts:
     .section
       .columns
         .column.column__sidebar
-          %h1.section__label
-            Contact
-          %h2.section__title
-            Get in Touch.
+          .sub-section
+            %h1.section__label
+              Contact
+            %h2.section__title
+              Get in Touch.
           .sub-section
             %h1.section__label
               General Contact
             %h4
               = mail_to('ask@neon-lab.com')
-            %h4
               415 355 4249
           .sub-section
-            %h4 70 S Park St.
-            %h4 San Francisco, CA, 94107
+            %h4 70 S Park St. San Francisco, CA, 94107
         .columns
           .column__main-content
             .image-container
@@ -48,13 +47,12 @@ scripts:
                 .section
                   .sub-section
                     %h1.section__label Press
-                    %p Interested in doing business with Neon? Get in touch at 415-355-4249 or email #{mail_to('sales@neon-lab.com')}
+                    %p
+                      Interested in doing business with Neon? Get in touch at 415-355-4249 or email #{mail_to('sales@neon-lab.com')}
                   .sub-section
                     %h1.section__label
                       Partnerships
                     %p Have a question? Get in touch at 415-355-4249 during business hours (M-F, 9-5 PT) or email #{mail_to('partnerships@neon-lab.com')}
-=======
         .column.column__main-content
           .image-container
             = image_tag('contact/contact-office.jpg', class: 'column__image')
->>>>>>> Add contact page, update column module
