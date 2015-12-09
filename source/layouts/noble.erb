@@ -6,7 +6,7 @@
     <body class="page <%= current_page.data.classes %>">
     	<%= partial "partials/scripts.middle" %>
     	<%= partial "partials/site.header" %>
-    	<main id="main" class="meat" role="main">
+    	<main id="main" class="meat restraint" role="main">
     		<%= yield %>
     	</main>
     	<% if current_page.data.hide_footer != true %>

@@ -1,5 +1,9 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+.primary-nav-wrapper {
+    position: relative;
+}
+
 .primary-nav {
     @include clearfix;
     position: absolute;
