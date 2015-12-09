@@ -3,15 +3,13 @@
 	<head>
 		<%= partial "partials/site.head" %>
 	</head>
-    <body class="page <%= current_page.data.classes %>">
+    <body class="page <%= current_page.data.classes %> <%= current_page.data.hide_footer ? 'hide-footer' : 'show-footer' %>">
     	<%= partial "partials/scripts.middle" %>
     	<%= partial "partials/site.header" %>
     	<main id="main" class="meat restraint" role="main">
     		<%= yield %>
     	</main>
-    	<% if current_page.data.hide_footer != true %>
-    		<%= partial "partials/site.footer" %>
-    	<% end %>
+        <%= partial "partials/site.footer" %>
     	<%= partial "partials/scripts.bottom" %>
     </body>
 </html>

@@ -24,8 +24,10 @@ function getClosestClass(elem, selector) {
 function renderNeonSlide(newSlideId) {
 
 	// old
-	var oldSlideId = neonSlidesContainer.dataset.currentSlide;
-	var oldSlideElement = document.getElementById(oldSlideId);
+	var oldSlideId = neonSlidesContainer.dataset.currentSlide,
+		oldSlideElement = document.getElementById(oldSlideId),
+		body = document.body
+	;
 	if (oldSlideElement) {
 		oldSlideElement.classList.add('ani-exit-slide');
 		oldSlideElement.classList.remove('ani-enter-slide');
@@ -40,6 +42,14 @@ function renderNeonSlide(newSlideId) {
 			newSlideElement.classList.remove('ani-exit-slide');
 		}
 		renderNeonNav(newSlideId);
+		if (newSlideId === 'best-performer') {
+			body.classList.add('show-footer');
+			body.classList.remove('hide-footer');
+		}
+		else {
+			body.classList.remove('show-footer');
+			body.classList.add('hide-footer');
+		}
 	}
 
 }
