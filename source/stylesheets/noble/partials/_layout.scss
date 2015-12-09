@@ -19,8 +19,13 @@ $desktop-mainbar-width: 65.2%;
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 .page {
-    width: $desktop-page-width;
-    margin: 3.7em auto 0;
+    margin-top: 3.7em;
+}
+
+.restraint {
+	width: $desktop-page-width;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
