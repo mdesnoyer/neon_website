@@ -18,6 +18,9 @@
 .happy-source {
     @include type(1.4, 3.2, $colour-dusty-gray, $font-family-primary-1);
     display: block;
+    // Cancel out generic footer rules
+    background-color: $colour-white;
+    padding: 0;
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
