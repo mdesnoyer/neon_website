@@ -1,4 +1,4 @@
-%footer
+%footer{ :role => 'contentinfo' }
   .footer__wrapper
     .footer__flex-content
       .footer__nav-block
@@ -17,7 +17,7 @@
           %li.sub-nav__title
             Resources
           %li.sub-nav__item
-            = link_to 'Terms of Service', '/terms/'
+            = link_to 'Terms of Service', '/terms/', { :title => 'Privacy Policy and Terms of Service' }
 
       .footer__nav-block
         %ul.sub-nav
