@@ -32,7 +32,6 @@ $mosaic-gutter: 40px;
 
   & > * + * {
     margin-bottom: $mosaic-gutter;
-    margin-left: 3em;
   }
 
   &--centered {
@@ -53,6 +52,10 @@ $mosaic-gutter: 40px;
 .mosaic-block__content--small {
   max-width: 25%;
   flex-shrink: 0;
+}
+
+.mosaic-block__content--left-gutter {
+  margin-left: $mosaic-gutter;
 }
 
 .mosaic-block__row--left {
