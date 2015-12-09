@@ -176,6 +176,9 @@ input {
 
 .meat {
     margin-bottom: 10em;
+    .show-footer & {
+        min-height: 40em;
+    }
 }
 
 .meat {
