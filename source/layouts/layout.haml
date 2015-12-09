@@ -18,9 +18,9 @@
 
     = stylesheet_link_tag "style"
 
-    %body
-      = render_partial '/partials/scripts.middle'
-      = render_partial '/partials/navigation'
-      = yield
-      = render_partial '/partials/footer'
-      = render_partial '/partials/scripts.bottom'
+  %body
+    = render_partial '/partials/scripts.middle'
+    = render_partial '/partials/navigation'
+    = yield
+    = render_partial '/partials/footer'
+    = render_partial '/partials/scripts.bottom'
