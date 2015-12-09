@@ -1,0 +1,45 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$desktop-page-width: 127.8em;
+$desktop-pinch-width: 14.8em;
+
+$desktop-sidebar-width: 30.7%;
+$desktop-mainbar-width: 65.2%;
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.pinch-left {
+    margin-left: $desktop-pinch-width / $desktop-page-width * 100%;
+}
+
+.pinch-right {
+    margin-right: $desktop-pinch-width / $desktop-page-width * 100%;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.page {
+    margin-top: 3.7em;
+}
+
+.restraint {
+	width: $desktop-page-width;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.page-columns {
+	@include clearfix;
+}
+
+.page-columns__verso {
+	width: $desktop-sidebar-width;
+	float: left;
+}
+
+.page-columns__recto {
+	width: $desktop-mainbar-width;
+	float: right;
+}

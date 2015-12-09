@@ -1,3 +1,70 @@
-%main.main
-  .section--hero
-    %h1 New Website
+---
+title: Home
+description:
+layout: layout
+classes: home
+home: true
+scripts:
+  slides: false
+---
+
+%main
+  .l-constrained
+    .section--hero
+      .section__title--hero
+        %h1 Images are a gateway to content.
+        %h1 Do you know which images work the best?
+      = link_to('Learn more', '#how-it-works', class: 'link--cta')
+    .section
+      .mosaic-block__row--centered
+        .mosaic-block__content--centered
+          %h1.section__label#how-it-works
+            How it Works
+          %h2.section__title
+            The images your viewers want to see, automatically.
+          %p
+            Our smart, science-based approach to understanding images predicts how your visual content will perform.
+
+          = link_to('Discover now', '/how-it-works/', class: 'link--cta')
+
+
+        = image_tag('images/home/how-it-works_01.png', class: 'mosaic-image mosaic-image--left-gutter')
+
+      .mosaic-block__row
+        .image-container--small
+          = image_tag('images/home/how-it-works_03.png', class: 'mosaic-image')
+        .image-container
+          = image_tag('images/home/how-it-works_02.png', class: 'mosaic-image mosaic-image--left-gutter')
+    .section
+      .mosaic-block__container
+        .mosaic-block__column
+          .mosaic-block__content
+            %h1.section__label Products
+            %h2.section__title Make your images more valuable.
+
+          = image_tag('images/home/products_01.png', class: 'mosaic-image mosaic-image--bottom-gutter')
+
+          .mosaic-block__content
+            %p
+              Neon makes it easy for you to get more value out of your content by representing it with the right images for your viewers.
+
+            = link_to('Learn more', '/products.html', class: 'link--cta')
+
+        .mosaic-block__column
+          = image_tag('images/home/products_02.png', class: 'mosaic-image mosaic-image--small mosaic-image--bottom-gutter')
+          = image_tag('images/home/products_03.png', class: 'mosaic-image mosaic-image--bottom-gutter')
+
+    .section
+      .mosaic-block__container
+        .mosaic-block__column
+          .mosaic-block__content
+            %h1.section__label Careers
+            %h2.section__title Do you want to impact how images are used across the Internet?
+          =image_tag('images/home/careers_01.png', class: 'mosaic-image')
+        .mosaic-block__column
+          =image_tag('images/home/careers_02.png', class: 'mosaic-image mosaic-image--bottom-gutter')
+          .mosaic-block__content
+            %p
+              Join our team of scientists, engineers, artists, and storytellers to understand and surface the right images at the right time.
+
+            = link_to('Meet Neon', '/careers', class: 'link--cta')

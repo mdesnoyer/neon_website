@@ -1,0 +1,31 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$colour-white: #fff;
+
+// Primary
+$colour-gray-chateau: #95a1ab;
+$colour-mine-shaft: #3d3d3d;
+$colour-dusty-gray: #989898;
+$colour-silver-chalice: #aaa;
+$colour-burning-orange: #ff6b31;
+
+// Secondary
+$colour-gallery: #ebebeb;
+$colour-regent-gray: #939da7;
+$colour-silver-chalice-10-percent: rgba($colour-silver-chalice, 0.10);
+$colour-gray-chateau-15-percent: rgba($colour-gray-chateau, 0.15);
+$colour-alto: #ddd;
+
+// Style Guide
+$colour-pacific-blue: #0094ce;
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$seashell: $colour-silver-chalice-10-percent;
+$mountain-mist: $colour-dusty-gray;
+$base-border-color: $colour-alto;
+$accent-color: $colour-burning-orange;
+$light-accent-color: lighten($accent-color, 10%);
+$header-color: $colour-mine-shaft;
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

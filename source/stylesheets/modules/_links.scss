@@ -1,0 +1,36 @@
+.link--cta {
+  font-size: $base-font-size;
+  padding-bottom: 3px;
+  border-bottom: 1.5px solid lighten($mountain-mist, 25%);
+
+  &:hover {
+    color: $mine-shaft;
+    border-bottom: 1.5px solid $hover-accent-color;
+  }
+}
+
+.link--cta--primary {
+  display: flex;
+  align-items: center;
+  font-size: $title-size--medium;
+  font-family: $sans-serif-thin;
+  letter-spacing: 1px;
+  color: $mountain-mist;
+  @include transition(all 0.2s linear);
+
+  &:hover {
+    color: $mine-shaft;
+
+    svg {
+      @include transform(translateX(5px));
+      fill: $hover-accent-color;
+    }
+  }
+}
+
+.arrow {
+  width: 1em;
+  fill: $mountain-mist;
+  margin-left: 10px;
+  @include transition(all 0.2s ease-out);
+}

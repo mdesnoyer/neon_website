@@ -1,0 +1,352 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@import 'bourbon';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@import url('http://cloud.webtype.com/css/568203bd-32db-4f07-bf02-10b6c682c324.css');
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@import 'modules/all';
+@import 'partials/all';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+html {
+    font-size: 62.5%;
+    font-family: $font-family-primary-1;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+input {
+    font-size: inherit;
+    font-family: $font-family-primary-1;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.styleguide-container {
+}
+
+.styleguide-h1 {
+    color: $colour-pacific-blue;
+    font-size: 4.236em;
+    margin-bottom: 1em;
+}
+
+.styleguide-h2 {
+    color: $colour-pacific-blue;
+    font-size: 2.618em;
+    margin-bottom: 1em;
+}
+.styleguide-key {
+    background-color: rgba($colour-pacific-blue, 0.22);
+    color: $colour-mine-shaft;
+    padding: 0.667em;
+    font-size: 1.618em;
+    clear: both;
+}
+
+.styleguide-value {
+    margin: 4.236em 0;
+    font-size: 1em;
+    position: relative;
+}
+
+.styleguide-colours-swatches {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.styleguide-colours-swatch {
+    height: 3em;
+    font-size: 1.618em;
+    text-align:  center;
+    vertical-align: middle;
+    width: (100% / 6);
+    &.-colour-gray-chateau {
+        background-color: $colour-gray-chateau;
+        &:before {
+            content: '#{$colour-gray-chateau}';
+            color: white;
+        }
+    }
+    &.-colour-mine-shaft {
+        background-color: $colour-mine-shaft;
+        &:before {
+            content: '#{$colour-mine-shaft}';
+            color: white;
+        }
+    }
+    &.-colour-dusty-gray {
+        background-color: $colour-dusty-gray;
+        &:before {
+            content: '#{$colour-dusty-gray}';
+            color: white;
+        }
+    }
+    &.-colour-silver-chalice {
+        background-color: $colour-silver-chalice;
+        &:before {
+            content: '#{$colour-silver-chalice}';
+            color: white;
+        }
+    }
+    &.-colour-burning-orange {
+        background-color: $colour-burning-orange;
+        &:before {
+            content: '#{$colour-burning-orange}';
+            color: white;
+        }
+    }
+    &.-colour-white {
+        background-color: $colour-white;
+        &:before {
+            content: '#{$colour-white}';
+            color: $colour-mine-shaft;
+        }
+    }
+    &.-colour-gallery {
+        background-color: $colour-gallery;
+        &:before {
+            content: '#{$colour-gallery}';
+            color: $colour-mine-shaft;
+        }
+    }
+    &.-colour-regent-gray {
+        background-color: $colour-regent-gray;
+        &:before {
+            content: '#{$colour-regent-gray}';
+            color: $colour-mine-shaft;
+        }
+    }
+}
+
+.faux {
+    background-color: $colour-pacific-blue;
+    height: 20px;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.h {
+    @include type(4.7, 5.8, $colour-mine-shaft, $font-family-secondary);
+    margin-bottom: 0.33em;
+    &.-cushion {
+        margin-bottom: 1em;
+    }
+}
+
+.hh {
+    @include type(3.3, 4.8, $colour-mine-shaft, $font-family-secondary);
+    margin-bottom: 0.5em;
+}
+
+.hhh {
+    @include type(2.3, 2.8, $colour-mine-shaft, $font-family-primary-1);
+    &.-cushion {
+        margin-bottom: 1em;
+    }
+}
+
+.hhhh {
+    @include type(2.5, 3.2, $colour-mine-shaft, $font-family-secondary);
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.details {
+    @include type(1.4, 3.2, $colour-silver-chalice, $font-family-primary-1);
+    &.-alt {
+        color: $colour-white;
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.meat {
+    margin-bottom: 10em;
+    .show-footer & {
+        min-height: 40em;
+    }
+}
+
+.meat {
+    p,
+    ul {
+        margin-bottom: 2em;
+    }
+
+    .copy {
+        // typically .copy will probably be a <p> so this is to make sure, ugh
+        margin-bottom: 1em;
+        &.-alt-01 {
+            margin-bottom: 2em;
+        }
+    }
+
+    .copy,
+    p,
+    li {
+        @include type(1.8, 2.7, $colour-dusty-gray, $font-family-primary-1);
+    }
+
+    li {
+        list-style: disc;
+        margin-left: 1em;
+    }
+}
+
+p,
+li:last-child {
+    margin-bottom: 3em;
+}
+
+.copy {
+    // typically .copy will probably be a <p> so this is to make sure, ugh
+    margin-bottom: 1em;
+    &.-alt-01 {
+        margin-bottom: 2em;
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.cta-small {
+    @include type(1.8, 2.7, $colour-mine-shaft, $font-family-primary-1);
+    border-bottom-style: solid;
+    border-bottom-width: 1px; 
+    padding-bottom: 0.1em;
+    display: inline-block;
+    &:link,
+    &:visited {
+        text-decoration: none;
+        color: $colour-mine-shaft;
+        border-bottom-color: $colour-mine-shaft;
+    }
+    &:focus,
+    &:hover,
+    &:active {
+        text-decoration: none;
+        color: $colour-mine-shaft;
+        border-bottom-color: $colour-burning-orange;
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.blonker {
+    display: block;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+a {
+    transition: all 0.5s;
+    &:link,
+    &:visited {
+        text-decoration: none;
+    }
+    &:focus,
+    &:hover,
+    &:active {
+        text-decoration: none;
+    }
+}
+
+
+.meat {
+    a {
+        &:link,
+        &:visited {
+            color: $colour-mine-shaft;
+        }
+        &:focus,
+        &:hover,
+        &:active {
+            color: $colour-burning-orange;  
+        }
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.hero {
+    width: 100%;
+    height: auto;
+    margin-bottom: 3em;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.divider {
+    color: $colour-gallery;
+    background-color: $colour-gallery;
+    width: 100%;
+    height: 1px;
+    border: 0;
+    margin: 5.5em 0;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.secondary-nav {
+}
+
+.secondary-nav-item {
+    @include type(1.4, 3.0, "", $font-family-primary-1);
+    list-style: none; // ugh
+    margin-left: 0; // ugh
+    a {
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: $colour-dusty-gray;
+        }
+        &:focus,
+        &:hover,
+        &:active {
+            text-decoration: none;
+            color: $colour-burning-orange;
+        }
+    }
+    &.-selected {
+        a {
+            &:link,
+            &:visited {
+                color: $colour-mine-shaft;
+            }
+            &:focus,
+            &:hover,
+            &:active {
+                color: $colour-burning-orange;
+            }
+        }
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.stat {
+    @include type(4.0, 5.0, $colour-burning-orange, $font-family-primary-2);    
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+strong,
+em {
+    font-family: $font-family-primary-3;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+

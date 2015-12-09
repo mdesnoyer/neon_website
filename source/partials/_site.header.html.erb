@@ -1,0 +1,23 @@
+<a class="visuallyhidden" href="#main">[Skip to Content]</a>
+<header class="site-header restraint clearfix" role="banner">
+	<div class="primary-nav-wrapper pinch-left pinch-right">
+		<% if current_page.data.home != true %>
+			<a class="insignia-link" href="/" title="Go to the Neon home page">
+		<% end %>
+		<div class="insignia"><i>Neon</i></div>
+		<% if current_page.data.home != true %>
+			</a>
+		<% end %>
+		<ul class="primary-nav">
+			<% if current_page.data.home != true %>
+				<li class="primary-nav-item -home"><a href="/">Home</a></li>
+			<% end %>
+			<li class="primary-nav-item -products"><a href="/products/">Products</a></li>
+			<li class="primary-nav-item -how-it-works"><a href="/how-it-works/">How it Works</a></li>
+			<li class="primary-nav-item -careers"><a href="/careers/">Careers</a></li>
+			<!--<li class="primary-nav-item -our-story"><a href="/our-story/">Our Story</a></li>-->
+			<li class="primary-nav-item -about"><a href="/about/">About</a></li>
+			<li class="primary-nav-item -about"><a href="/contact/">Contact</a></li>
+		</ul>
+	</div>
+</header>

@@ -1,0 +1,82 @@
+<svg viewBox="0 0 476 383" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-miterlimit="1.414">
+  <path d="M21 1v350M40.5 1v350M60 1v350M79.6 1v350M99.1 1v350M118.6 1v350M138.1 1v350M157.7 1v350M177.2 1v350M196.7 1v350M216.2 1v350M235.8 1v350M255.3 1v350M274.8 1v350M294.3 1v350M313.9 1v350M333.4 1v350M352.9 1v350M372.4 1v350M392 1v350M411.5 1v350M431 1v350M1 331h450M1 311.6h450M1 292.2h450M1 272.9h450M1 253.5h450M1 234.1h450M1 214.7h450M1 195.4h450M1 176h450M1 156.6h450M1 137.2h450M1 117.9h450M1 98.5h450M1 79.1h450M1 59.7h450M1 40.4h450M1 21h450" fill="none" stroke-width=".25" stroke-dasharray="2,4" stroke="#94a0ab"/>
+  <text x="212.43" y="381.928" font-family="Balto" font-size="4.9" fill="#94a0ab">
+    int<tspan x="217.844" y="381.928">e</tspan>nsity
+  </text>
+  <text x="475.026" y="179.27" font-family="Balto" font-size="4.9" fill="#94a0ab" fill-opacity=".5" transform="rotate(-90 475.027 179.27)">
+    p<tspan x="477.702" y="179.27">x</tspan>
+  </text>
+  <text x="18.781" y="364.761" font-family="Balto" font-size="7" fill="#94a0ab">
+    0
+  </text>
+  <text x="457.781" y="333.761" font-family="Balto" font-size="7" fill="#94a0ab" fill-opacity=".5">
+    0
+  </text>
+  <text x="454.585" y="236.511" font-family="Balto" font-size="7" fill="#94a0ab" fill-opacity=".5">
+    5
+  </text>
+  <text x="456.262" y="139.928" font-family="Balto" font-size="7" fill="#94a0ab" fill-opacity=".5">
+    10
+  </text>
+  <text x="456.566" y="42.928" font-family="Balto" font-size="7" fill="#94a0ab" fill-opacity=".5">
+    15
+  </text>
+  <text x="95.033" y="364.761" font-family="Balto" font-size="7" fill="#94a0ab">
+    50
+  </text>
+  <text x="170.543" y="364.761" font-family="Balto" font-size="7" fill="#94a0ab">
+    100
+  </text>
+  <text x="249.348" y="364.761" font-family="Balto" font-size="7" fill="#94a0ab">
+    150
+  </text>
+  <text x="326.749" y="364.761" font-family="Balto" font-size="7" fill="#94a0ab">
+    200
+  </text>
+  <text x="405.721" y="364.761" font-family="Balto" font-size="7" fill="#94a0ab">
+    250
+  </text>
+  <text x="72" y="75.25" font-family="Balto" font-size="4.2" fill="#fff">
+    mean
+  </text>
+  <text x="72" y="93.75" font-family="Balto" font-size="9" fill="#fff">
+    148.42
+  </text>
+  <g opacity=".5" font-family="Balto" font-size="4.2" fill="#fff">
+    <text x="115" y="75.25">
+      std
+    </text>
+    <text x="126.166" y="75.25">
+      dev
+    </text>
+  </g>
+  <text x="115" y="93.75" font-family="Balto" font-size="9" fill="#fff">
+    55.59
+  </text>
+  <text x="191" y="75.25" font-family="Balto" font-size="4.2" fill="#fff">
+    pixels
+  </text>
+  <text x="191" y="93.75" font-family="Balto" font-size="9" fill="#fff">
+    2,073,600
+  </text>
+  <path d="M56 80.7l190 .1M56 65.7l190 .1M109 109.7V56M66 109.7V56" fill="#94a0ab" fill-rule="nonzero" stroke-width=".25" stroke="#fff"/>
+  <text x="154.5" y="75.25" font-family="Balto" font-size="4.2" fill="#fff">
+    median
+  </text>
+  <text x="154.5" y="93.75" font-family="Balto" font-size="9" fill="#fff">
+    159
+  </text>
+  <path d="M148.5 109.7V56M185 109.7V56" fill="#94a0ab" fill-rule="nonzero" stroke-width=".25" stroke="#fff"/>
+  <path d="M19.3 331c11.3 0 13.9-13.5 25.9-13.5 12 0 14.3-7.7 25.3-7.7 24.9 0 22.6-18.9 25.6-18.9s1.9 12 25.6 12c11.7 0 11.8 8.8 25.6 8.8s18.2-13.6 25.6-13.6c7.4 0 9 9.6 25.6 9.6 20.9 0 15.9-20.2 25.6-20.2 15.7 0 14.7-60.1 25.6-60.1 16 0 20.8-70.5 25.6-70.5 4.8 0 1.3 59.3 25.6 59.3 23.7 0 20.3-32.5 25.6-32.5 5.2 0-1.9 107.8 25.6 107.8 19.8 0 5.8 28.5 25.6 28.5 12.7 0 12.6 3.7 25.6 3.7 8.4 0 15.2 7.4 25.6 7.4H19.3v-.1z" fill="#00f" fill-opacity=".15" fill-rule="nonzero"/>
+  <path d="M19.3 331c11.7 0 17.8-6.6 25.9-6.6 8.1 0 7.6 1.9 25.3 1.9 13.6 0 14.7-13 25.6-13 20 0 12.8-18.9 25.6-18.9 27.4 0 20.4-16.8 25.6-16.8 5.2 0 2.9 29.8 25.6 29.8 12.1 0 15.1-14.6 25.6-14.6 15.6 0 12.3-26.1 25.6-26.1 18.2 0 12-14.4 25.6-14.4 17.9 0 20.4-64.1 25.6-64.1 5.2 0 6.1 38.9 25.6 38.9 18.6 0 3.7 55.1 25.6 55.1 18.3 0 19.9-27.1 25.6-27.1 7.5 0 3.3 37 25.6 37 16.6 0 10 12.9 25.6 12.9 15.6 0 16.7 26.1 25.6 26.1 8.9 0 0 0 0 0S23.8 331 19.3 331z" fill="#0f0" fill-opacity=".15" fill-rule="nonzero"/>
+  <path d="M19.3 331c25 0 20.6-22 25.9-22 5.3 0-.2 17.8 25.3 17.8 11.1 0 12.1-4.4 25.6-4.4 16 0 22.1-10.8 25.6-10.8s10.7 8 25.6 8c14.9 0 21.4-13.8 25.6-13.8 4.2 0 8.2 8.5 25.6 8.5 27.6 0 20.4-54.8 25.6-54.8 5.2 0 0 28.7 25.6 28.7 28 0 19.7-56.9 25.6-56.9 5.9 0 .3 37.4 25.6 37.4 8.5 0 12.5-6.8 25.6-6.8 27.1 0 18.5-30.9 25.6-30.9 7.1 0-4.8 50.9 25.6 50.9 15.1 0 11.1 34.6 25.6 34.6 14.5 0 12.6 14.5 25.6 14.5H19.3z" fill="red" fill-opacity=".15" fill-rule="nonzero"/>
+  <circle cx="50" cy="293.4" r="1.5" fill="#fff"/>
+  <circle cx="199" cy="279" r="1.5" fill="#fff"/>
+  <circle cx="348.8" cy="217.4" r="1.5" fill="#fff"/>
+  <circle cx="99.4" cy="275.8" r="1.5" fill="#fff"/>
+  <circle cx="248.4" cy="216.5" r="1.5" fill="#fff"/>
+  <circle cx="299.5" cy="203.9" r="1.5" fill="#fff"/>
+  <circle cx="149.1" cy="262.8" r="1.5" fill="#fff"/>
+  <circle cx="401.6" cy="289.3" r="1.5" fill="#fff"/>
+  <path d="M53.8 292.1l45.6-16.3 49.7-13 48 15.6M201.5 275.8l47.3-60.4 49.8-10.9 49.7 12.9 52.1 70.3" fill="none" stroke-linecap="round" stroke-dasharray="0,4.01" stroke="#fff"/>
+</svg>

@@ -1,0 +1,26 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$desired-width: 12em;
+$original-width: 120px;
+$original-height: 50px;
+$shift-left: 47px;
+
+.insignia-link,
+.insignia {
+    @include alt-rectangle($desired-width, (($original-height / $original-width) * $desired-width));
+}
+
+.insignia-link {
+    transition: none;
+}
+
+.insignia { 
+    float: left;
+    background: url('/images/navigation/logo.svg') no-repeat 50% 50%;
+    transform: translateX(-1 * percentage($shift-left / $original-width));
+    i {
+        @include visuallyhidden;
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

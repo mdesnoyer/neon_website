@@ -1,0 +1,86 @@
+---
+title: Neon Styleguide
+description:
+layout: styleguide
+classes: styleguide
+scripts:
+  slides: false
+---
+%main.main.l-constrained
+  .section
+    %h1 Neon Styleguide
+  .section
+    .section__header
+      %h5 Navigation
+    .section__content
+      = render_partial 'partials/navigation'
+
+  .section
+    .section__header
+      %h5 Colors
+    .section__content
+      %ul.l-flex-container
+        %li.color.color--gray-chateau
+          .color__swatch.color--gray-chateau__swatch
+          .color__details.color--gray-chateau__details
+            .color--gray-chateau__code
+            .color--gray-chateau__name
+        %li.color.color--mine-shaft
+          .color__swatch.color--mine-shaft__swatch
+          .color__details.color--mine-shaft__details
+            .color--mine-shaft__code
+            .color--mine-shaft__name
+        %li.color.color--mountain-mist
+          .color__swatch.color--mountain-mist__swatch
+          .color__details.color--mountain-mist__details
+            .color--mountain-mist__code
+            .color--mountain-mist__name
+        %li.color.color--star-dust
+          .color__swatch.color--star-dust__swatch
+          .color__details.color--star-dust__details
+            .color--star-dust__code
+            .color--star-dust__name
+        %li.color.color--burnt-orange
+          .color__swatch.color--burnt-orange__swatch
+          .color__details.color--burnt-orange__details
+            .color--burnt-orange__code
+            .color--burnt-orange__name
+
+  .section
+    .section__header
+      %h5 Headings
+    .section__content
+      %h1.section__item h1. Images are a gateway to content.
+      %h2.section__item h2. Make your images more valuable.
+      %h3.section__item h3. The quick, brown fox
+      %h4.section__item h4. press@neon-lab.com
+      %h5.section__item h5. The quick, brown fox
+
+  .section
+    .section__header
+      %h5 Paragraph
+    .section__content
+      %p.section__item
+        A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.
+
+  .section
+    .section__header
+      %h5 Blockquote
+    .section__content
+      %blockquote.silver.section__item
+        This is a quote
+
+  .section
+    .section__header
+      %h5 Links & Calls to Action
+    .section__content
+      .section__item.margin-top--60
+        .prehead Inline link with CTA
+        %p This is an #{link_to('inline link', '')}. The Read More link below is used underneath paragraphs.
+        .link--cta
+          = link_to 'Read More', '/index.html'
+      .section__item.margin-top--60
+        .prehead Call to action
+        = link_to '/index.html', class: 'link--cta--primary' do
+          Get in Touch
+          = inline_svg("arrow.svg", class: "arrow")

@@ -1,0 +1,137 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$selected-top-border-width: 2px;
+$item-right-border-width: 1px;
+$font-size: 1.4;
+$pop-height: 14em;
+$timeline-width: 100%;
+
+.timeline-nav {
+    display: flex;
+    flex-direction: row;
+    width: $timeline-width;
+    &.-sunken {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        z-index: 1111;
+    }
+}
+
+// widths
+.timeline-nav-item {
+    .-sextuple & {
+        width: ($timeline-width / 6);
+    }
+    .-septuple & {
+        width: ($timeline-width / 7);
+    }
+}
+
+// pops
+.timeline-nav-item {
+    @include type($font-size, 2.0, $colour-mine-shaft, $font-family-primary-1);
+    padding: 0.5em 0;
+    display: block;
+    background-color: $colour-silver-chalice-10-percent;
+    text-align: center;
+    border-right: $item-right-border-width solid $colour-alto;
+    background-clip: padding-box;
+    position: relative;
+    &:last-child {
+        border-right: 0;
+    }
+    &.-selected {
+        background-color: $colour-gray-chateau-15-percent;
+    }
+    &:link,
+    &:visited {
+        color: $colour-mine-shaft;
+    }
+    &:focus,
+    &:hover,
+    &:active {
+        color: $colour-mine-shaft;
+    }
+    .-pops & {
+        &:before,
+        &:after {
+            transition: all 0.25s;
+            content: '';
+            display: block;
+            position: absolute;
+            top: -$item-right-border-width;
+            width: 100%;
+            height: 0;
+        }
+        &:before {
+            left: -$item-right-border-width;
+        }
+        &:after {
+            right: -$item-right-border-width;
+            background-color: $colour-silver-chalice-10-percent;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            background-size: 50%;
+            // background-image: set below!
+        }
+        // Icons
+        @each $icon in $how-it-works-icons {
+            &.-#{$icon} {
+                &:after {
+                    background-image: url('/images/how-it-works/icons--light/#{$icon}.svg');
+                }
+            }
+            &.-selected.-#{$icon} {
+                &:after {
+                    background-image: url('/images/how-it-works/icons--dark/#{$icon}.svg');
+                }
+            }
+        }
+        // Icons
+        &.-selected-border {
+            &:before,
+            &:after {
+                border-top: $selected-top-border-width solid $colour-burning-orange;
+            }
+            &:after {
+                background-color: $colour-gray-chateau-15-percent;
+            }
+        }
+        &:link,
+        &:visited {
+            color: $colour-dusty-gray;
+        }
+        &:focus,
+        &:hover,
+        &:active {
+            color: $colour-dusty-gray;
+            &:before,
+            &:after {
+                top: (-$pop-height / $font-size);
+                height: ($pop-height / $font-size);
+            }
+            &:before {
+                border-left: $item-right-border-width solid $colour-silver-chalice-10-percent;
+            }
+            &:after {
+                right: 0;
+            }
+        }
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.timeline-mercury {
+    margin: 0;
+    height: 0;
+    border: 0;
+    width: 90%;
+    background-color: $colour-burning-orange;
+    color: $colour-burning-orange;
+    border-bottom: $colour-burning-orange $selected-top-border-width solid;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

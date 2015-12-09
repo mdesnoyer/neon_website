@@ -1,0 +1,61 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.cta-small {
+    @include type(1.8, 2.7, $colour-mine-shaft, $font-family-primary-1);
+    border-bottom-style: solid;
+    border-bottom-width: 1px; 
+    padding-bottom: 0.1em;
+    display: inline-block;
+    &:link,
+    &:visited {
+        text-decoration: none;
+        color: $colour-mine-shaft;
+        border-bottom-color: $colour-mine-shaft;
+    }
+    &:focus,
+    &:hover,
+    &:active {
+        text-decoration: none;
+        color: $colour-mine-shaft;
+        border-bottom-color: $colour-burning-orange;
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.cta-large {
+    @include type(3.1, 3.1, $colour-dusty-gray, $font-family-primary-2);
+    display: inline-block;
+    &:after {
+        $h: 0.45em;
+        transition: all 0.5s;
+        content: '';
+        display: inline-block;
+        color: $colour-dusty-gray;
+        mask: url('/images/arrow.svg');
+        background-color: $colour-dusty-gray;
+        background-repeat: no-repeat;
+        width: 0;
+        height: $h;
+        padding-right: (32 / 11) * $h;
+        margin-left: 0.5em;
+        vertical-align: middle;
+    }
+    &:link,
+    &:visited {
+        text-decoration: none;
+        color: $colour-dusty-gray;
+    }
+    &:focus,
+    &:hover,
+    &:active {
+        text-decoration: none;
+        color: $colour-mine-shaft;
+        &:after {
+            background-color: $colour-burning-orange;
+            transform: translateX(0.25em);
+        }
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

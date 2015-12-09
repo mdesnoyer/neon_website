@@ -1,0 +1,19 @@
+.l-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.l-constrained {
+  width: 127.8em;
+  margin: 3.7em auto 0;
+}
+
+.l-narrow {
+  width: 66%;
+}
+
+.l-narrow--offset {
+  @include clearfix;
+  width: 66%;
+  float: right;
+}

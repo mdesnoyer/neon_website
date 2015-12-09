@@ -1,0 +1,31 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.slides {
+	@include clearfix;
+	position: relative;
+}
+
+.slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.slide__columns {
+	@include clearfix;
+	margin-bottom: 10em;
+}
+
+.slide__columns__verso {
+	float: left;
+	width: 52%;
+}
+
+.slide__columns__recto {
+	float: right;
+	width: 41%;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

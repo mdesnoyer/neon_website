@@ -1,0 +1,181 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// Collage
+// - a stylistic layout consisting of a number of different components
+// - percentage based
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@mixin generate-collage($w, $h, $background-image) {
+    background-color: $colour-white;
+    @if $background-image != "" {
+        background-image: url('#{$background-image}');
+    }
+    // these values are only used for the ratio, not absolute px values
+    padding-bottom: percentage($h / $w);
+}
+
+@mixin generate-tile($t, $l, $w, $h, $cw, $ch, $background-image) {
+    // 10 points for being able to explain!
+    // 1. We get the ratio of the height compared to the width of the tile as a percentage
+    // 2. We get the ratio of the width of the tile compared to the collage width
+    // 3. This gives us the tile height as a percentage relative to the collage width
+    @include alt-rectangle(percentage($w / $cw), percentage(($h / $w) * ($w / $cw)));
+    background-color: $colour-white;
+    @if $background-image != "" {
+        background-image: url('#{$background-image}');
+    }
+    top: percentage($t / $ch);
+    left: percentage($l / $cw);
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.collage-outer {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20em;
+}
+
+.collage-inner {
+    @include alt-rectangle(100%, 0);
+    // background-color: $colour-pacific-blue !important; // debug
+    background-repeat: no-repeat;
+}
+
+.collage-image,
+.collage-text,
+.collage-cutout {
+    position: absolute;
+    display: block;
+}
+
+.collage-image {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.-collage-flavour-01 {
+    $cw: 1132px;
+    $ch: 524px;
+    @include generate-collage($cw, $ch, '');
+    .-tile-01-a {
+        @include generate-tile(0px, 0px, 796px, 546px, $cw, $ch, '/images/careers/careers_nicole-wiley.jpg');
+    }
+    .-tile-01-b {
+        @include generate-tile(75px, 660px, 472px, 423px, $cw, $ch, '');
+    }
+    .-tile-01-c {
+        @include generate-tile(0px, 405px, 41px, $ch, $cw, $ch, '');
+    }
+    .-tile-01-d {
+        @include generate-tile(0px, 618px, 42px, $ch, $cw, $ch, '');
+    }
+    .-tile-01-e {
+        @include generate-tile(0px, 405px, 727px, 75px, $cw, $ch, '');
+    }
+    .-tile-01-f {
+        @include generate-tile(477px, 405px, 727px, 47px, $cw, $ch, '');
+    }
+    .-tile-01-g {
+        @include generate-tile(0px, 0px, 168px, 221px, $cw, $ch, '');
+    }
+    .-tile-01-h {
+        @include generate-tile(178px, 0px, 405px, 43px, $cw, $ch, '');
+    }
+}
+
+.-collage-flavour-02 {
+    $cw: 984px;
+    $ch: 590px;
+    @include generate-collage($cw, $ch, '');
+    .-tile-02-a {
+        @include generate-tile(71px, 0px, 465px, 286px, $cw, $ch, '');
+    }
+    .-tile-02-b {
+        @include generate-tile(0px, 512px, 472px, 352px, $cw, $ch, '/images/careers/careers_ed-nicole.jpg');
+    }
+    .-tile-02-c {
+        @include generate-tile(394px, 381px, 261px, 196px, $cw, $ch, '/images/careers/careers_legos.jpg');
+    }
+}
+
+.-collage-flavour-03 {
+    $cw: 1132px;
+    $ch: 684px;
+    @include generate-collage($cw, $ch, '');
+    .-tile-03-a {
+        @include generate-tile(153px, 660px, 472px, 231px, $cw, $ch, '');
+    }
+    .-tile-03-b {
+        @include generate-tile(509px, 146px, 472px, 175px, $cw, $ch, '');
+    }
+    .-tile-03-c {
+        @include generate-tile(0px, 0px, 618px, 466px, $cw, $ch, '/images/careers/careers_mark.jpg');
+    }
+    .-tile-03-d {
+        @include generate-tile(416px, 660px, 259px, 194px, $cw, $ch, '/images/careers/careers_nick.jpg');
+    }
+}
+
+.-collage-flavour-04 {
+    $cw: 984px;
+    $ch: 577px;
+    @include generate-collage($cw, $ch, '');
+    .-tile-04-a {
+        @include generate-tile(25px, 512px, 473px, 203px, $cw, $ch, '');
+    }
+    .-tile-04-b {
+        @include generate-tile(286px, 294px, 365px, 195px, $cw, $ch, '');
+    }
+    .-tile-04-c {
+        @include generate-tile(0px, 147px, 326px, 244px, $cw, $ch, '/images/careers/careers_post-its.jpg');
+    }
+    .-tile-04-d {
+        @include generate-tile(286px, 0px, 259px, 195px, $cw, $ch, '/images/careers/careers_deb.jpg');
+    }
+    .-tile-04-e {
+        @include generate-tile(286px, 765px, 219px, 291px, $cw, $ch, '/images/careers/careers_skateboard.jpg');
+    }
+}
+
+.-collage-flavour-05 {
+    $cw: 1132px;
+    $ch: 645px;
+    @include generate-collage($cw, $ch, '');
+    .-tile-05-a {
+        @include generate-tile(118px, 0px, 465px, 257px, $cw, $ch, '');
+    }
+    .-tile-05-b {
+        @include generate-tile(513px, 512px, 472px, 133px, $cw, $ch, '');
+    }
+    .-tile-05-c {
+        @include generate-tile(0px, 512px, 620px, 464px, $cw, $ch, '/images/careers/careers_wiley.jpg');
+    }
+    .-tile-05-d {
+        @include generate-tile(442px, 0px, 270px, 203px, $cw, $ch, '/images/careers/careers_code.jpg');
+    }
+}
+
+.-collage-flavour-06 {
+    $cw: 984px;
+    $ch: 581px;
+    @include generate-collage($cw, $ch, '');
+    .-tile-06-a {
+        @include generate-tile(157px, 0px, 459px, 342px, $cw, $ch, '');
+    }
+    .-tile-06-b {
+        @include generate-tile(0px, 512px, 258px, 344px, $cw, $ch, '/images/careers/careers_jeff.jpg');
+    }
+    .-tile-06-c {
+        @include generate-tile(387px, 512px, 258px, 194px, $cw, $ch, '/images/careers/careers_writing.jpg');
+    }
+    .-tile-06-d {
+        @include generate-tile(287px, 813px, 171px, 164px, $cw, $ch, '/images/careers/careers_nicole.jpg');
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

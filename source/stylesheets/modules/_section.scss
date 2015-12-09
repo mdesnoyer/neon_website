@@ -1,0 +1,58 @@
+.section__inner {
+  max-width: 1278px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  @include clearfix();
+  padding: $xl 0;
+}
+
+.section--hero {
+  padding-top: ($xl + $xl);
+  padding-bottom: 360px;
+
+  @media (min-width: 1200px) and (max-width: 1450px) {
+    padding-bottom: 140px;
+  }
+}
+
+.section__title--hero {
+  margin-bottom: 30px;
+}
+
+.section__label {
+  @extend .prehead;
+}
+
+.section__description {
+  max-width: 75%;
+}
+
+.section__title {
+  margin-bottom: $medium;
+}
+
+.section--medium {
+  width: 60%;
+}
+
+.section--bordered {
+  $border-color: $seashell;
+
+
+  & > * + * {
+    border-top: 3px solid $border-color;
+  }
+}
+
+.section--img {
+  padding-top: $small;
+}
+
+.sub-section {
+  &:not(:last-child) {
+    margin-bottom: $xl;
+  }
+}

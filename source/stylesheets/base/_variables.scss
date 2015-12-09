@@ -1,0 +1,74 @@
+// Colors
+///////////////////////////////////////////////////////////////////////////////
+$gray-chateau: #95A1AB;
+$burnt-orange: #FF6B31;
+$mine-shaft: #3D3D3D;
+$mountain-mist: #989898;
+$star-dust: #AAAAAA;
+$seashell: rgba(170, 170, 170, 0.1);
+
+$colors: (
+  gray-chateau: $gray-chateau,
+  burnt-orange: $burnt-orange,
+  mine-shaft: $mine-shaft,
+  mountain-mist: $mountain-mist,
+  star-dust: $star-dust,
+  seashell: $seashell
+);
+
+//  Brand Colors
+$brand-color: $gray-chateau;
+$accent-color: $burnt-orange;
+$light-accent-color: lighten($accent-color, 10%);
+
+//  Text Colors
+$base-font-color: $mountain-mist;
+$header-color: $mine-shaft;
+
+//  Link Colors
+$base-link-color: $mine-shaft;
+$hover-accent-color: $accent-color;
+$hover-neutral-color: $mine-shaft;
+
+// Form Colors
+$base-border-color: #d6d6d6;
+
+// Typography
+///////////////////////////////////////////////////////////////////////////////
+$serif: "Harriet Display Light", serif;
+$sans-serif: "Balto Book", sans-serif;
+$sans-serif-thin: "Balto Thin", sans-serif;
+$sans-serif-medium: "Balto Medium", sans-serif;
+
+$base-font-family: $sans-serif;
+$header-font-family: $serif;
+
+// Font sizes
+$base-font-size: 1.8em;
+
+$title-size--large: 4.7em;
+$title-size--medium: 3.3em;
+$title-size--small: 2.3em;
+$title-size--tiny: 1.2em;
+
+// Line heights
+$base-line-height: 150%;
+
+// ASCII Shortcuts
+$open-quote: "\201C";
+$close-quote: "\201D";
+
+// Margin & Padding Sizes
+///////////////////////////////////////////////////////////////////////////////
+$small:   10px;
+$medium:  20px;
+$large:   40px;
+$xl:      80px;
+
+// Media queries
+$tablet-min: new-breakpoint(min-width 769px);
+$tablet-max: new-breakpoint(max-width 1024px);
+$laptop: new-breakpoint(min-width 1025px);
+$desktop: new-breakpoint(min-width 1280px);
+$nav-breakpoint-max: new-breakpoint(max-width 1049px);
+$nav-breakpoint: new-breakpoint(min-width 1050px);

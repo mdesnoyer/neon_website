@@ -1,0 +1,80 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.ani-base-class { 
+    // do not use directly
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+.ani-base-enter {
+    @extend .ani-base-class;
+    // do not use directly
+    pointer-events: auto;
+}
+
+.ani-base-exit {
+    @extend .ani-base-class;
+    // do not use directly
+    pointer-events: none;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// nav
+
+@keyframes ani-enter-nav {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes ani-exit-nav {
+    to {
+        opacity: 0;
+    }
+}
+
+.ani-enter-nav {
+    @extend .ani-base-enter;
+    animation-name: ani-enter-nav;
+}
+
+.ani-exit-nav {
+    @extend .ani-base-exit;
+    animation-name: ani-exit-nav;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// icons/slides
+
+@each $icon in $how-it-works-icons {
+    ##{$icon} {
+        @keyframes ani-enter-slide-#{$icon} {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes ani-exit-slide-#{$icon} {
+            to {
+                opacity: 0;
+            }
+        }
+        &.ani-enter-slide {
+            @extend .ani-base-enter;
+            animation-name: ani-enter-slide-#{$icon};
+        }
+        &.ani-exit-slide {
+            @extend .ani-base-exit;
+            animation-name: ani-exit-slide-#{$icon};
+        }
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
