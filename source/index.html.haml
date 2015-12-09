@@ -26,9 +26,9 @@ scripts:
             Our smart, science-based approach to understanding images predicts how your visual content will perform.
 
           = link_to('Discover now', '/how-it-works/', class: 'link--cta')
-
-
-        = image_tag('images/home/how-it-works_01.png', class: 'mosaic-image mosaic-image--left-gutter')
+        .image-container--outer
+          .image-container--inner
+            = image_tag('images/home/how-it-works_01.png', class: 'mosaic-image mosaic-image--left-gutter')
 
       .mosaic-block__row
         .image-container--small
