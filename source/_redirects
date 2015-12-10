@@ -1,10 +1,11 @@
 # https://www.netlify.com/docs/redirects
 
-#/press/        /TODO
-#/faq/          /TODO
-#/live/             /TODO/
-#/customers/      /TODO/
-#/pricing/      /TODO/
-#/wef/		    /TODO/		
+#/press/			/news-and-press/
+#/live/				/news-and-press/
+#/wef/				/news-and-press/
 
-/product/	  /products/
+/product/			/products/
+/customers/			/products/
+/pricing/			/products/
+
+/faq/				/contact/
