@@ -16,6 +16,8 @@ input {
   box-shadow: 0 0 4px rgba(110,91,170,0);
   padding-right: 50px;
   border: 1px solid $base-border-color;
+  font-size: 1.2em;
+  line-height: 2em;
 
   &:active, &:focus {
     border: 1px solid $accent-color;
