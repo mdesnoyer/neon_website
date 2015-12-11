@@ -8,8 +8,6 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
-page "/404.html", :directory_index => false
-
 after_build do |builder|
 	src = File.join(config[:source],"_redirects")
 	dst = File.join(config[:build_dir],"_redirects")

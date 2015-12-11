@@ -1,0 +1,7 @@
+---
+layout: false
+directory_index: false
+---
+User-agent: *
+Allow: /
+Sitemap: <%=data.config.root%>sitemap.xml
