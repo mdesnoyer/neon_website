@@ -37,8 +37,9 @@
           %li.sub-nav__title--long
             Subscribe to our newsletter!
           %li.sub-nav__item
-            %form.inline-submit
-              %input{:type => 'email', :placeholder => 'Your email address'}
+            %form.inline-submit{"accept-charset" => "UTF-8", :action => "https://formkeep.com/f/00f26f27ac0d", :method => "POST"}
+              %input{:name => "utf8", :type => "hidden", :value => "✓"}
+              %input{:type => 'email', :name => 'email', :placeholder => 'Email address'}
               %input{:type => 'submit', :value => "Go"}
 
           = yield_content :footer
