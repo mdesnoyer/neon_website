@@ -222,29 +222,6 @@ li:last-child {
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-.cta-small {
-    @include type(1.8, 2.7, $colour-mine-shaft, $font-family-primary-1);
-    border-bottom-style: solid;
-    border-bottom-width: 1px; 
-    padding-bottom: 0.1em;
-    display: inline-block;
-    &:link,
-    &:visited {
-        text-decoration: none;
-        color: $colour-mine-shaft;
-        border-bottom-color: $colour-mine-shaft;
-    }
-    &:focus,
-    &:hover,
-    &:active {
-        text-decoration: none;
-        color: $colour-mine-shaft;
-        border-bottom-color: $colour-burning-orange;
-    }
-}
-
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
 .blonker {
     display: block;
 }

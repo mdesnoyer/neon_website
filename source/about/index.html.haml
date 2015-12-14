@@ -4,7 +4,7 @@ description:
 layout: layout
 scripts:
   slides: false
-  jump: false
+  jump: true
 sitemap: true
 ---
 
@@ -18,18 +18,20 @@ sitemap: true
           %h2.section__title
             Images Matter.
           %p Where will your images take you?
+          = link_to('Learn more', '#neons-history', class: 'link--cta js-neon-jump')
         .column.column__main-content
           .image-container
             = image_tag('about/about-cmu.jpg', class: 'column__image')
           .section
-            %h2.section__title Neon&rsquo;s History
+            %h2.section__title#neons-history
+              Neon&rsquo;s History
             %p
               We started with a simple question: does every images evoke an emotional response? With this spirit of curiosity and inquiry, we&rsquo;ve built Neon, based in San Francisco and founded on over ten years of research in the science labs of Brown University, Carnegie Mellon, and Massachusetts General Hospital. Through a process of research commercialization supported by the National Science Foundation and leading Silicon Valley venture capitalists, Neon has become the leading automated image management platform that can handle the billions of images uploaded online every day.
             %p
               Neon&rsquo;s award-winning image management tools make visual content more valuable for leading online news, sports, entertainment media publishers, advertisers and marketers. We hold a number of patents and have won awards for our visionary technology and innovative team.
           .section--bordered
             .section
-              %h2.section__title Neon's Growth
+              %h2.section__title Neon&rsquo;s Growth
               %p
                 As the number of images online grows, Neon scales to handle them with our smart, science-based technology.
               .section--img
