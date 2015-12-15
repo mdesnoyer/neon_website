@@ -2,43 +2,43 @@
   .footer__wrapper
     .footer__flex-content
       .footer__nav-block
-        %ul.sub-nav
-          %li.sub-nav__title
+        %dl.sub-nav
+          %dt.sub-nav__title
             Company
-          %li.sub-nav__item
+          %dd.sub-nav__item
             = link_to 'About', '/about/'
-          %li.sub-nav__item
+          %dd.sub-nav__item
             = link_to 'Jobs', '/jobs/'
-          %li.sub-nav__item
+          %dd.sub-nav__item
             = link_to 'Contact', '/contact/'
 
       .footer__nav-block
-        %ul.sub-nav
-          %li.sub-nav__title
+        %dl.sub-nav
+          %dt.sub-nav__title
             Resources
-          %li.sub-nav__item
+          %dd.sub-nav__item
             = link_to 'Terms of Service', '/terms/', { :title => 'Privacy Policy and Terms of Service' }
-          %li.sub-nav__item
+          %dd.sub-nav__item
             = link_to 'Site Map', '/sitemap/'
 
       .footer__nav-block
-        %ul.sub-nav
-          %li.sub-nav__title
+        %dl.sub-nav
+          %dt.sub-nav__title
             Social
-          %li.sub-nav__item
+          %dd.sub-nav__item
             = link_to 'Twitter', 'https://www.twitter.com/neonlab'
-          %li.sub-nav__item
+          %dd.sub-nav__item
             = link_to 'Facebook', 'https://www.facebook.com/neonthumbnails'
-          %li.sub-nav__item
+          %dd.sub-nav__item
             = link_to 'Medium', 'https://medium.com/neon-blog'
-          %li.sub-nav__item
+          %dd.sub-nav__item
             = link_to 'LinkedIn', 'https://www.linkedin.com/company/neon-lab'
 
       .footer__nav-block
-        %ul.sub-nav
-          %li.sub-nav__title--long
+        %dl.sub-nav
+          %dt.sub-nav__title--long
             Subscribe to our newsletter!
-          %li.sub-nav__item
+          %dd.sub-nav__item
             %form.inline-submit{"accept-charset" => "UTF-8", :action => "https://formkeep.com/f/00f26f27ac0d", :method => "POST"}
               %input{:name => "utf8", :type => "hidden", :value => "✓"}
               %input{:type => 'email', :name => 'email', :placeholder => 'Email address'}
