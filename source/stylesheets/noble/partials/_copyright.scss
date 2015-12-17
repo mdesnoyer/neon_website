@@ -1,0 +1,10 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.copyright {
+	@include type(1.4, 1.4, $colour-dusty-gray, $font-family-primary-1);
+	margin-top: 5em;
+	display: block;
+	text-align: left;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
