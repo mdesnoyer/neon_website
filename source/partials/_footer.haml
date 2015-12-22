@@ -10,6 +10,8 @@
           %dd.sub-nav__item
             = link_to 'Jobs', '/jobs/'
           %dd.sub-nav__item
+            = link_to 'Blog', data.config.blog_url, { :title => data.config.blog_blurb }
+          %dd.sub-nav__item
             = link_to 'Contact', '/contact/'
 
       .footer__nav-block
@@ -30,7 +32,7 @@
           %dd.sub-nav__item
             = link_to 'Facebook', 'https://www.facebook.com/neonthumbnails'
           %dd.sub-nav__item
-            = link_to 'Medium', 'https://medium.com/neon-blog'
+            = link_to 'Medium', data.config.blog_url, { :title => data.config.blog_blurb }
           %dd.sub-nav__item
             = link_to 'LinkedIn', 'https://www.linkedin.com/company/neon-lab'
 
