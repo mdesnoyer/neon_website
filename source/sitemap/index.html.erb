@@ -10,12 +10,14 @@ sitemap: false
 ---
 <section class="pinch-left pinch-right">
 	<h1 class="h">Site Map</h1>
-	<% pages = sitemap.resources.find_all{|p| p.source_file.match(/\.html/) } %>
-	<% pages.each do |p| %>
-    	<% if p.data.sitemap == true %>
-	        <li>
-	            <a href="/<%=p.destination_path.gsub('/index.html', '/')%>" title=""><%=p.data.title%></a>
-	        </li>
-    	<% end %>
-	<% end %>
+	<ul>
+		<% pages = sitemap.resources.find_all{|p| p.source_file.match(/\.html/) } %>
+		<% pages.each do |p| %>
+	    	<% if p.data.sitemap == true %>
+		        <li>
+		            <a href="/<%=p.destination_path.gsub('/index.html', '/')%>" title=""><%=p.data.title%></a>
+		        </li>
+	    	<% end %>
+		<% end %>
+	</ul>
 </section>
