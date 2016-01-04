@@ -1,0 +1,12 @@
+<% if current_page.data.tags.try(:count) %>
+	<%
+		keywords = ''
+		article_tags = ''
+		current_page.data.tags.each do |t|
+			keywords = keywords + t + ','
+			article_tags = article_tags + '<meta property="article:tag" content="' + t + '" />'
+		end
+	%>
+	<meta name="keywords" content="<%= keywords.chomp(',') %>" />
+	<%= article_tags %>
+<% end %>

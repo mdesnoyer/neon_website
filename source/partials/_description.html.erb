@@ -1,0 +1,9 @@
+<% if current_page.data.description_override == 'jobs' %>
+	<% description = partial("partials/jobs.description") %>
+<% else %>
+	<% description = current_page.data.description %>
+<% end %>
+
+<meta name="description" content="<%= description %>" />         
+<meta name="twitter:description" content="<%= description %>" />
+<meta property="og:description" content="<%= description %>" />

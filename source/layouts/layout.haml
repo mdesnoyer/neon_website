@@ -5,14 +5,14 @@
     %meta{ :content => partial('partials/copyright'), 'name' => 'copyright' }
     %meta{ :charset => 'utf-8' }
     %meta{ 'http-equiv' => 'X-UA-Compatible', :content => 'IE=edge' }
-    %meta{ :name => 'description', :content => current_page.data.description }
     %meta{ :name => 'google-site-verification', :content => data.config.google_site_verification }
     %meta{ :name => 'viewport', :content => 'width=device-width, initial-scale=1' }
-
+    = render_partial 'partials/tags'
+    = render_partial 'partials/description'
     = partial 'partials/favicons'
 
     - if current_page.data.home
-      %title Neon | Find your best images
+      %title Neon | #{data.config.tagline}
     - else
       %title #{current_page.data.title} | Neon
 

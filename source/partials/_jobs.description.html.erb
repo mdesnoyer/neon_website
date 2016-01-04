@@ -1,0 +1,11 @@
+<% if data.jobs.roles.try(:count) %>
+	<%
+		roles = ''
+		data.jobs.roles.each do |role|
+			roles = roles + role.title + ', '
+		end
+	%>
+	Job Openings at Neon: <%= roles.chomp(', ').concat('.') %>
+<% else %>
+	<%= data.jobs.no_roles_message_text %>
+<% end %>
