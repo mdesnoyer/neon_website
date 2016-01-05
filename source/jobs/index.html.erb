@@ -1,6 +1,8 @@
 ---
-title: Jobs
-description:
+title: Work at Neon
+description_override: jobs
+tags:
+  - benefits + perks
 layout: noble
 classes: jobs
 scripts:
@@ -28,20 +30,18 @@ sitemap: true
 
 			<h2 class="prehead -alt-01 -alt-02">Job openings</h2>
 
-			<div class="bricks -double -tight">
-				<a class="brick" href="/jobs/backend-engineer/">
-					<h3 class="hhhh">Backend Engineer</h3>
-					<p class="copy">San Francisco</p>
-				</a>
-				<a class="brick" href="/jobs/devops-engineer/">
-					<h3 class="hhhh">DevOps Engineer</h3>
-					<p class="copy">San Francisco</p>
-				</a>
-				<a class="brick" href="/jobs/big-data-engineer/">
-					<h3 class="hhhh">Big Data Engineer</h3>
-					<p class="copy">San Francisco</p>
-				</a>
-			</div>
+			<% if data.jobs.roles.try(:count) %>
+				<div class="bricks -double -tight">
+					<% data.jobs.roles.each do |role| %>
+						<a class="brick" title="<%= role.title %>, <%= role.location %>" href="<%= role.url %>">
+							<h3 class="hhhh"><%= role.title %></h3>
+							<p class="copy"><%= role.location %></p>
+						</a>
+					<% end %>
+				</div>
+			<% else %>
+				<p><%= data.jobs.no_roles_message_html %></p>
+			<% end %>
 
 			<hr class="divider" />
 
