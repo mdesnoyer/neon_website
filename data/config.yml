@@ -1,10 +1,8 @@
 root: 'https://neon-lab.com/'
 google_site_verification: 'ry_d1cL4Kfa75kdLJmrsH-la7iOAMCfRNIJL4jycLeQ'
 company_name: 'Neon Labs, Inc.'
-
 blog_url: 'https://medium.com/neon-blog'
-blog_blurb: 'Go to the Neon Blog on Medium (link opens in a new window)'
-
+blog_blurb: 'Learn about what&rsquo;s new in images and tech on Neon&rsquo;s blog (link opens in a new window)'
 company_telephone: '415-355-4249'
-
 partners_email: 'partners@neon-lab.com'
+tagline: 'Find your best images.'
