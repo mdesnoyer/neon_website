@@ -1,3 +1,5 @@
+$border-color: $seashell;
+
 .section__inner {
   max-width: 1278px;
   margin-left: auto;
@@ -39,9 +41,6 @@
 }
 
 .section--bordered {
-  $border-color: $seashell;
-
-
   & > * + * {
     border-top: 3px solid $border-color;
   }
@@ -55,4 +54,8 @@
   &:not(:last-child) {
     margin-bottom: $xl;
   }
+}
+
+.section--border-bottom {
+  border-bottom: 3px solid $border-color;
 }
