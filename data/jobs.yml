@@ -1,8 +1,8 @@
 no_roles_message_html: 'We&rsquo;re always looking for great people to join our team. <a href="mailto:careers@neon-lab.com">Get in touch</a> to let us know what you&rsquo;re interested in working on and why you&rsquo;re excited about Neon.'
 no_roles_message_text: 'We&rsquo;re always looking for great people to join our team. Get in touch to let us know what you&rsquo;re interested in working on and why you&rsquo;re excited about Neon.'
 roles:
-  - title: Backend Engineer
-    url: /jobs/backend-engineer/
+  - title: Back End Engineer
+    url: /jobs/back-end-engineer/
     location: San Francisco
   - title: DevOps Engineer
     url: /jobs/devops-engineer/
@@ -10,9 +10,9 @@ roles:
   - title: Big Data Engineer
     url: /jobs/big-data-engineer/
     location: San Francisco
-  - title: Backend Engineering Intern
-    url: /jobs/backend-engineering-intern/
+  - title: Back End Engineer (Intern)
+    url: /jobs/back-end-engineer-intern/
     location: San Francisco
-  - title: Front End Engineer (Intern / Co&ndash;op)
-    url: /jobs/front-end-engineer-intern-co-op/
+  - title: Front End Engineer (Intern)
+    url: /jobs/front-end-engineer-intern/
     location: San Francisco
