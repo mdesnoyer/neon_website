@@ -1,0 +1,581 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// Collage
+// - a stylistic layout consisting of a number of different components
+// - percentage based
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@mixin generate-collage($w, $h, $background-image: '') {
+    background-color: $colour-white;
+    @include breakpoint(goldilocks) {
+        // empty
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @if ($background-image != '') {
+            background-image: url('#{$background-image}');
+        }
+        // these values are only used for the ratio, not absolute px values
+        padding-bottom: percentage($h / $w);
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@mixin generate-tile($t, $l, $w, $h, $cw, $ch, $background-image: '', $scale: 1, $shift-right: false, $background-colour: $colour-white) {
+    // 10 points for being able to explain!
+    // 1. We get the ratio of the height compared to the width of the tile as a percentage
+    // 2. We get the ratio of the width of the tile compared to the collage width
+    // 3. This gives us the tile height as a percentage relative to the collage width
+    @if ($background-colour != '') {
+        background-color: $background-colour;
+    }
+    @if ($background-image != '') {
+        background-image: url('#{$background-image}');
+    }
+    @include breakpoint(goldilocks) {
+        $ww: $w * $scale;
+        $hh: $h * $scale;
+        @include alt-rectangle(percentage($ww / $w), percentage($hh / $w));
+        @if ($shift-right) {
+            transform: translateX((100% * 1 / $scale) - 100%);
+        }
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include alt-rectangle(percentage($w / $cw), percentage(($h / $w) * ($w / $cw)));
+        top: percentage($t / $ch);
+        left: percentage($l / $cw);
+        transform: none;
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.collage-outer {
+    position: relative;
+    overflow: hidden;
+    @include breakpoint(goldilocks) {
+        margin-bottom: calc-breakpoint-ratio-px-to-em(60px, goldilocks);
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        margin-bottom: calc-breakpoint-ratio-px-to-em(200px, daddy-bear);
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.collage-inner {
+    @include breakpoint(goldilocks) {
+        // empty
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include alt-rectangle(100%, 0);
+        background-repeat: no-repeat;
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.collage-image,
+.collage-text,
+.collage-cutout {
+    @include breakpoint(goldilocks) {
+        // empty
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        position: absolute;
+    }
+}
+
+.collage-image {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include breakpoint(goldilocks) {
+        margin-bottom: 1.618em;
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        margin-bottom: 0;
+    }
+}
+
+.collage-text {
+    @include breakpoint(goldilocks) {
+        margin-bottom: 1.618em;
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        margin-bottom: 0;
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$cw: 1132px;
+$ch: 524px;
+
+.-collage-flavour-01 {
+    @include generate-collage($cw, $ch);
+}
+.collage-tile-01-a {
+    @include generate-tile(0px, 0px, 796px, 546px, $cw, $ch, '/images/careers/careers_nicole-wiley.jpg');
+}
+.collage-tile-01-b {
+    @include breakpoint(goldilocks) {
+        // empty
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include generate-tile(75px, 660px, 472px, 423px, $cw, $ch);
+    }
+}
+.collage-tile-01-c {
+    @include breakpoint(goldilocks) {
+        display: none;
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include generate-tile(0px, 405px, 41px, $ch, $cw, $ch);
+    }
+}
+.collage-tile-01-d {
+    @include breakpoint(goldilocks) {
+        display: none;
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include generate-tile(0px, 618px, 42px, $ch, $cw, $ch);
+    }
+}
+.collage-tile-01-e {
+    @include breakpoint(goldilocks) {
+        display: none;
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include generate-tile(0px, 405px, 727px, 75px, $cw, $ch);
+    }
+}
+.collage-tile-01-f {
+    @include breakpoint(goldilocks) {
+        display: none;
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include generate-tile(477px, 405px, 727px, 47px, $cw, $ch);
+    }
+}
+.collage-tile-01-g {
+    @include breakpoint(goldilocks) {
+        display: none;
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include generate-tile(0px, 0px, 168px, 221px, $cw, $ch);
+    }
+}
+.collage-tile-01-h {
+    @include breakpoint(goldilocks) {
+        display: none;
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include generate-tile(178px, 0px, 405px, 43px, $cw, $ch);
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$cw: 984px;
+$ch: 590px;
+
+.-collage-flavour-02 {
+    @include generate-collage($cw, $ch);
+}
+.collage-tile-02-a {
+    @include breakpoint(goldilocks) {
+        // empty
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include generate-tile(71px, 0px, 465px, 286px, $cw, $ch);
+    }
+}
+.collage-tile-02-b {
+    @include generate-tile(0px, 512px, 472px, 352px, $cw, $ch, '/images/careers/careers_ed-nicole.jpg');
+}
+.collage-tile-02-c {
+    @include generate-tile(394px, 381px, 261px, 196px, $cw, $ch, '/images/careers/careers_legos.jpg', 0.5, true);
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$cw: 1132px;
+$ch: 684px;
+
+.-collage-flavour-03 {
+    @include generate-collage($cw, $ch);
+}
+.collage-tile-03-a {
+    @include breakpoint(goldilocks) {
+        // empty
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include generate-tile(153px, 660px, 472px, 231px, $cw, $ch);
+    }
+}
+.collage-tile-03-b {
+    @include breakpoint(goldilocks) {
+        // empty
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include generate-tile(509px, 146px, 472px, 175px, $cw, $ch);
+    } 
+}
+.collage-tile-03-c {
+    @include generate-tile(0px, 0px, 618px, 466px, $cw, $ch, '/images/careers/careers_mark.jpg');
+}
+.collage-tile-03-d {
+    @include generate-tile(416px, 660px, 259px, 194px, $cw, $ch, '/images/careers/careers_nick.jpg');
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$cw: 984px;
+$ch: 577px;
+
+.-collage-flavour-04 {
+    @include generate-collage($cw, $ch);
+}
+.collage-tile-04-a {
+    @include breakpoint(goldilocks) {
+        // empty
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include generate-tile(25px, 512px, 473px, 203px, $cw, $ch);
+    }
+}
+.collage-tile-04-b {
+    @include breakpoint(goldilocks) {
+        // empty
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include generate-tile(286px, 294px, 365px, 195px, $cw, $ch);
+    }
+}
+.collage-tile-04-c {
+    @include generate-tile(0px, 147px, 326px, 244px, $cw, $ch, '/images/careers/careers_post-its.jpg', 0.5);
+}
+.collage-tile-04-d {
+    @include generate-tile(286px, 0px, 259px, 195px, $cw, $ch, '/images/careers/careers_deb.jpg', 0.5, true);
+}
+.collage-tile-04-e {
+    @include generate-tile(286px, 765px, 219px, 291px, $cw, $ch, '/images/careers/careers_skateboard.jpg', 0.5, true);
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$cw: 1132px;
+$ch: 645px;
+
+.-collage-flavour-05 {
+    @include generate-collage($cw, $ch);
+}
+.collage-tile-05-a {
+    @include breakpoint(goldilocks) {
+        // empty
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include generate-tile(118px, 0px, 465px, 257px, $cw, $ch);
+    }
+}
+.collage-tile-05-b {
+    @include breakpoint(goldilocks) {
+        // empty
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include generate-tile(513px, 512px, 472px, 133px, $cw, $ch);
+    }
+}
+.collage-tile-05-c {
+    @include generate-tile(0px, 512px, 620px, 464px, $cw, $ch, '/images/careers/careers_wiley.jpg');
+}
+.collage-tile-05-d {
+    @include generate-tile(442px, 0px, 270px, 203px, $cw, $ch, '/images/careers/careers_code.jpg', 0.5);
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$cw: 984px;
+$ch: 581px;
+
+.-collage-flavour-06 {
+    @include generate-collage($cw, $ch);
+}
+.collage-tile-06-a {
+    @include breakpoint(goldilocks) {
+        // empty
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include generate-tile(157px, 0px, 459px, 342px, $cw, $ch);
+    }
+}
+.collage-tile-06-b {
+    @include generate-tile(0px, 512px, 258px, 344px, $cw, $ch, '/images/careers/careers_jeff.jpg', 0.5);
+}
+.collage-tile-06-c {
+    @include generate-tile(387px, 512px, 258px, 194px, $cw, $ch, '/images/careers/careers_writing.jpg', 0.5);
+}
+.collage-tile-06-d {
+    @include generate-tile(287px, 813px, 171px, 164px, $cw, $ch, '/images/careers/careers_nicole.jpg', 0.46);
+    position: absolute;
+    right: 0;
+    transform: translateY(100%);
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$cw: 984px;
+$ch: 870px;
+
+.-collage-flavour-10 {
+    @include generate-collage($cw, $ch);
+}
+.collage-tile-10-a {
+    @include breakpoint(goldilocks) {
+        // empty
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include generate-tile(194px, 0px, 300px, 95px, $cw, $ch);
+    }
+}
+.collage-tile-10-b {
+    @include breakpoint(goldilocks) {
+        // empty
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include generate-tile(0px, 341px, 344px, 423px, $cw, $ch);
+    }
+}
+.collage-tile-10-c {
+    @include generate-tile(105px, 341px, 643px, 482px, $cw, $ch, '/images/products/products-football.jpg');
+}
+.collage-tile-10-d {
+    @include generate-tile(322px, 0px, 300px, 426px, $cw, $ch, '/images/products/products-woman.jpg');
+}
+.collage-tile-10-e {
+    @include generate-tile(627px, 341px, 344px, 234px, $cw, $ch, '/images/products/products-guy.jpg');
+}
+.collage-tile-10-f {
+    @include breakpoint(goldilocks) {
+        // empty
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include generate-tile(627px, 719px, 265px, 121px, $cw, $ch);
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$cw: 984px;
+$ch: 507px;
+.-collage-flavour-11 {
+    @include generate-collage($cw, $ch);
+}
+.collage-tile-11-a {
+    @include generate-tile(0px, 0px, 471px, 366px, $cw, $ch, '/images/products/products-lift-261.jpg');
+}
+.collage-tile-11-b {
+    @include breakpoint(goldilocks) {
+        display: none;
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include generate-tile(17px, 514px, 96px, 29px, $cw, $ch, '/images/products/logos/ign.svg');
+    }
+}
+.collage-tile-11-c {
+    @include generate-tile(68px, 514px, 470px, 175px, $cw, $ch);
+}
+.collage-tile-11-d {
+    @include breakpoint(goldilocks) {
+        display: none;
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include generate-tile(285px, 16px, 200px, 49px, $cw, $ch, '', 1, false, transparent);
+    }
+}
+.collage-tile-11-e {
+    @include generate-tile(391px, 0px, 471px, 35px, $cw, $ch);
+}
+.collage-tile-11-f {
+    @include generate-tile(278px, 514px, 298px, 229px, $cw, $ch, '/images/products/products-lift-62.jpg');
+}
+.collage-tile-11-g {
+    @include breakpoint(goldilocks) {
+        display: none;
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include generate-tile(426px, 525px, 196px, 81px, $cw, $ch, '', 1, false, transparent);
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

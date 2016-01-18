@@ -1,0 +1,30 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.alpha {
+    @extend %x-alpha;
+    margin-bottom: 0.3333em;
+}
+
+.beta {
+    @extend %x-beta;
+    margin-bottom: 0.5em;
+}
+
+.gamma {
+    @extend %x-gamma;
+}
+
+.delta {
+    @extend %x-delta;
+}
+
+.epsilon {
+    @extend %x-epsilon;
+    text-transform: uppercase;
+}
+
+.zeta {
+    @extend %x-zeta;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

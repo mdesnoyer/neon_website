@@ -1,0 +1,96 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+a:not([class]) {
+    transition: color $DEFAULT-TRANSITION-TIME;
+    &:link,
+    &:visited {
+        color: $colour-mine-shaft;
+        text-decoration: none;
+    }
+    &:focus,
+    &:hover,
+    &:active {
+        color: $colour-burning-orange;
+        text-decoration: none;
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.cta-small {
+    text-decoration: none;
+    padding-bottom: 0.1em;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    &:before,
+    &:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;
+        content: '';
+        transition: transform $DEFAULT-TRANSITION-TIME;
+        border-bottom-style: solid;
+        border-bottom-width: 1px; 
+        width: 100%;
+    }
+    &:before {
+        border-bottom-color: $colour-burning-orange;
+    }
+    &:after {
+        border-bottom-color: $colour-dusty-gray;
+    }
+    &:link,
+    &:visited {
+        color: $colour-mine-shaft;
+    }
+    &:focus,
+    &:hover,
+    &:active {
+        color: $colour-mine-shaft;
+        &:after {
+            transform: translateX(100%);
+        }
+    }   
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.cta-big {
+    @include font-size($cta-big-font-sizes);
+    font-family: $font-family-secondary-1;
+    font-weight: $font-weight-secondary-1;
+    display: inline-block;
+    text-decoration: none;
+    &:after {
+        $h: 0.45em;
+        transition: all $DEFAULT-TRANSITION-TIME;
+        content: '';
+        display: inline-block;
+        color: $colour-dusty-gray;
+        mask: url('/images/arrow.svg');
+        background-color: $colour-dusty-gray;
+        background-repeat: no-repeat;
+        width: 0;
+        height: $h;
+        padding-right: (32 / 11) * $h;
+        margin-left: 0.5em;
+        vertical-align: middle;
+    }
+    &:link,
+    &:visited {
+        color: $colour-dusty-gray;
+    }
+    &:focus,
+    &:hover,
+    &:active {
+        color: $colour-mine-shaft;
+        &:after {
+            background-color: $colour-burning-orange;
+            transform: translateX(0.25em);
+        }
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

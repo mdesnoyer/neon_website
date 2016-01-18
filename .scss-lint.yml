@@ -1,0 +1,64 @@
+scss_files: 'source/stylesheets/ramsay/**/*.scss'
+# exclude: 'app/assets/stylesheets/plugins/**'
+
+linters:
+  ColorKeyword:
+    enabled: false
+  ColorVariable:
+    enabled: false
+  Comment:
+    enabled: false
+  DeclarationOrder:
+    enabled: false
+  DuplicateProperty:
+    enabled: false
+  ElsePlacement:
+    enabled: false
+  EmptyLineBetweenBlocks:
+    enabled: false
+  EmptyRule:
+    enabled: false
+  FinalNewline:
+    enabled: false
+  HexLength:
+    enabled: false
+  HexNotation:
+    enabled: false
+  ImportantRule:
+    enabled: false
+  Indentation:
+    enabled: false
+  LeadingZero:
+    enabled: false
+  MergeableSelector:
+    enabled: false
+  NameFormat:
+    enabled: false
+  NestingDepth:
+    enabled: false
+  PlaceholderInExtend:
+    enabled: false
+  PropertySortOrder:
+    enabled: false
+  QualifyingElement:
+    enabled: false
+  SelectorFormat:
+    enabled: false
+  SingleLinePerSelector:
+    enabled: false
+  SpaceAfterComma:
+    enabled: false
+  SpaceAfterPropertyColon:
+    enabled: false
+  StringQuotes:
+    enabled: false
+  TrailingSemicolon:
+    enabled: false
+  TrailingWhitespace:
+    enabled: false
+  UnnecessaryMantissa:
+    enabled: false
+  UnnecessaryParentReference:
+    enabled: false
+  ZeroUnit:
+    enabled: false

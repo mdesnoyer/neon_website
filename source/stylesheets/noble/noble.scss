@@ -78,35 +78,35 @@ input {
         background-color: $colour-gray-chateau;
         &:before {
             content: '#{$colour-gray-chateau}';
-            color: white;
+            color: $colour-white;
         }
     }
     &.-colour-mine-shaft {
         background-color: $colour-mine-shaft;
         &:before {
             content: '#{$colour-mine-shaft}';
-            color: white;
+            color: $colour-white;
         }
     }
     &.-colour-dusty-gray {
         background-color: $colour-dusty-gray;
         &:before {
             content: '#{$colour-dusty-gray}';
-            color: white;
+            color: $colour-white;
         }
     }
     &.-colour-silver-chalice {
         background-color: $colour-silver-chalice;
         &:before {
             content: '#{$colour-silver-chalice}';
-            color: white;
+            color: $colour-white;
         }
     }
     &.-colour-burning-orange {
         background-color: $colour-burning-orange;
         &:before {
             content: '#{$colour-burning-orange}';
-            color: white;
+            color: $colour-white;
         }
     }
     &.-colour-white {

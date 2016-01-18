@@ -1,0 +1,42 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@mixin rectangle($width, $height: $width) {
+    display: block;
+    width: $width;
+    height: $height;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@mixin square($length) {
+    @include rectangle($length);
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@mixin circle($diameter) {
+    @include rectangle($diameter);
+    border-radius: 50%;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@mixin alt-rectangle($width, $height) {
+    @include rectangle($width, 0);
+    padding-bottom: $height; // padding is relative to width
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@mixin alt-square($length) {
+    @include alt-rectangle($length, $length);
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@mixin alt-circle($diameter) {
+    @include alt-square($diameter);
+    border-radius: 50%;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

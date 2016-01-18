@@ -1,0 +1,46 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$spacing: 2em;
+
+.site-footer {
+	background-color: rgba($colour-silver-chalice, 0.1);
+	padding: (2 * $spacing) 0 $spacing;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.site-footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.site-footer-nav-item {
+	margin-bottom: 2em;
+	@include breakpoint(goldilocks) {
+		width: 30%;
+		&:last-child {
+			width: 66.6667%;
+		}
+	}
+	@include breakpoint(baby-bear) {
+		&:last-child {
+			width: 100%;
+		}
+	}
+	@include breakpoint(mummy-bear) {
+		&:last-child {
+			width: 66.6667%;
+		}
+	}
+	@include breakpoint(daddy-bear) {
+		width: 20%;
+		&:last-child {
+			width: 40%;
+		}
+	}
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

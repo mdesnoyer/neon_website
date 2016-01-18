@@ -1,0 +1,59 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$big-original-width: 120px;
+$big-original-height: 50px;
+$big-shift-left: 48px;
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$small-original-width: 38.7px;
+$small-original-height: 49.3px;
+$small-shift-left: 6px;
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.mark,
+.mark-anchor {
+	@include breakpoint(goldilocks) {
+		$width: calc-breakpoint-ratio-px-to-em($small-original-width, goldilocks);
+	    @include alt-rectangle($width, (($small-original-height / $small-original-width) * $width));
+	}
+	@include breakpoint(baby-bear) {
+		$width: calc-breakpoint-ratio-px-to-em($small-original-width, baby-bear);
+	    @include alt-rectangle($width, (($small-original-height / $small-original-width) * $width));
+	}
+	@include breakpoint(mummy-bear) {
+		$width: calc-breakpoint-ratio-px-to-em($big-original-width, mummy-bear);
+	    @include alt-rectangle($width, (($big-original-height / $big-original-width) * $width));
+	}
+	@include breakpoint(daddy-bear) {
+		$width: calc-breakpoint-ratio-px-to-em($big-original-width, daddy-bear);
+	    @include alt-rectangle($width, (($big-original-height / $big-original-width) * $width));
+	}
+}
+
+.mark { 
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: contain;
+	@include breakpoint(goldilocks) {
+	    background-image: url('/images/navigation/mark.svg');
+	    transform: translateX(-1 * percentage($small-shift-left / $small-original-width));
+	}
+	@include breakpoint(baby-bear) {
+	    // empty
+	}
+	@include breakpoint(mummy-bear) {
+		// empty	
+	}
+	@include breakpoint(daddy-bear) {
+		background-image: url('/images/navigation/logo.svg');
+	    transform: translateX(-1 * percentage($big-shift-left / $big-original-width));
+	}
+}
+
+.mark-text {
+    @include visuallyhidden;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

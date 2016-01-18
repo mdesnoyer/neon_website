@@ -1,0 +1,26 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.callout {
+    text-align: center;
+}
+
+.callout-line {
+    height: 2em; // Better number?
+    width: 1px;
+    display: block;
+    background-color: $colour-mine-shaft;
+    color: $colour-mine-shaft;
+    border: 0;
+}
+
+.callout-key {
+    @extend %x-epsilon;
+    text-transform: uppercase;
+    color: $colour-burning-orange;
+}
+
+.callout-value {
+    @extend %x-zeta;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

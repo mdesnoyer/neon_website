@@ -1,0 +1,92 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.newsletter {
+	width: 100%;
+    &.is-submitted {
+        .newsletter-email {
+            display: none;
+        }
+        .newsletter-message-success {
+            display: block;
+        }
+        .newsletter-submit {
+            display: none;
+        }
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.newsletter-cushion {
+    // empty
+}
+
+.newsletter-grouper {
+    position: relative;
+}
+
+.newsletter-legend {
+    @extend %x-epsilon;
+    color: $colour-burning-orange;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.newsletter-label {
+    @include visuallyhidden;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.newsletter-email {
+    @extend %x-zeta;
+    transition: all $DEFAULT-TRANSITION-TIME;
+    border-radius: 0.3em;
+    width: 100%;
+    padding: 0.75em 3.5em 0.75em 1em;
+    border: 1px solid $colour-alto;
+    color: $colour-mine-shaft;
+    line-height: 1;
+    &:focus,
+    &:active {
+        border-color: $colour-burning-orange;
+    }
+    @include placeholder {
+        color: $colour-dusty-gray;
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.newsletter-message-success {
+    @extend %x-zeta;
+    transition: all $DEFAULT-TRANSITION-TIME;
+    display: none;
+    color: $colour-mine-shaft;
+    line-height: 1.4;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.newsletter-submit {
+    @extend %x-epsilon;
+    @include vertical-align-center;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 2;
+    border-radius: 0.3em;
+    color: $colour-white;
+    transition: background-color $DEFAULT-TRANSITION-TIME;
+    background-color: lighten($colour-burning-orange, 10%);
+    border: 0;
+    padding: 0 0.5em;
+    margin: 0;
+    right: 0.5em;
+    &:focus,
+    &:hover,
+    &:active {
+        background-color: $colour-burning-orange;
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<%= partial "partials/site.head" %>
+	</head>
+    <body class="page hamburger-mode-is-hidden <%= current_page.data.classes %>">
+    	<%= partial "partials/scripts.middle" %>
+        <a class="visuallyhidden" href="#main">[Skip to Content]</a>
+    	<%= partial "partials/ramsay/site.header" %>
+    	<main id="main" role="main" class="meat restraint">
+    		<%= yield %>
+    	</main>
+        <%= partial "partials/ramsay.site.footer" %>
+    	<%= partial "partials/scripts.bottom" %>
+    </body>
+</html>

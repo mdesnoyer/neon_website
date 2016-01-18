@@ -1,0 +1,186 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.x {
+    @include breakpoint(goldilocks) {
+        @include square(1em);
+        background: url('/images/navigation/x.svg');
+        z-index: 2222;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        cursor: pointer;
+        .hamburger-mode-is-hidden & {
+            display: none;
+        }
+        .hamburger-mode-is-shown & {
+            display: block;
+        }
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        display: none;
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.overlay {
+    // empty
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.primary-nav {
+    @include breakpoint(goldilocks) {
+        @include font-size($overlay-nav-item-font-sizes);
+        color: $colour-white;
+        font-family: $font-family-primary;
+        font-weight: $font-weight-primary;
+        overflow: hidden;
+        background-color: $colour-gray-chateau;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1111;
+        .hamburger-mode-is-hidden & {
+            display: none;
+        }
+        .hamburger-mode-is-shown & {
+            @include fade-in;
+        }
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include clearfix;
+        @include font-size($primary-nav-item-font-sizes);
+        font-family: $font-family-secondary-2;
+        font-weight: $font-weight-secondary-2;
+        display: block !important;
+        background: none;
+        bottom: 0;
+        right: 0;
+        left: auto;
+        top: auto;
+        width: auto;
+        height: 1em;
+        color: $colour-mine-shaft;
+        position: absolute;
+        z-index: auto;
+        overflow: visible;
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.primary-nav-item {
+    white-space: nowrap;
+    position: relative;
+    @include breakpoint(goldilocks) {
+        top: 10%;
+        left: 5%;
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        transform: none;
+        left: auto;
+        font-size: 1em;
+        float: left;
+        list-style: none;
+        margin-left: 2em;
+        &:after {
+            display: block;
+            position: absolute;
+            bottom: -0.25em;
+            left: 0;
+            content: ' ';
+            width: 1em;
+            height: 1px;
+            background-color: transparent;
+        }
+    }
+}
+
+.primary-nav-anchor {
+    transition: color $DEFAULT-TRANSITION-TIME;
+    @include breakpoint(goldilocks) {
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: $colour-white;
+        }
+        &:focus,
+        &:hover,
+        &:active {
+            text-decoration: underline;
+            color: $colour-white;
+        }
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty   
+    }
+    @include breakpoint(daddy-bear) {
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: $colour-dusty-gray;
+        }
+        &:focus,
+        &:hover,
+        &:active {
+            text-decoration: none;
+            color: $colour-burning-orange;
+        }
+    }
+}
+
+@each $primary-nav-link in $primary-nav-links {
+    @include breakpoint(goldilocks) {
+        // empty
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        .#{$primary-nav-link} .primary-nav-item.-#{$primary-nav-link} {
+            &:after {
+                background-color: $colour-burning-orange;
+            }
+            .primary-nav-anchor {
+                &:link,
+                &:visited {
+                    color: $colour-mine-shaft;
+                }
+                &:focus,
+                &:hover,
+                &:active {
+                    color: $colour-burning-orange;
+                }
+            }
+        }
+    }    
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

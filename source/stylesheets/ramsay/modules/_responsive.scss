@@ -1,0 +1,52 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$breakpoints: (
+    goldilocks: 320px / $BASE-FONT-SIZE-PX * 1em,
+    baby-bear: 640px / $BASE-FONT-SIZE-PX * 1em,
+    mummy-bear: 768px / $BASE-FONT-SIZE-PX * 1em,
+    daddy-bear: $SITE-MAX-WIDTH / $BASE-FONT-SIZE-PX * 1em
+);
+
+/*
+
+@include breakpoint(goldilocks) {
+    // empty
+}
+@include breakpoint(baby-bear) {
+    // empty
+}
+@include breakpoint(mummy-bear) {
+    // empty
+}
+@include breakpoint(daddy-bear) {
+    // empty
+}
+
+*/
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@function calc-breakpoint-ratio-px-to-em($width, $bp) {
+    @return $width / nth(map-get($base-font-sizes, $bp), 1) * 1em;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@function get-breakpoint-size($bp) {
+    @return map-get($breakpoints, $bp);
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@mixin breakpoint($bp) {
+    @if ($bp == null) {
+        @content;
+    }
+    @else {
+        @media only screen and (min-width: get-breakpoint-size($bp)) {
+            @content;
+        }
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
