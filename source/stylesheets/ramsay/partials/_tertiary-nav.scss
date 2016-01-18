@@ -1,0 +1,37 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+%x-tertiary-nav-item {
+    @include font-size($tertiary-nav-item-font-sizes);
+    color: $colour-silver-chalice;
+    font-family: $font-family-secondary-2;
+    font-weight: $font-weight-secondary-2;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.tertiary-nav-anchor {
+	transition: all $DEFAULT-TRANSITION-TIME;
+	&:link,
+	&:visited {
+		text-decoration: none;
+		color: $colour-silver-chalice;
+	}
+	&:focus,
+	&:hover,
+	&:active {
+		text-decoration: none;
+		color: $colour-mine-shaft;
+	}
+}
+
+.tertiary-nav-key {
+    @extend %x-epsilon;
+    text-transform: uppercase;
+    color: $colour-mine-shaft;
+}
+
+.tertiary-nav-value {
+    @extend %x-tertiary-nav-item;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

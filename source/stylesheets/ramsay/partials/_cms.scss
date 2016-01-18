@@ -1,0 +1,16 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+p:not([class]) {
+    margin-bottom: 2em;
+}
+
+ul:not([class]) { 
+    margin-bottom: 2em;
+}
+
+li:not([class]) {
+    list-style: disc;
+    margin-left: 1em;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

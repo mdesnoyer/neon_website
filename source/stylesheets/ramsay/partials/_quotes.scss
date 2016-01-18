@@ -1,0 +1,47 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$quote-space: 1.5em;
+
+.happy-quote {
+    @include breakpoint(goldilocks) {
+        &.-quote {
+            margin-top: $quote-space * 2;
+        }
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        &.-quote {
+            margin-top: 0;
+            transform: translateY($quote-space);
+        }
+    }
+}
+
+.happy-words {
+    @extend %x-gamma;
+    color: $colour-mine-shaft;
+    margin-bottom: $quote-space * 0.3333;
+    display: block;
+    .-quote & {
+        &:before {
+            @extend %x-beta;
+            color: $colour-burning-orange;
+            line-height: 0.1;
+            content: '\201c';
+            display: block;
+        }
+    }
+}
+
+.happy-source {
+    @extend %x-zeta;
+    color: $colour-dusty-gray;
+    display: block;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

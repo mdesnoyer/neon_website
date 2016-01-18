@@ -1,0 +1,7 @@
+<% if current_page.data.home != true %>
+	<a class="mark-anchor" href="/" title="Go to the <%= data.config.company_name_short %> home page">
+<% end %>
+		<span class="mark"><i class="mark-text"><%= data.config.company_name_short %></i></span>
+<% if current_page.data.home != true %>
+	</a>
+<% end %>

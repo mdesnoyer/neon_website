@@ -1,0 +1,26 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.stat {
+}
+
+.stat__key {
+    @include font-size($stat-font-sizes);
+    font-family: $font-family-secondary-1;
+    font-weight: $font-weight-secondary-1;
+    display: block;
+    color: $colour-burning-orange;
+    &.-alt {
+    	color: $colour-white;
+        text-shadow: 0 0 1em $colour-mine-shaft;
+    }
+}
+
+.stat__value {
+    // empty
+    &.-alt {
+    	color: $colour-white;
+        text-shadow: 0 0 1em $colour-mine-shaft;
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

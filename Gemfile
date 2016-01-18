@@ -3,6 +3,8 @@
 source 'http://rubygems.org'
 ruby '2.1.2'
 
+gem 'scss_lint', require: false
+
 gem "middleman", "~>3.3.5"
 
 # Live-reloading plugin

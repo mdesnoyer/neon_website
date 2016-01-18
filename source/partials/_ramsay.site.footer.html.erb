@@ -1,0 +1,46 @@
+<footer class="site-footer">
+	<div class="restraint">
+		<div class="pinch-left pinch-right">
+			<nav class="site-footer-nav">
+				<div class="site-footer-nav-item">
+					<dl class="tertiary-nav">
+						<dt class="tertiary-nav-key">Company</dt>
+							<dd class="tertiary-nav-value"><a class="tertiary-nav-anchor" href="/about/">About</a></dd>
+							<dd class="tertiary-nav-value"><a class="tertiary-nav-anchor" href="/jobs/">Jobs</a></dd>
+							<dd class="tertiary-nav-value"><a class="tertiary-nav-anchor" href="/partnerships/">Partnerships</a></dd>
+							<dd class="tertiary-nav-value"><a class="tertiary-nav-anchor" href="/news-and-press/">News + Press</a></dd>
+							<dd class="tertiary-nav-value"><a rel="me" class="tertiary-nav-anchor" href="<%=data.config.blog_url%>" title="<$=data.config.blog_blurb%>">Blog</a></dd>
+							<dd class="tertiary-nav-value"><a class="tertiary-nav-anchor" href="/contact/">Contact</a></dd>
+					</dl>
+				</div>
+				<div class="site-footer-nav-item">
+					<dl class="tertiary-nav">
+						<dt class="tertiary-nav-key">Resources</dt>
+							<dd class="tertiary-nav-value"><a class="tertiary-nav-anchor" href="/terms/" title="Privacy Policy and Terms of Service">Terms of Service</a></dd>
+							<dd class="tertiary-nav-value"><a class="tertiary-nav-anchor" href="/sitemap/">Site Map</a></dd>
+					</dl>
+				</div>
+				<div class="site-footer-nav-item">
+					<dl class="tertiary-nav">
+						<dt class="tertiary-nav-key">Social</dt>
+							<dd class="tertiary-nav-value"><a class="tertiary-nav-anchor" href="<%=data.config.twitter_url%>">Twitter</a></dd>
+							<dd class="tertiary-nav-value"><a class="tertiary-nav-anchor" href="<%=data.config.facebook_url%>">Facebook</a></dd>
+							<dd class="tertiary-nav-value"><a class="tertiary-nav-anchor" href="<%=data.config.blog_url%>">Medium</a></dd>
+							<dd class="tertiary-nav-value"><a class="tertiary-nav-anchor" href="<%=data.config.linkedin_url%>">LinkedIn</a></dd>
+					</dl>
+				</div>
+				<div class="site-footer-nav-item">
+					<%= partial "partials/newsletter" %>
+				</div>
+			</nav>
+			<small class="copyright"><%= partial "partials/copyright" %></small>
+		</div>
+	</div>
+</footer>
+
+<% if current_page.data.layout == 'ramsay' %>
+    <div id="js-overlay" class="overlay">
+        <div id="js-x" class="x"></div>
+    </div>
+<% end %>
+

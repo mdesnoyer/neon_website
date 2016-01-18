@@ -6,17 +6,6 @@ function clickNeonSlide(e) {
 		var anchor = target.getAttribute('href').split('#')[1];
 		renderNeonSlide(anchor);
 	}
-};
-
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-function getClosestClass(elem, selector) {
-	for (; elem && elem !== document; elem = elem.parentNode ) {
-		if (elem.classList.contains(selector)) {
-			return elem;
-		}
-	}
-	return false;
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
