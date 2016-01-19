@@ -6,23 +6,22 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
-    align-content: flex-start;
-    margin-top: 1em; 
+    align-content: flex-start; 
 }
 
-.wall-item {
-    @include breakpoint(goldilocks) {
-        width: 33.3333%;
-    }
-    @include breakpoint(baby-bear) {
-        width: 50%;
-    }
-    @include breakpoint(mummy-bear) {
-        // empty
-    }
-    @include breakpoint(daddy-bear) {
-        // empty
-    }
+.wall__item {
+	@include breakpoint(goldilocks) {
+	    width: 100%;
+	}
+	@include breakpoint(baby-bear) {
+	    width: 45%;
+	}
+	@include breakpoint(mummy-bear) {
+	    // empty
+	}
+	@include breakpoint(daddy-bear) {
+	    // empty
+	}
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

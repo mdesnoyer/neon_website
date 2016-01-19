@@ -4,6 +4,10 @@ p:not([class]) {
     margin-bottom: 2em;
 }
 
+div:not([class]) {
+	margin-bottom: 0.5em;
+}
+
 ul:not([class]) { 
     margin-bottom: 2em;
 }
