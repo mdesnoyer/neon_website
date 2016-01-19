@@ -9,33 +9,53 @@ scripts:
 sitemap: true
 ---
 <section class="pinch-left pinch-right">
-	<header class="page-columns">
-		<div class="page-columns__verso">
-			<div class="epsilon">San Francisco</div>
-			<h1 class="alpha masthead">Big Data Engineer</h1>
-		</div>
-	</header>
-	<div class="page-columns">
-		<div class="page-columns__verso">
-			<p><a class="cta-small" href="/jobs/">Back to Jobs</a></p>
-		</div>
-		<div class="page-columns__recto">		
-			<h2 class="beta">About the position</h2>
-			<p>As a Big Data Engineer, you will have total ownership over a key component of Neon&rsquo;s technology: the data processing pipeline that utilizes users&rsquo; reactions to imagery to optimize customer images shown. Not only will you manage the cluster, but you will also write analysis jobs and ultimately, define how the event processing system will evolve. As we scale, the data will scale with us, so your role will be essential to the management of the pipeline.</p>
-			<p>At Neon, system stability is a team effort. This means all engineers strive to write stable and maintainable code, and share the responsibility of being &lsquo;on call&rsquo; as well as helping out with all back end systems as necessary.</p>
-			<p>Joining our team means you&rsquo;ll become part of a high performance group that has built underwater robots, massive gaming infrastructures, and streaming services at Google, Zynga, and Brightcove. We have fun by cultivating hobbies such as sailing in the Bay and judging robotics competitions.</p>
-			<h2 class="beta">Requirements</h2>
-			<p>2+ years running production of Big Data analysis pipelines Working knowledge of statistical inference techniques.</p>
-			<h2 class="beta">Desired Skills</h2>
-			<ul>
-				<li>Hadoop/MapReduce</li>
-				<li>Flume</li>
-				<li>HBase</li>
-				<li>Other big data distributed analysis technologies</li>
-				<li>Amazon Web Services</li>
-			</ul>
-			<h2 class="beta">How to Apply</h2>
-			<p>Please send your resume and links to your previous projects (Github, Bitbucket etc.) to <a href="mailto:careers@neon-lab.com">careers@neon-lab.com</a> and let us know why you&rsquo;re interested in this position.</p>
-		</div>
-	</div>
+    <header class="page-columns">
+        <div class="page-columns__verso">
+            <div class="epsilon">San Francisco</div>
+            <h1 class="alpha masthead">Big Data Engineer</h1>
+        </div>
+    </header>
+    <div class="page-columns">
+        <div class="page-columns__verso">
+            <%= partial "partials/content/jobs/back-to-jobs" %>
+        </div>
+        <div class="page-columns__recto">       
+            
+            <h2 class="beta">Description</h2>
+            
+            <p>As a Big Data Engineer, you will have total ownership over a key component of Neon&rsquo;s technology: the data processing pipeline that utilizes users&rsquo; reactions to imagery to optimize customer images shown. Not only will you manage the cluster, but you will also write analysis jobs and ultimately, define how the event processing system will evolve. As we scale, the data will scale with us, so your role will be essential to the management of the pipeline.</p>
+            <p>At Neon, system stability is a team effort. This means all engineers strive to write stable and maintainable code, and share the responsibility of being &lsquo;on call&rsquo; as well as helping out with all back end systems as necessary.</p>
+            
+            <%= partial "partials/content/jobs/joining-our-team" %>
+            
+            <h2 class="beta">Requirements</h2>
+            
+            <ul>
+                <li>2+ years running production of Big Data analysis pipelines</li>
+                <li>Working knowledge of statistical inference techniques.</li>
+            </ul>
+            
+            <h2 class="beta">Desired Skills</h2>
+            
+            <ul>
+                <li>Hadoop/MapReduce</li>
+                <li>Flume</li>
+                <li>HBase</li>
+                <li>Other big data distributed analysis technologies</li>
+                <li>Amazon Web Services</li>
+            </ul>
+
+            <%= partial "partials/content/jobs/about-neon" %>
+
+            <h2 class="beta">Benefits + Perks</h2>
+            <%= partial "partials/content/jobs/benefits-and-perks-generic" %>
+            <%= partial "partials/content/jobs/benefits-and-perks-permanent" %>
+
+            <%= partial "partials/content/jobs/how-to-apply" %>
+
+            <hr class="divider" />
+            <%= partial "partials/content/jobs/job-openings-logic" %>
+            
+        </div>
+    </div>
 </section>

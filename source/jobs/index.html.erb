@@ -12,55 +12,31 @@ sitemap: true
 ---
 
 <section class="pinch-left pinch-right">
-	<header class="page-columns">
-		<div class="page-columns__verso">
-			<h1 class="epsilon">Jobs</h1>
-			<h2 class="alpha masthead">Work with us.</h2>
-		</div>
-	</header>
-	<div class="page-columns">
-		<div class="page-columns__verso">
-			<p>Join us and change the way images are selected and surfaced across the internet.</p>
-			<p><a class="cta-small" href="/careers/">Our Culture</a></p>
-		</div>
-		<div class="page-columns__recto">
-			<img class="hero" src="/images/jobs/jobs_team.jpg" alt="" title="" />
-			<p>We&rsquo;re always looking for great people to join us at Neon. We are a tight&#45;knit team of passionate, curious, and creative people motivated by solving interesting problems and delighting our customers. We are relentless do&#45;ers, and we reward execution with deep trust and independence. If you&rsquo;re interested in a job at Neon, apply online by clicking any of the job openings below. Get in touch with questions by emailing us at <a href="mailto:careers@neon-lab.com">careers@neon-lab.com</a>.</p>
-			<h2 class="epsilon">Job openings</h2>
+    <header class="page-columns">
+        <div class="page-columns__verso">
+            <h1 class="epsilon">Jobs</h1>
+            <h2 class="alpha masthead">Work with us.</h2>
+        </div>
+    </header>
+    <div class="page-columns">
+        <div class="page-columns__verso">
+            <p>Join us and change the way images are selected and surfaced across the internet.</p>
+            <p><a class="cta-small" href="/careers/">Our Culture</a></p>
+        </div>
+        <div class="page-columns__recto">
+            <img class="hero" src="/images/jobs/jobs_team.jpg" alt="" title="" />
+            <p>We&rsquo;re always looking for great people to join us at Neon. We are a tight&#45;knit team of passionate, curious, and creative people motivated by solving interesting problems and delighting our customers. We are relentless do&#45;ers, and we reward execution with deep trust and independence. If you&rsquo;re interested in a job at Neon, apply online by clicking any of the job openings below. Get in touch with questions by emailing us at <a href="mailto:careers@neon-lab.com">careers@neon-lab.com</a>.</p>
+            
+            <%= partial "partials/content/jobs/job-openings-logic" %>
 
-			<% if data.jobs.roles.try(:count) %>
-				<ul class="recs">
-					<% data.jobs.roles.each do |role| %>
-						<li class="recs__item">
-							<h3 class="delta">
-								<a title="<%= role.title %>, <%= role.location %>" href="<%= role.url %>">
-									<%= role.title %>
-								</a>
-							</h3>
-							<p><%= role.location %></p>
-						</li>
-					<% end %>
-				</ul>
-			<% else %>
-				<p><%= data.jobs.no_roles_message_html %></p>
-			<% end %>
+            <hr class="divider" />
 
-			<hr class="divider" />
-			<h2 class="beta">Benefits + Perks</h2>
-			<ul>
-				<li>Competitive compensation</li>
-				<li>Health, dental, vision, and life insurance</li>
-				<li>401K available</li>
-				<li>Commuter benefits</li>
-				<li>Beautiful office in South Park, San Francisco</li>
-				<li>Educational budget</li>
-				<li>Unlimited vacation time (with a required minimum number of days off)</li>
-				<li>Parental leave</li>
-				<li>Team off&#45;sites and field trips</li>
-				<li>Communications and career development coaching</li>
-			</ul>
-			<h2 class="beta">Diversity + Sustainability</h2>
-			<p>Neon is committed to building a diverse team with a range of backgrounds and approaches. We find that different viewpoints make our work stronger, more relevant, and more sustainable.</p>
-		</div>
-	</div>
+            <h2 class="beta">Benefits + Perks</h2>
+            <%= partial "partials/content/jobs/benefits-and-perks-generic" %>
+            <%= partial "partials/content/jobs/benefits-and-perks-permanent" %>
+            
+            <h2 class="beta">Diversity + Sustainability</h2>
+            <p>Neon is committed to building a diverse team with a range of backgrounds and approaches. We find that different viewpoints make our work stronger, more relevant, and more sustainable.</p>
+        </div>
+    </div>
 </section>
