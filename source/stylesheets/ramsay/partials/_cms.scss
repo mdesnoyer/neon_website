@@ -4,6 +4,10 @@ p:not([class]) {
     margin-bottom: 2em;
 }
 
+div:not([class]) {
+	margin-bottom: 0.5em;
+}
+
 ul:not([class]) { 
     margin-bottom: 2em;
 }
@@ -11,6 +15,13 @@ ul:not([class]) {
 li:not([class]) {
     list-style: disc;
     margin-left: 1em;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.cols-2 {
+    columns: 2;
+    margin-bottom: 2em;
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

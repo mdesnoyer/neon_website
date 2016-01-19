@@ -7,7 +7,6 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 @mixin generate-collage($w, $h, $background-image: '') {
-    background-color: $colour-white;
     @include breakpoint(goldilocks) {
         // empty
     }
@@ -579,3 +578,144 @@ $ch: 507px;
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$cw: 1132px;
+$ch: 860px;
+.-collage-flavour-21 {
+    @include generate-collage($cw, $ch);
+}
+.collage-tile-21-a {
+    @include breakpoint(goldilocks) {
+        // empty
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include generate-tile(138px,0px, 471px, 214px, $cw, $ch);
+    }
+}
+.collage-tile-21-b {
+    @include generate-tile(0px, 514px, 618px, 465px, $cw, $ch, '/images/home/how-it-works_01.png');
+}
+.collage-tile-21-c {
+    @include breakpoint(goldilocks) {
+        display: none;
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include generate-tile(508px, 214px, 257px, 257px, $cw, $ch, '/images/home/how-it-works_03.png');
+    }
+}
+.collage-tile-21-d {
+    @include breakpoint(goldilocks) {
+        // empty
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include generate-tile(508px, 514px, 470px, 352px, $cw, $ch, '/images/home/how-it-works_02.png');
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$cw: 984px;
+$ch: 635px;
+.-collage-flavour-22 {
+    @include generate-collage($cw, $ch);
+}
+.collage-tile-22-a {
+    @include breakpoint(goldilocks) {
+        // empty
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include generate-tile(0px, 0px, 265px, 163px, $cw, $ch);
+    }
+}
+.collage-tile-22-b {
+    @include breakpoint(goldilocks) {
+        display: none;
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include generate-tile(0px, 604px, 256px, 256px, $cw, $ch, '/images/home/products_02.png');
+    }
+}
+.collage-tile-22-c {
+    @include generate-tile(163px, 0px, 561px, 315px, $cw, $ch, '/images/home/products_01.png');
+}
+.collage-tile-22-d {
+    @include generate-tile(510px, 0px, 425px, 117px, $cw, $ch);
+}
+.collage-tile-22-e {
+    @include breakpoint(goldilocks) {
+        display: none;
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include generate-tile(299px, 604px, 380px, 285px, $cw, $ch, '/images/home/products_03.png');
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$cw: 1132px;
+$ch: 613px;
+.-collage-flavour-23 {
+    @include generate-collage($cw, $ch);
+}
+.collage-tile-23-a {
+    @include generate-tile(0px, 145px, 474px, 158px, $cw, $ch);
+}
+.collage-tile-23-b {
+    @include generate-tile(195px, 0px, 619px, 348px, $cw, $ch, '/images/home/careers_01.png');
+}
+.collage-tile-23-c {
+    @include generate-tile(494px, 661px, 471px, 114px, $cw, $ch);
+}
+.collage-tile-23-d {
+    @include breakpoint(goldilocks) {
+        display: none;
+    }
+    @include breakpoint(baby-bear) {
+        // empty
+    }
+    @include breakpoint(mummy-bear) {
+        // empty
+    }
+    @include breakpoint(daddy-bear) {
+        @include generate-tile(107px, 661px, 471px, 353px, $cw, $ch, '/images/home/careers_02.png');
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+

@@ -1,12 +1,18 @@
 root: 'https://neon-lab.com/'
 google_site_verification: 'ry_d1cL4Kfa75kdLJmrsH-la7iOAMCfRNIJL4jycLeQ'
+
 blog_url: 'https://medium.com/neon-blog'
 blog_blurb: 'Go to the Neon Blog on Medium (link opens in a new window)'
+
 company_name_long: 'Neon Labs, Inc.'
 company_name_short: 'Neon'
 company_telephone: '415-355-4249'
+company_hours: '(M-F, 9-5 PT)'
+
 partners_email: 'partners@neon-lab.com'
+
 tagline: 'Find your best images.'
+
 twitter_url: https://www.twitter.com/neonlab
 facebook_url: https://www.facebook.com/neonthumbnails
 linkedin_url: https://www.linkedin.com/company/neon-lab
