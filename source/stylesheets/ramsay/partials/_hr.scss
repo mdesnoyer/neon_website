@@ -6,7 +6,18 @@
     width: 100%;
     height: 1px;
     border: 0;
-    margin: 2em 0 4em;
+	@include breakpoint(goldilocks) {
+	    margin: 2em 0;
+	}
+	@include breakpoint(baby-bear) {
+	    // empty
+	}
+	@include breakpoint(mummy-bear) {
+	    // empty
+	}
+	@include breakpoint(daddy-bear) {
+	    margin: 4em 0;
+	}
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
