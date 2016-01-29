@@ -9,34 +9,55 @@ scripts:
 sitemap: true
 ---
 <section class="pinch-left pinch-right">
-	<header class="page-columns">
-		<div class="page-columns__verso">
-			<div class="epsilon">San Francisco</div>
-			<h1 class="alpha masthead">Backend Engineer</h1>
-		</div>
-	</header>
-	<div class="page-columns">
-		<div class="page-columns__verso">
-			<p><a class="cta-small" href="/jobs/">Back to Jobs</a></p>
-		</div>
-		<div class="page-columns__recto">		
-			<h2 class="beta">About the position</h2>
-			<p>As a back end engineer at Neon, you&rsquo;ll work primarily with the Engineering team to build robust, scalable systems that support Neon APIs, infrastructure services, and Neon analytics. In this role, you should expect to collaborate deeply with the product and design teams. Given that Neon is an early&#45;stage startup, you will have an exciting opportunity to work on a wide range of projects. You will be part of a rapid development cycle, writing code primarily in Python for projects ranging from building new APIs, to improving current system performance and scalability, to analytics.</p>
-			<h2 class="beta">Requirements</h2>
-			<ul>
-				<li>In&#45;depth knowledge of and experience building distributed systems</li>
-				<li>Experience in asynchronous programming</li>
-				<li>Proven ability to identify and troubleshoot issues in complex systems</li>
-				<li>Motivated to deliver high quality code</li>
-			</ul>
-			<h2 class="beta">Desired Skills</h2>
-			<ul>
-				<li>Familiarity with Linux, SaaS security, Amazon Web Services, REST, and API design</li>
-				<li>Previous coding experience in C/C++/Java Experience in Hadoop and other Apache data analytics technologies</li>
-				<li>Knowledge of relational databases and also non&#45;relational systems like Redis and Memcache</li>
-			</ul>
-			<h2 class="beta">How to Apply</h2>
-			<p>Please send your resume to <a href="mailto:careers@neon-lab.com">careers@neon-lab.com</a> and let us know why you&rsquo;re interested in this position.</p>
-		</div>
-	</div>
+    <header class="page-columns">
+        <div class="page-columns__verso">
+            <div class="epsilon">San Francisco</div>
+            <h1 class="alpha masthead">Backend Engineer</h1>
+        </div>
+    </header>
+    <div class="page-columns">
+        <div class="page-columns__verso">
+            <%= partial "partials/content/jobs/back-to-jobs" %>
+        </div>
+        <div class="page-columns__recto">       
+            
+            <h2 class="beta">Description</h2>
+            
+            <p>As a back end engineer at Neon, you&rsquo;ll work primarily with the Engineering team to build robust, scalable systems that support Neon APIs, infrastructure services, and Neon analytics. In this role, you should expect to collaborate deeply with the product and design teams. Given that Neon is an early&#45;stage startup, you will have an exciting opportunity to work on a wide range of projects. You will be part of a rapid development cycle, writing code primarily in Python for projects ranging from building new APIs, to improving current system performance and scalability, to analytics.</p>
+            
+            <%= partial "partials/content/jobs/joining-our-team" %>
+
+            <h2 class="beta">Requirements</h2>
+
+            <ul>
+                <li>In&#45;depth knowledge of and experience building distributed systems</li>
+                <li>Experience in asynchronous programming</li>
+                <li>Proven ability to identify and troubleshoot issues in complex systems</li>
+                <li>Motivated to deliver high quality code</li>
+            </ul>
+
+            <h2 class="beta">Desired Skills</h2>
+
+            <ul>
+                <li>Familiarity with Linux, SaaS security</li>
+                <li>Amazon Web Services, REST, and API design</li>
+                <li>Python Experience</li>
+                <li>Relational databases (e.g. MySQL, PostGres)</li>
+                <li>Previous coding experience in C/C++/Java Experience in Hadoop and other Apache data analytics technologies</li>
+                <li>Knowledge of relational databases and also non&#45;relational systems like Redis and Memcache</li>
+            </ul>
+
+            <%= partial "partials/content/jobs/about-neon" %>
+
+            <h2 class="beta">Benefits + Perks</h2>
+            <%= partial "partials/content/jobs/benefits-and-perks-generic" %>
+            <%= partial "partials/content/jobs/benefits-and-perks-permanent" %>
+
+            <%= partial "partials/content/jobs/how-to-apply" %>
+
+            <hr class="divider" />
+            <%= partial "partials/content/jobs/job-openings-logic" %>
+
+        </div>
+    </div>
 </section>
