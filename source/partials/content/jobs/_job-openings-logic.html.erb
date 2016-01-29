@@ -1,0 +1,17 @@
+<h2 class="epsilon">Job openings</h2>
+<% if data.jobs.roles.try(:count) %>
+    <ul class="recs">
+        <% data.jobs.roles.each do |role| %>
+            <li class="recs__item">
+                <h3 class="delta">
+                    <a title="<%= role.title %>, <%= role.location %>" href="<%= role.url %>">
+                        <%= role.title %>
+                    </a>
+                </h3>
+                <p><%= role.location %></p>
+            </li>
+        <% end %>
+    </ul>
+<% else %>
+    <p><%= data.jobs.no_roles_message_html %></p>
+<% end %>
