@@ -1,6 +1,9 @@
 no_roles_message_html: 'We&rsquo;re always looking for great people to join our team. <a href="mailto:careers@neon-lab.com">Get in touch</a> to let us know what you&rsquo;re interested in working on and why you&rsquo;re excited about Neon.'
 no_roles_message_text: 'We&rsquo;re always looking for great people to join our team. Get in touch to let us know what you&rsquo;re interested in working on and why you&rsquo;re excited about Neon.'
 roles:
+  - title: Customer Success Solutions Engineer
+    url: /jobs/customer-success-solutions-engineer/
+    location: San Francisco
   - title: Back End Engineer
     url: /jobs/back-end-engineer/
     location: San Francisco
